@@ -34,7 +34,9 @@
            monokai-theme
            smart-mode-line
            aggressive-indent
-	   flycheck))
+	   flycheck
+           elpy
+	   flycheck-rtags))
   (unless (package-installed-p package)
     (package-install package))
   )
