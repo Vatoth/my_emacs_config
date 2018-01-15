@@ -151,8 +151,5 @@
 (require 'helm-config)
 (helm-mode 1)
 
-;;elpy for python things
-(elpy-enable)
-
 (provide '.emacs)
 ;;; .emacs ends here
