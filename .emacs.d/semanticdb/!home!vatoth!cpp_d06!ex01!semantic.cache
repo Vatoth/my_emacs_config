@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "my_convert_temp.cpp"
+      :pointmax 560
+      :fsize 559
+      :lastmodtime '(23123 51698 762390 34000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_d06!ex01!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

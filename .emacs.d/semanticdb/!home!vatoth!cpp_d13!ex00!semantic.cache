@@ -1,0 +1,266 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Picture.hpp" include nil nil [64 86])
+            ("Toy.hpp" include nil nil [87 105])
+            ("Toy" function
+               (:constructor-flag t
+                :parent "Toy"
+                :type ("Toy" type (:type "class") nil nil))
+                nil [107 193])
+            ("Toy" function
+               (:constructor-flag t
+                :parent "Toy"
+                :arguments 
+                  ( ("type" variable (:type ("ToyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [205 218])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219 243])
+                    ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 272]))                  
+                :type ("Toy" type (:type "class") nil nil))
+                nil [196 373])
+            ("getName" function
+               (:methodconst-flag t
+                :parent "Toy"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [375 433])
+            ("getAscii" function
+               (:methodconst-flag t
+                :parent "Toy"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [435 495])
+            ("getType" function
+               (:methodconst-flag t
+                :parent "Toy"
+                :type ("Toy::ToyType" type (:type "class") nil nil))
+                nil [497 556])
+            ("setName" function
+               (:parent "Toy"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [576 600]))                  
+                :type "void")
+                nil [558 626])
+            ("setAscii" function
+               (:parent "Toy"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [647 675]))                  
+                :type "bool")
+                nil [628 815]))          
+      :file "Toy.cpp"
+      :pointmax 816
+      :fsize 815
+      :lastmodtime '(23132 29125 510167 342000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PICTURE_HPP" variable (:constant-flag t) nil [92 103])
+            ("string" include (:system-flag t) nil [105 122])
+            ("Picture" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [140 147])
+                    ("Picture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Picture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [149 159])
+                    ("Picture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [176 200]))                          
+                        :type ("Picture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [168 201])
+                    ("getPictureFromFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("file" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [234 258]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [210 259])
+                    ("data" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [268 285]))                  
+                :type "class")
+                nil [124 288]))          
+      :file "Picture.hpp"
+      :pointmax 311
+      :fsize 409
+      :lastmodtime '(23132 63659 788587 997000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PICTURE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TOY_HPP" variable (:constant-flag t) nil [88 95])
+            ("string" include (:system-flag t) nil [97 114])
+            ("Picture.hpp" include nil nil [115 137])
+            ("Toy" type
+               (:superclasses 
+                  ( ("Picture" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [168 175])
+                    ("ToyType" type
+                       (:members 
+                          ( ("BASIC_TOY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [198 208])
+                            ("ALIEN" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [231 237]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [184 238])
+                    ("Toy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Toy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [247 253])
+                    ("Toy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("ToyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [266 279])
+                            ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [280 304])
+                            ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [305 333]))                          
+                        :type ("Toy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [262 334])
+                    ("getName" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [343 371])
+                    ("getAscii" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [380 409])
+                    ("getType" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("ToyType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [418 442])
+                    ("setName" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [464 488]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [443 489])
+                    ("setAscii" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [512 540]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [498 541])
+                    ("private" label nil (reparse-symbol classsubparts) [542 550])
+                    ("_picture" variable (:type ("Picture" type (:type "class") nil nil)) (reparse-symbol classsubparts) [559 576])
+                    ("_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [585 603])
+                    ("_ascii" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [612 631])
+                    ("_type" variable (:type ("ToyType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [640 654]))                  
+                :type "class")
+                nil [139 657]))          
+      :file "Toy.hpp"
+      :pointmax 676
+      :fsize 675
+      :lastmodtime '(23132 29125 510167 342000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TOY_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [64 82])
+            ("fstream" include (:system-flag t) nil [83 101])
+            ("iostream" include (:system-flag t) nil [102 121])
+            ("Picture.hpp" include nil nil [122 144])
+            ("Picture" function
+               (:constructor-flag t
+                :parent "Picture"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163 191]))                  
+                :type ("Picture" type (:type "class") nil nil))
+                nil [146 233])
+            ("Picture" function
+               (:constructor-flag t
+                :parent "Picture"
+                :type ("Picture" type (:type "class") nil nil))
+                nil [235 275])
+            ("getPictureFromFile" function
+               (:parent "Picture"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [310 338]))                  
+                :type "bool")
+                nil [277 716]))          
+      :file "Picture.cpp"
+      :pointmax 717
+      :fsize 970
+      :lastmodtime '(23132 63620 579370 835000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "main.cpp"
+      :pointmax 43
+      :fsize 42
+      :lastmodtime '(23132 63643 248073 771000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_d13!ex00!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,69 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [64 84])
+            ("iostream" include (:system-flag t) nil [85 104])
+            ("fstream" include (:system-flag t) nil [105 123])
+            ("sstream" include (:system-flag t) nil [124 142])
+            ("string" include (:system-flag t) nil [143 160])
+            ("KoalaNurse.hpp" include nil nil [162 187])
+            ("WhoSay" function
+               (:parent "KoalaNurse"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [213 218]))                  
+                :type "void")
+                nil [189 261])
+            ("KoalaNurse" function
+               (:destructor-flag t
+                :parent "KoalaNurse"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [287 292]))                  
+                :type "void")
+                nil [263 356])
+            ("giveDrug" function
+               (:parent "KoalaNurse"
+                :arguments 
+                  ( ("Drug" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 401])
+                    ("Koala" variable
+                       (:pointer 1
+                        :type ("SickKoala" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [402 419]))                  
+                :type "void")
+                nil [358 447])
+            ("readReport" function
+               (:parent "KoalaNurse"
+                :arguments 
+                  ( ("filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [484 505]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [449 978])
+            ("string" include (:system-flag t) nil [980 997])
+            ("timeCheck" function
+               (:parent "KoalaNurse"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1028 1033]))                  
+                :type "void")
+                nil [1001 1298])
+            ("KoalaNurse" function
+               (:constructor-flag t
+                :parent "KoalaNurse"
+                :arguments 
+                  ( ("StartID" variable (:type "int") (reparse-symbol arg-sub-list) [1323 1335]))                  
+                :type ("KoalaNurse" type (:type "class") nil nil))
+                nil [1300 1373]))          
+      :file "KoalaNurse.cpp"
+      :pointmax 1376
+      :fsize 1375
+      :lastmodtime '(23123 53835 155534 997000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "KoalaNurse.hpp"
+      :fsize 409
+      :lastmodtime '(23123 51698 762390 34000)))
+  :file "!home!vatoth!cpp_d06!ex03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

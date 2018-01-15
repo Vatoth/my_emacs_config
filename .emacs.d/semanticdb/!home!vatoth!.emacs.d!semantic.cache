@@ -1,0 +1,16 @@
+;; Object .emacs.d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".emacs.d/"
+  :tables
+  (list
+    (semanticdb-table "lol.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "lol.hpp"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(23131 7173 971349 744000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!.emacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

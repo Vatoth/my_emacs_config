@@ -1,0 +1,29 @@
+;; Object cpp_rush2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpp_rush2/"
+  :tables
+  (list
+
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [64 80])
+            ("RM" variable (:default-value ("rm" "-f")) nil [81 99])
+            ("CPPFLAGS" variable (:default-value ("-I./include/" "-Wall" "-Wextra" "-Werror" "-std=gnu++0x")) nil [101 161])
+            ("SRCS" variable (:default-value ("src/main.cpp" "src/LittlePony.cpp" "src/Object.cpp" "src/Teddy.cpp" "src/Toy.cpp" "src/Wrap.cpp" "src/GiftPaper.cpp" "src/Box.cpp" "src/Hand.cpp" "src/PapaXmasElf.cpp" "src/PapaXmasConveyorBelt.cpp" "src/PapaXmasTable.cpp")) nil [162 416])
+            ("OBJS" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [417 446])
+            ("NAME" variable (:default-value ("a.out")) nil [447 466])
+            ("all" function (:arguments ("$(NAME)")) nil [467 483])
+            ("$(NAME)" function (:arguments ("$(OBJS)")) nil [484 551])
+            ("clean" function nil nil [552 575])
+            ("fclean" function (:arguments ("clean")) nil [576 605])
+            ("re" function (:arguments ("fclean" "all")) nil [606 624]))          
+      :file "Makefile"
+      :pointmax 653
+      :fsize 652
+      :lastmodtime '(23130 38954 135155 798000)
+      :unmatched-syntax nil)
+)
+  :file "!home!vatoth!cpp_rush2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,504 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("typeinfo" include (:system-flag t) nil [84 103])
+            ("LittlePony.hpp" include nil nil [104 129])
+            ("Teddy.hpp" include nil nil [130 150])
+            ("GiftPaper.hpp" include nil nil [151 175])
+            ("Box.hpp" include nil nil [176 194])
+            ("PapaXmasConveyorBelt.hpp" include nil nil [195 230])
+            ("PapaXmasElf.hpp" include nil nil [231 257])
+            ("PapaXmasTable.hpp" include nil nil [258 286])
+            ("MyUnitTests" function
+               (:pointer 2
+                :type ("Object" type (:type "class") nil nil))
+                nil [288 486])
+            ("PrepareTestWrapping" function
+               (:pointer 2
+                :type ("Object" type (:type "class") nil nil))
+                nil [488 715])
+            ("MyUnitTests" function
+               (:pointer 1
+                :arguments 
+                  ( ("my_object" variable
+                       (:pointer 2
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [737 756]))                  
+                :type ("Object" type (:type "class") nil nil))
+                nil [717 890])
+            ("createConveyorBelt" function
+               (:pointer 1
+                :type ("IConveyorBelt" type (:type "class") nil nil))
+                nil [892 1044])
+            ("createTable" function
+               (:pointer 1
+                :type ("ITable" type (:type "class") nil nil))
+                nil [1046 1362])
+            ("MyUnitTests" function
+               (:arguments 
+                  ( ("elf" variable
+                       (:pointer 1
+                        :type ("PapaXmasElf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1381 1398]))                  
+                :type "void")
+                nil [1364 1692])
+            ("main" function (:type "int") nil [1694 1875]))          
+      :file "main.cpp"
+      :pointmax 1876
+      :fsize 1875
+      :lastmodtime '(23132 23682 948265 723000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("LittlePony.hpp" include nil nil [84 109])
+            ("LittlePony" function
+               (:constructor-flag t
+                :parent "LittlePony"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134 159]))                  
+                :type ("LittlePony" type (:type "class") nil nil))
+                nil [111 206])
+            ("isTaken" function
+               (:parent "LittlePony"
+                :type "void")
+                nil [208 281]))          
+      :file "LittlePony.cpp"
+      :pointmax 282
+      :fsize 281
+      :lastmodtime '(23130 22426 964027 278000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("Object.hpp" include nil nil [84 105])
+            ("Object" function
+               (:constructor-flag t
+                :parent "Object"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122 147])
+                    ("type" variable (:type ("type_object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156 173]))                  
+                :type ("Object" type (:type "class") nil nil))
+                nil [107 209])
+            ("getType" function
+               (:parent "Object"
+                :type ("type_object" type (:type "class") nil nil))
+                nil [211 265])
+            ("getTitle" function
+               (:parent "Object"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [267 323]))          
+      :file "Object.cpp"
+      :pointmax 326
+      :fsize 325
+      :lastmodtime '(23130 22539 196029 495000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Toy.hpp" include nil nil [64 82])
+            ("Toy" function
+               (:constructor-flag t
+                :parent "Toy"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93 118]))                  
+                :type ("Toy" type (:type "class") nil nil))
+                nil [84 143])
+            ("getTitle" function
+               (:parent "Toy"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [146 199]))          
+      :file "Toy.cpp"
+      :pointmax 200
+      :fsize 199
+      :lastmodtime '(23130 22568 712030 78000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Box.hpp" include nil nil [64 82])
+            ("Box" function
+               (:constructor-flag t
+                :parent "Box"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93 118]))                  
+                :type ("Box" type (:type "class") nil nil))
+                nil [84 159]))          
+      :file "Box.cpp"
+      :pointmax 160
+      :fsize 159
+      :lastmodtime '(23131 35896 524938 499000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("Wrap.hpp" include nil nil [84 103])
+            ("ostream" include (:system-flag t) nil [104 122])
+            ("Wrap" function
+               (:constructor-flag t
+                :parent "Wrap"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136 161]))                  
+                :type ("Wrap" type (:type "class") nil nil))
+                nil [125 221])
+            ("isTaken" function
+               (:parent "Wrap"
+                :type "void")
+                nil [223 306])
+            ("wrapMeThat" function
+               (:parent "Wrap"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [330 342]))                  
+                :type "void")
+                nil [308 618])
+            ("openMe" function
+               (:pointer 1
+                :parent "Wrap"
+                :type ("Object" type (:type "class") nil nil))
+                nil [620 718])
+            ("getClosed" function
+               (:parent "Wrap"
+                :type "bool")
+                nil [720 769])
+            ("getObj" function
+               (:pointer 1
+                :parent "Wrap"
+                :type ("Object" type (:type "class") nil nil))
+                nil [771 817])
+            ("closeMe" function
+               (:parent "Wrap"
+                :type "void")
+                nil [819 860]))          
+      :file "Wrap.cpp"
+      :pointmax 861
+      :fsize 860
+      :lastmodtime '(23130 22936 572037 344000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("ostream" include (:system-flag t) nil [84 102])
+            ("GiftPaper.hpp" include nil nil [103 127])
+            ("GiftPaper" function
+               (:constructor-flag t
+                :parent "GiftPaper"
+                :arguments 
+                  ( ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [150 175]))                  
+                :type ("GiftPaper" type (:type "class") nil nil))
+                nil [129 222])
+            ("wrapMeThat" function
+               (:parent "GiftPaper"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [251 263]))                  
+                :type "void")
+                nil [224 417]))          
+      :file "GiftPaper.cpp"
+      :pointmax 418
+      :fsize 417
+      :lastmodtime '(23130 23007 372038 742000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("Teddy.hpp" include nil nil [84 104])
+            ("Teddy" function
+               (:constructor-flag t
+                :parent "Teddy"
+                :arguments 
+                  ( ("title" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119 143]))                  
+                :type ("Teddy" type (:type "class") nil nil))
+                nil [106 185])
+            ("isTaken" function
+               (:parent "Teddy"
+                :type "void")
+                nil [187 255]))          
+      :file "Teddy.cpp"
+      :pointmax 256
+      :fsize 255
+      :lastmodtime '(23130 22558 364029 873000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ostream" include (:system-flag t) nil [75 93])
+            ("Wrap.hpp" include nil nil [94 113])
+            ("PapaXmasElf.hpp" include nil nil [114 140])
+            ("PapaXmasElf" function
+               (:constructor-flag t
+                :parent "PapaXmasElf"
+                :type ("PapaXmasElf" type (:type "class") nil nil))
+                nil [142 189])
+            ("makeAWrap" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219 231]))                  
+                :type "void")
+                nil [191 372])
+            ("takeAWrap" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("wrap" variable
+                       (:pointer 1
+                        :type ("Wrap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [402 413]))                  
+                :type "void")
+                nil [374 466])
+            ("look" function
+               (:pointer 2
+                :parent "PapaXmasElf"
+                :arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [500 520]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [468 553])
+            ("receive" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [581 601]))                  
+                :type "void")
+                nil [555 636])
+            ("send" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [661 681]))                  
+                :type "void")
+                nil [638 717])
+            ("put" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [741 755]))                  
+                :type "void")
+                nil [719 812])
+            ("put" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [836 856]))                  
+                :type "void")
+                nil [814 912])
+            ("take" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("table" variable
+                       (:pointer 1
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [937 951]))                  
+                :type "void")
+                nil [914 985])
+            ("take" function
+               (:parent "PapaXmasElf"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1030]))                  
+                :type "void")
+                nil [987 1062])
+            ("getObj" function
+               (:pointer 1
+                :parent "PapaXmasElf"
+                :type ("Object" type (:type "class") nil nil))
+                nil [1064 1121]))          
+      :file "PapaXmasElf.cpp"
+      :pointmax 1121
+      :fsize 1120
+      :lastmodtime '(23131 6094 933922 534000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("Object.hpp" include nil nil [84 105])
+            ("PapaXmasTable.hpp" include nil nil [106 134])
+            ("PapaXmasTable" function
+               (:constructor-flag t
+                :parent "PapaXmasTable"
+                :type ("PapaXmasTable" type (:type "class") nil nil))
+                nil [136 169])
+            ("look" function
+               (:pointer 2
+                :parent "PapaXmasTable"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [172 397])
+            ("put" function
+               (:parent "PapaXmasTable"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [423 435]))                  
+                :type "void")
+                nil [399 549])
+            ("take" function
+               (:pointer 1
+                :parent "PapaXmasTable"
+                :type ("Object" type (:type "class") nil nil))
+                nil [551 729]))          
+      :file "PapaXmasTable.cpp"
+      :pointmax 730
+      :fsize 729
+      :lastmodtime '(23131 9360 972647 674000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [83 102])
+            ("string" include (:system-flag t) nil [103 120])
+            ("PapaXmasConveyorBelt.hpp" include nil nil [121 156])
+            ("PapaXmasConveyorBelt" function
+               (:constructor-flag t
+                :parent "PapaXmasConveyorBelt"
+                :type ("PapaXmasConveyorBelt" type (:type "class") nil nil))
+                nil [158 218])
+            ("getEmpty" function
+               (:parent "PapaXmasConveyorBelt"
+                :type "char")
+                nil [220 283])
+            ("pushButtonIn" function
+               (:pointer 1
+                :parent "PapaXmasConveyorBelt"
+                :type ("Object" type (:type "class") nil nil))
+                nil [285 348])
+            ("pushButtonOut" function
+               (:pointer 1
+                :parent "PapaXmasConveyorBelt"
+                :type ("Object" type (:type "class") nil nil))
+                nil [350 414])
+            ("put" function
+               (:parent "PapaXmasConveyorBelt"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [447 459]))                  
+                :type "void")
+                nil [416 572])
+            ("get" function
+               (:pointer 1
+                :parent "PapaXmasConveyorBelt"
+                :type ("Object" type (:type "class") nil nil))
+                nil [574 679]))          
+      :file "PapaXmasConveyorBelt.cpp"
+      :pointmax 680
+      :fsize 679
+      :lastmodtime '(23130 38828 331633 178000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstddef" include (:system-flag t) nil [75 93])
+            ("iostream" include (:system-flag t) nil [94 113])
+            ("Hand.hpp" include nil nil [114 133])
+            ("Hand" function
+               (:constructor-flag t
+                :parent "Hand"
+                :type ("Hand" type (:type "class") nil nil))
+                nil [135 168])
+            ("pushButton" function
+               (:parent "Hand"
+                :arguments 
+                  ( ("belt" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [192 212])
+                    ("button" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [213 238]))                  
+                :type "void")
+                nil [170 351])
+            ("isEmpty" function
+               (:parent "Hand"
+                :type "bool")
+                nil [353 393])
+            ("getObj" function
+               (:pointer 1
+                :parent "Hand"
+                :type ("Object" type (:type "class") nil nil))
+                nil [395 435])
+            ("setObj" function
+               (:parent "Hand"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [455 467]))                  
+                :type "void")
+                nil [437 484]))          
+      :file "Hand.cpp"
+      :pointmax 485
+      :fsize 484
+      :lastmodtime '(23131 6094 933922 534000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "main.c"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(23132 23452 2292 734000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_rush2!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

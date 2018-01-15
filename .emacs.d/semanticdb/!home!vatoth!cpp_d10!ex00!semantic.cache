@@ -1,0 +1,77 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Sorcerer.hpp" include nil nil [64 87])
+            ("Sorcerer" function
+               (:constructor-flag t
+                :parent "Sorcerer"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108 132])
+                    ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133 158]))                  
+                :type ("Sorcerer" type (:type "class") nil nil))
+                nil [89 260])
+            ("Sorcerer" function
+               (:destructor-flag t
+                :parent "Sorcerer"
+                :type "void")
+                nil [262 399])
+            ("getName" function
+               (:methodconst-flag t
+                :parent "Sorcerer"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [401 457])
+            ("getTitle" function
+               (:methodconst-flag t
+                :parent "Sorcerer"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [459 517])
+            ("polymorph" function
+               (:methodconst-flag t
+                :parent "Sorcerer"
+                :arguments 
+                  ( ("victim" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Victim" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [544 565]))                  
+                :type "void")
+                nil [519 601])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [628 649])
+                    ("Sorcerer" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Sorcerer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [654 679]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [603 819]))          
+      :file "Sorcerer.cpp"
+      :pointmax 820
+      :fsize 819
+      :lastmodtime '(23128 57904 404347 526000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Sorcerer.hpp"
+      :fsize 544
+      :lastmodtime '(23128 31253 993035 467000)))
+  :file "!home!vatoth!cpp_d10!ex00!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

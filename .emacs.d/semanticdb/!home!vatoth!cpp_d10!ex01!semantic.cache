@@ -1,0 +1,16 @@
+;; Object ex01/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ex01/"
+  :tables
+  (list
+    (semanticdb-table "AEnemy.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "AEnemy.hpp"
+      :pointmax 305
+      :fsize 304
+      :lastmodtime '(23128 34819 697115 232000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_d10!ex01!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

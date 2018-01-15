@@ -1,0 +1,1 @@
+(define-package "company-rtags" "20170924.2244" "RTags back-end for company" '((emacs "24.3") (company "0.8.1") (rtags "2.10")) :commit "db5ad3a48c579b3522411bd2411c09dbb27af578" :url "http://rtags.net")

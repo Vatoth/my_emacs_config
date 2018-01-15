@@ -1,0 +1,1845 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("signal.h" include (:system-flag t) nil [677 696])
+            ("stdio.h" include (:system-flag t) nil [697 715])
+            ("stdlib.h" include (:system-flag t) nil [716 735])
+            ("rct/EventLoop.h" include nil nil [787 813])
+            ("rct/FileSystemWatcher.h" include nil nil [814 848])
+            ("rct/Log.h" include nil nil [849 869])
+            ("rct/Process.h" include nil nil [870 894])
+            ("rct/rct-config.h" include nil nil [895 922])
+            ("rct/Rct.h" include nil nil [923 943])
+            ("rct/StackBuffer.h" include nil nil [944 972])
+            ("rct/Thread.h" include nil nil [973 996])
+            ("rct/ThreadPool.h" include nil nil [997 1024])
+            ("RTags.h" include nil nil [1025 1043])
+            ("CommandLineParser.h" include nil nil [1044 1074])
+            ("Server.h" include nil nil [1075 1094])
+            ("crashDumpTempFilePath" variable
+               (:dereference 1
+                :type "char")
+                nil [1234 1271])
+            ("crashDumpFilePath" variable
+               (:dereference 1
+                :type "char")
+                nil [1272 1305])
+            ("crashDumpFile" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1306 1330])
+            ("signalHandler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signal" variable (:type "int") (reparse-symbol arg-sub-list) [1357 1368]))                  
+                :type "void")
+                nil [1331 2276])
+            ("DEFAULT_EXCLUDEFILTER" variable (:constant-flag t) nil [2286 2307]))          
+      :file "rdm.cpp"
+      :pointmax 40218
+      :fsize 40217
+      :lastmodtime '(23133 761 338481 527000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEFAULT_EXCLUDEFILTER" . ((string "\"*/CMakeFiles/*;*/cmake*/Modules/*;*/conftest.c*;/tmp/*;/private/tmp/*;/private/var" 2308 . 2391)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "RTags.h"
+      :fsize 34743
+      :lastmodtime '(23133 761 326483 58000))
+    (semanticdb-table "semanticdb-table"
+      :file "CommandLineParser.h"
+      :fsize 11857
+      :lastmodtime '(23133 761 314484 588000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Server_h" variable (:constant-flag t) nil [702 710])
+            ("IndexMessage.h" include nil nil [712 737])
+            ("rct/Flags.h" include nil nil [738 760])
+            ("rct/Hash.h" include nil nil [761 782])
+            ("rct/List.h" include nil nil [783 804])
+            ("rct/SocketServer.h" include nil nil [805 834])
+            ("rct/String.h" include nil nil [835 858])
+            ("rct/Thread.h" include nil nil [859 882])
+            ("Source.h" include nil nil [883 902])
+            ("RTags.h" include nil nil [903 921])
+            ("Match" type
+               (:prototype t
+                :type "class")
+                nil [1071 1083])
+            ("CompletionThread" type
+               (:prototype t
+                :type "class")
+                nil [1084 1107])
+            ("Connection" type
+               (:prototype t
+                :type "class")
+                nil [1108 1125])
+            ("ErrorMessage" type
+               (:prototype t
+                :type "class")
+                nil [1126 1145])
+            ("IndexDataMessage" type
+               (:prototype t
+                :type "class")
+                nil [1146 1169])
+            ("QueryJob" type
+               (:prototype t
+                :type "class")
+                nil [1170 1185])
+            ("LogOutputMessage" type
+               (:prototype t
+                :type "class")
+                nil [1186 1209])
+            ("Message" type
+               (:prototype t
+                :type "class")
+                nil [1210 1224])
+            ("OutputMessage" type
+               (:prototype t
+                :type "class")
+                nil [1225 1245])
+            ("Project" type
+               (:prototype t
+                :type "class")
+                nil [1246 1260])
+            ("QueryMessage" type
+               (:prototype t
+                :type "class")
+                nil [1261 1280])
+            ("VisitFileMessage" type
+               (:prototype t
+                :type "class")
+                nil [1281 1304])
+            ("JobScheduler" type
+               (:prototype t
+                :type "class")
+                nil [1305 1324])
+            ("IndexParseData" type
+               (:prototype t
+                :type "class")
+                nil [1325 1346])
+            ("Server" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1362 1369])
+                    ("Server" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1374 1383])
+                    ("Server" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1388 1398])
+                    ("instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1403 1450])
+                    ("Option" type
+                       (:members 
+                          ( ("NoOptions" variable
+                               (:constant-flag t
+                                :default-value (1489 1492)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1477 1492])
+                            ("ClearProjects" variable
+                               (:constant-flag t
+                                :default-value (1518 1529)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1502 1529])
+                            ("Wall" variable
+                               (:constant-flag t
+                                :default-value (1546 1557)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1539 1557])
+                            ("IgnorePrintfFixits" variable
+                               (:constant-flag t
+                                :default-value (1588 1599)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1567 1599])
+                            ("SpellChecking" variable
+                               (:constant-flag t
+                                :default-value (1625 1636)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1609 1636])
+                            ("AllowMultipleSources" variable
+                               (:constant-flag t
+                                :default-value (1669 1680)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1646 1680])
+                            ("NoStartupCurrentProject" variable
+                               (:constant-flag t
+                                :default-value (1716 1727)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1690 1727])
+                            ("WatchSystemPaths" variable
+                               (:constant-flag t
+                                :default-value (1756 1767)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1737 1767])
+                            ("NoFileManagerWatch" variable
+                               (:constant-flag t
+                                :default-value (1798 1809)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1777 1809])
+                            ("NoFileSystemWatch" variable
+                               (:constant-flag t
+                                :default-value (1839 1850)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1819 1850])
+                            ("NoNoUnknownWarningsOption" variable
+                               (:constant-flag t
+                                :default-value (1888 1900)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1860 1900])
+                            ("SuspendRPOnCrash" variable
+                               (:constant-flag t
+                                :default-value (1929 1941)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1910 1941])
+                            ("SeparateDebugAndRelease" variable
+                               (:constant-flag t
+                                :default-value (1977 1989)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1951 1989])
+                            ("AllowPedantic" variable
+                               (:constant-flag t
+                                :default-value (2015 2027)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1999 2027])
+                            ("StartSuspended" variable
+                               (:constant-flag t
+                                :default-value (2054 2066)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2037 2066])
+                            ("EnableCompilerManager" variable
+                               (:constant-flag t
+                                :default-value (2100 2112)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2076 2112])
+                            ("EnableNDEBUG" variable
+                               (:constant-flag t
+                                :default-value (2137 2149)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2122 2149])
+                            ("Progress" variable
+                               (:constant-flag t
+                                :default-value (2170 2182)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2159 2182])
+                            ("Weverything" variable
+                               (:constant-flag t
+                                :default-value (2206 2218)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2192 2218])
+                            ("NoComments" variable
+                               (:constant-flag t
+                                :default-value (2241 2253)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2228 2253])
+                            ("Launchd" variable
+                               (:constant-flag t
+                                :default-value (2273 2285)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2263 2285])
+                            ("RPLogToSyslog" variable
+                               (:constant-flag t
+                                :default-value (2311 2323)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2295 2323])
+                            ("CompletionsNoFilter" variable
+                               (:constant-flag t
+                                :default-value (2355 2367)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2333 2367])
+                            ("WatchSourcesOnly" variable
+                               (:constant-flag t
+                                :default-value (2396 2408)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2377 2408])
+                            ("NoFileLock" variable
+                               (:constant-flag t
+                                :default-value (2431 2443)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2418 2443])
+                            ("PCHEnabled" variable
+                               (:constant-flag t
+                                :default-value (2466 2478)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2453 2478])
+                            ("NoFileManager" variable
+                               (:constant-flag t
+                                :default-value (2504 2516)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2488 2516])
+                            ("ValidateFileMaps" variable
+                               (:constant-flag t
+                                :default-value (2545 2557)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2526 2557])
+                            ("CompletionLogs" variable
+                               (:constant-flag t
+                                :default-value (2584 2596)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2567 2596])
+                            ("AllowWErrorAndWFatalErrors" variable
+                               (:constant-flag t
+                                :default-value (2635 2647)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2606 2647])
+                            ("NoRealPath" variable
+                               (:constant-flag t
+                                :default-value (2670 2682)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2657 2682])
+                            ("Separate32BitAnd64Bit" variable
+                               (:constant-flag t
+                                :default-value (2716 2728)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2692 2728])
+                            ("SourceIgnoreIncludePathDifferencesInUsr" variable
+                               (:constant-flag t
+                                :default-value (2780 2792)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2738 2792])
+                            ("NoLibClangIncludePath" variable
+                               (:constant-flag t
+                                :default-value (2826 2838)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2802 2838])
+                            ("TranslationUnitCache" variable
+                               (:constant-flag t
+                                :default-value (2871 2883)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2848 2883]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1455 2890])
+                    ("Options" type
+                       (:members 
+                          ( ("Options" function
+                               (:constructor-flag t
+                                :type ("Options" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2920 3367])
+                            ("socketFile" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3433])
+                            ("dataDir" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3433])
+                            ("argTransform" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3433])
+                            ("rp" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3433])
+                            ("sandboxRoot" variable (:type ("Path" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3433])
+                            ("options" variable (:type ("Flags" type
+                                 (:template-specifier 
+                                    ( ("Option" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3442 3464])
+                            ("jobCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3473 3537])
+                            ("headerErrorJobCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3473 3537])
+                            ("maxIncludeCompletionDepth" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3473 3537])
+                            ("rpVisitFileTimeout" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("rpIndexDataMessageTimeout" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("rpConnectTimeout" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("rpConnectAttempts" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("rpNiceValue" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("maxCrashCount" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("completionCacheSize" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("testTimeout" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("maxFileMapScopeCacheSize" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("errorLimit" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("pollTimer" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("maxSocketWriteBufferSize" variable (:type "int") (reparse-symbol classsubparts) [3546 3806])
+                            ("tcpPort" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3815 3832])
+                            ("defaultArguments" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3841 3887])
+                            ("excludeFilters" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3841 3887])
+                            ("blockedArguments" variable (:type ("Set" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3896 3925])
+                            ("includePaths" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("Source::Include" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3934 3969])
+                            ("defines" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("Source::Define" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3978 4007])
+                            ("tests" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("Path" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4016 4033])
+                            ("ignoredCompilers" variable (:type ("Set" type
+                                 (:template-specifier 
+                                    ( ("Path" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4042 4069])
+                            ("compilerWrappers" variable (:type ("Set" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4078 4107])
+                            ("debugLocations" variable (:type ("List" type
+                                 (:template-specifier 
+                                    ( ("String" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4116 4144]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2895 4151])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4166 4189]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4156 4190])
+                    ("runTests" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4195 4211])
+                    ("options" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4216 4267])
+                    ("suspended" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4272 4317])
+                    ("project" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4355 4372]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("Project" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4322 4412])
+                    ("shouldIndex" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Source" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4434 4455])
+                            ("project" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4456 4476]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4417 4483])
+                    ("stopServers" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4488 4507])
+                    ("dumpJobs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4526 4566]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4512 4567])
+                    ("jobScheduler" function
+                       (:methodconst-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("JobScheduler" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4572 4648])
+                    ("activeBuffers" function
+                       (:methodconst-flag t
+                        :constant-flag t
+                        :type ("Set" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4653 4722])
+                    ("hadActiveBuffers" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4727 4786])
+                    ("isActiveBuffer" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("fileId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4811 4827]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4791 4877])
+                    ("exitCode" function
+                       (:methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4882 4924])
+                    ("currentProject" function
+                       (:methodconst-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("Project" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4929 5011])
+                    ("onNewMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Message" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5034 5074])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5075 5115]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5016 5116])
+                    ("saveFileIds" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5121 5140])
+                    ("loadCompileCommands" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("IndexParseData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5170 5191])
+                            ("compileCommands" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5192 5220])
+                            ("environment" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5221 5253])
+                            ("cache" variable
+                               (:pointer 1
+                                :type ("SourceCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5254 5273]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5145 5280])
+                    ("parse" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("IndexParseData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5296 5317])
+                            ("" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5333 5342])
+                            ("" variable (:type ("arguments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5342 5352])
+                            ("pwd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5368 5384])
+                            ("compileCommandsFileId" variable
+                               (:default-value "0"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5400 5434])
+                            ("cache" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("SourceCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5451 5473]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5285 5481])
+                    ("FileIdsFileFlag" type
+                       (:members 
+                          ( ("None" variable
+                               (:constant-flag t
+                                :default-value (5524 5527)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5517 5527])
+                            ("HasSandboxRoot" variable
+                               (:constant-flag t
+                                :default-value (5554 5557)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5537 5557]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [5486 5564])
+                    ("private" label nil (reparse-symbol classsubparts) [5565 5573])
+                    ("guessArguments" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("args" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5600 5619])
+                            ("pwd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5620 5636])
+                            ("projectRootOverride" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5637 5669]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5578 5676])
+                    ("load" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5681 5693])
+                    ("onNewConnection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("server" variable
+                               (:pointer 1
+                                :type ("SocketServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5719 5740]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5698 5741])
+                    ("setCurrentProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("project" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Project" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5769 5809]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5746 5810])
+                    ("ClearMode" type
+                       (:members 
+                          ( ("Clear_All" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5840 5850])
+                            ("Clear_KeepFileIds" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5859 5882]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [5815 5883])
+                    ("clearProjects" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable (:type ("ClearMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5907 5922]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5888 5923])
+                    ("handleIndexMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IndexMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5952 5997])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5998 6038]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5928 6039])
+                    ("handleIndexDataMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("IndexDataMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6072 6121])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6122 6162]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6044 6163])
+                    ("handleQueryMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6192 6237])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6238 6278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6168 6279])
+                    ("handleErrorMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("ErrorMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6308 6353])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6354 6394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6284 6395])
+                    ("handleLogOutputMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("LogOutputMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6428 6477])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6478 6518]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6400 6519])
+                    ("handleVisitFileMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("VisitFileMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6552 6601])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6602 6642]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6524 6643])
+                    ("sendDiagnostics" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6685 6728])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6729 6769]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6664 6770])
+                    ("clearProjects" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6794 6837])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6838 6878]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6775 6879])
+                    ("codeCompleteAt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6904 6947])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6948 6988]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6884 6989])
+                    ("symbolInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7010 7053])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7054 7094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6994 7095])
+                    ("dependencies" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7118 7161])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7162 7202]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7100 7203])
+                    ("startClangThread" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7230 7273])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7274 7314]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7208 7315])
+                    ("dumpFileMaps" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7338 7381])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7382 7422]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7320 7423])
+                    ("diagnose" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7442 7485])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7486 7526]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7428 7527])
+                    ("generateTest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7550 7593])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7594 7634]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7532 7635])
+                    ("findFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7654 7697])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7698 7738]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7640 7739])
+                    ("findSymbols" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7761 7804])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7805 7845]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7744 7846])
+                    ("fixIts" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7863 7906])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7907 7947]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7851 7948])
+                    ("followLocation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7973 8016])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8017 8057]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7953 8058])
+                    ("hasFileManager" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8083 8126])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8127 8167]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8063 8168])
+                    ("includeFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8190 8233])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8234 8274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8173 8275])
+                    ("isIndexed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8295 8338])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8339 8379]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8280 8380])
+                    ("isIndexing" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8401 8439])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8440 8480]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8385 8481])
+                    ("jobCount" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8500 8543])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8544 8584]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8486 8585])
+                    ("listSymbols" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8607 8650])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8651 8691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8590 8692])
+                    ("preprocessFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8717 8760])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8761 8801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8697 8802])
+                    ("project" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8820 8863])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8864 8904]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8807 8905])
+                    ("referencesForLocation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8937 8980])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8981 9021]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8910 9022])
+                    ("referencesForName" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9050 9093])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9094 9134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9027 9135])
+                    ("reindex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9153 9196])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9197 9237]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9140 9238])
+                    ("reloadFileManager" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9266 9309])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9310 9350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9243 9351])
+                    ("removeFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9372 9415])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9416 9456]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9356 9457])
+                    ("removeProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9481 9524])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9525 9565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9462 9566])
+                    ("sources" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9584 9627])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9628 9668]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9571 9669])
+                    ("dumpCompletions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9695 9738])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9739 9779]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9674 9780])
+                    ("dumpCompileCommands" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9810 9853])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9854 9894]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9785 9895])
+                    ("status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9912 9955])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9956 9996]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9900 9997])
+                    ("suspend" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10015 10058])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10059 10099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10002 10100])
+                    ("setBuffers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10121 10164])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10165 10205]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10105 10206])
+                    ("classHierarchy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10231 10274])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10275 10315]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10211 10316])
+                    ("debugLocations" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10341 10384])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10385 10425]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10321 10426])
+                    ("tokens" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10443 10486])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10487 10527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10431 10528])
+                    ("validate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10547 10590])
+                            ("conn" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Connection" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10591 10631]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10533 10632])
+                    ("projectForQuery" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("queryMessage" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10679 10729]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("Project" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10638 10730])
+                    ("projectForMatches" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("matches" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("List" type
+                                     (:template-specifier 
+                                        ( ("Match" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10778 10805]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("Project" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10735 10806])
+                    ("addProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10847 10864]))                          
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("Project" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10811 10865])
+                    ("initServers" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10871 10890])
+                    ("removeSocketFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [10895 10919])
+                    ("prepareCompletion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("query" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("QueryMessage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10947 10990])
+                            ("fileId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10991 11007])
+                            ("project" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Project" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11008 11048]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10924 11049])
+                    ("ProjectsMap" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("Path" type nil nil nil)
+                                  ("std::shared_ptr" type (:template-specifier 
+                                    ( ("Project" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11055 11113])
+                    ("mProjects" variable (:type ("ProjectsMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11118 11140])
+                    ("mCurrentProject" variable (:type ("std::weak_ptr" type
+                         (:template-specifier 
+                            ( ("Project" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11145 11184])
+                    ("sInstance" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11190 11215])
+                    ("mOptions" variable (:type ("Options" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11220 11237])
+                    ("mSuspended" variable (:type "bool") (reparse-symbol classsubparts) [11242 11258])
+                    ("mUnixServer" variable (:type ("SocketServer::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11263 11311])
+                    ("mTcpServer" variable (:type ("SocketServer::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11263 11311])
+                    ("mEnvironment" variable (:type ("List" type
+                         (:template-specifier 
+                            ( ("String" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11316 11342])
+                    ("mPollTimer" variable (:type "int") (reparse-symbol classsubparts) [11348 11374])
+                    ("mExitCode" variable (:type "int") (reparse-symbol classsubparts) [11348 11374])
+                    ("mLastFileId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11379 11400])
+                    ("mJobScheduler" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("JobScheduler" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11405 11449])
+                    ("mCompletionThread" variable
+                       (:pointer 1
+                        :type ("CompletionThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11454 11490])
+                    ("mHadActiveBuffers" variable (:type "bool") (reparse-symbol classsubparts) [11495 11518])
+                    ("mActiveBuffers" variable (:type ("Set" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11523 11552])
+                    ("mConnections" variable (:type ("Set" type
+                         (:template-specifier 
+                            ( ("std::shared_ptr" type (:template-specifier 
+                                ( ("Connection" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11557 11604])
+                    ("mIndexDataMessageReceived" variable (:type "int") (reparse-symbol classsubparts) [11641 11667])
+                    ("saveFileIds" function
+                       (:prototype-flag t
+                        :typemodifiers ("friend")
+                        :type "void")
+                        (reparse-symbol classsubparts) [11672 11698]))                  
+                :type "class")
+                nil [1347 11701])
+            ("RCT_FLAGS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Server::Option" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11712 11727]))                  
+                :type "int")
+                nil [11702 11728])
+            ("RCT_FLAGS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Server::FileIdsFileFlag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11739 11763]))                  
+                :type "int")
+                nil [11729 11764]))          
+      :file "Server.h"
+      :pointmax 11773
+      :fsize 11772
+      :lastmodtime '(23133 761 330482 547000)
+      :unmatched-syntax '((punctuation 11639 . 11640) (punctuation 11637 . 11638) (semantic-list 11635 . 11637) (VOID 11631 . 11635) (punctuation 11630 . 11631) (symbol 11622 . 11630) (punctuation 11621 . 11622) (punctuation 11620 . 11621) (symbol 11617 . 11620) (punctuation 11616 . 11617) (symbol 11610 . 11616) (punctuation 5341 . 5342))
+      :lexical-table 
+        '(("Server_h")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "IndexMessage.h"
+      :fsize 2337
+      :lastmodtime '(23133 761 318484 78000))
+    (semanticdb-table "semanticdb-table"
+      :file "Source.h"
+      :fsize 10526
+      :lastmodtime '(23133 761 330482 547000)))
+  :file "!home!vatoth!rtags!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
