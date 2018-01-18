@@ -1,87 +1,0 @@
-Leaving directory `/home/vatoth/.emacs.d/elpa/popup-20160709.729'
-
-Compiling file /home/vatoth/.emacs.d/elpa/popup-20160709.729/popup-pkg.el at Sat Nov 11 11:53:00 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/popup-20160709.729/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/popup-20160709.729/popup.el at Sat Nov 11 11:53:00 2017
-
-Compiling no file at Sat Nov 11 11:53:02 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/auto-complete-20170124.1845'
-
-Compiling file /home/vatoth/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete-config.el at Sat Nov 11 11:53:02 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/auto-complete-20170124.1845/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/auto-complete-20170124.1845/auto-complete.el at Sat Nov 11 11:53:02 2017
-
-Compiling no file at Sat Nov 11 11:53:03 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/deferred-20170901.630'
-
-Compiling file /home/vatoth/.emacs.d/elpa/deferred-20170901.630/deferred-pkg.el at Sat Nov 11 11:53:03 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/deferred-20170901.630/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/deferred-20170901.630/deferred.el at Sat Nov 11 11:53:03 2017
-
-In deferred:earlier-main:
-deferred.el:676:33:Warning: value returned from (length (car-safe
-    (internal-get-closed-var 3))) is unused
-
-Compiling no file at Sat Nov 11 11:53:03 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/python-environment-20150310.153'
-
-Compiling file /home/vatoth/.emacs.d/elpa/python-environment-20150310.153/python-environment.el at Sat Nov 11 11:53:03 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/python-environment-20150310.153/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/python-environment-20150310.153/test-python-environment.el at Sat Nov 11 11:53:03 2017
-
-Compiling no file at Sat Nov 11 11:53:04 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/ctable-20171005.1711'
-
-Compiling file /home/vatoth/.emacs.d/elpa/ctable-20171005.1711/ctable-pkg.el at Sat Nov 11 11:53:04 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/ctable-20171005.1711/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/ctable-20171005.1711/ctable.el at Sat Nov 11 11:53:04 2017
-
-In ctbl:render-column-header-keymap:
-ctable.el:881:32:Warning: reference to free variable
-    `ctbl:column-header-keymap'
-
-Compiling no file at Sat Nov 11 11:53:04 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/concurrent-20161228.1930'
-
-Compiling file /home/vatoth/.emacs.d/elpa/concurrent-20161228.1930/concurrent-pkg.el at Sat Nov 11 11:53:04 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/concurrent-20161228.1930/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/concurrent-20161228.1930/concurrent.el at Sat Nov 11 11:53:04 2017
-
-Compiling no file at Sat Nov 11 11:53:05 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/epc-20140609.2234'
-
-Compiling file /home/vatoth/.emacs.d/elpa/epc-20140609.2234/epc.el at Sat Nov 11 11:53:05 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/epc-20140609.2234/'
-
-In epc:controller-update-buffer:
-epc.el:801:22:Warning: reference to free variable `epc:controller-keymap'
-
-In epc:controller-methods-update-buffer:
-epc.el:894:25:Warning: reference to free variable
-    `epc:controller-methods-keymap'
-
-Compiling file /home/vatoth/.emacs.d/elpa/epc-20140609.2234/epcs.el at Sat Nov 11 11:53:05 2017
-
-Compiling no file at Sat Nov 11 11:53:06 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/jedi-core-20170121.610'
-
-Compiling file /home/vatoth/.emacs.d/elpa/jedi-core-20170121.610/jedi-core.el at Sat Nov 11 11:53:06 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/jedi-core-20170121.610/'
-jedi-core.el:495:1:Warning: Unused lexical variable `mngr-list'
-jedi-core.el:649:1:Warning: Unused lexical argument `x'
-jedi-core.el:826:1:Warning: Unused lexical argument `x'
-jedi-core.el:980:1:Warning: Unused lexical argument `x'
-
-Compiling no file at Sat Nov 11 11:53:06 2017
-Leaving directory `/home/vatoth/.emacs.d/elpa/jedi-20160425.2156'
-
-Compiling file /home/vatoth/.emacs.d/elpa/jedi-20160425.2156/jedi-pkg.el at Sat Nov 11 11:53:06 2017
-Entering directory `/home/vatoth/.emacs.d/elpa/jedi-20160425.2156/'
-
-Compiling file /home/vatoth/.emacs.d/elpa/jedi-20160425.2156/jedi.el at Sat Nov 11 11:53:06 2017
