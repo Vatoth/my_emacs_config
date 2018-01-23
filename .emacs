@@ -3,7 +3,7 @@
 ;; ----------------------------------
 ;;           EPITECH CONFIG
 ;; ----------------------------------
-
+;;
 ;; Packages from Melpa
 (require 'package)
 ;;; Code:
