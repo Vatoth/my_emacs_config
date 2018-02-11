@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("nanotekspice")) nil [82 103])
+            ("CCXX" variable (:default-value ("clang++")) nil [104 120])
+            ("SRCS" variable (:default-value ("src/main.cpp")) nil [121 142])
+            ("SRCS" variable (:default-value ("src/Parser.cpp")) nil [142 166])
+            ("SRCS" variable (:default-value ("src/Components/False.cpp")) nil [166 200])
+            ("SRCS" variable (:default-value ("src/Components/True.cpp")) nil [200 233])
+            ("SRCS" variable (:default-value ("src/Components/Input.cpp")) nil [233 267])
+            ("SRCS" variable (:default-value ("src/Components/Output.cpp")) nil [267 302])
+            ("SRCS" variable (:default-value ("src/Components/4081.cpp")) nil [302 335])
+            ("OBJ" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [336 359])
+            ("LIB" variable nil nil [360 367])
+            ("RM" variable (:default-value ("rm" "-f")) nil [368 380])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-Wextra" "-Wpedantic")) nil [381 418])
+            ("CXXFLAGS" variable (:default-value ("-I" "./include")) nil [418 444])
+            ("CXXFLAGS" variable (:default-value ("-g3")) nil [476 493])
+            ("all" function (:arguments ("$(NAME)")) nil [494 507])
+            ("$(NAME)" function (:arguments ("$(OBJ)")) nil [508 570])
+            ("clean" function nil nil [571 592])
+            ("fclean" function (:arguments ("clean")) nil [593 622])
+            ("re" function (:arguments ("fclean" "all")) nil [623 638]))          
+      :file "Makefile"
+      :pointmax 667
+      :fsize 666
+      :lastmodtime '(23163 42147 252764 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "lol.hpp"
+      :pointmax 50
+      :fsize 49
+      :lastmodtime '(23163 45306 350490 462000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!nanotekspice!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

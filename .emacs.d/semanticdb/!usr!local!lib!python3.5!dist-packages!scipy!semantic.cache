@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+SciPy: A scientific computing package for Python
+================================================
+
+Documentation is available in the docstrings and
+online at https://docs.scipy.org.
+
+Contents
+--------
+SciPy imports all the functions from the NumPy namespace, and in
+addition provides:
+
+Subpackages
+-----------
+Using any of these subpackages requires an explicit import.  For example,
+``import scipy.cluster``.
+
+::
+
+ cluster                      --- Vector Quantization / Kmeans
+ fftpack                      --- Discrete Fourier Transform algorithms
+ integrate                    --- Integration routines
+ interpolate                  --- Interpolation Tools
+ io                           --- Data input and output
+ linalg                       --- Linear algebra routines
+ linalg.blas                  --- Wrappers to BLAS library
+ linalg.lapack                --- Wrappers to LAPACK library
+ misc                         --- Various utilities that don't have
+                                  another home.
+ ndimage                      --- n-dimensional image package
+ odr                          --- Orthogonal Distance Regression
+ optimize                     --- Optimization Tools
+ signal                       --- Signal Processing Tools
+ sparse                       --- Sparse Matrices
+ sparse.linalg                --- Sparse Linear Algebra
+ sparse.linalg.dsolve         --- Linear Solvers
+ sparse.linalg.dsolve.umfpack --- :Interface to the UMFPACK library:
+                                  Conjugate Gradient Method (LOBPCG)
+ sparse.linalg.eigen          --- Sparse Eigenvalue Solvers
+ sparse.linalg.eigen.lobpcg   --- Locally Optimal Block Preconditioned
+                                  Conjugate Gradient Method (LOBPCG)
+ spatial                      --- Spatial data structures and algorithms
+ special                      --- Special functions
+ stats                        --- Statistical Functions
+
+Utility tools
+-------------
+::
+
+ test              --- Run scipy unittests
+ show_config       --- Show scipy build configuration
+ show_numpy_config --- Show numpy build configuration
+ __version__       --- Scipy version string
+ __numpy_version__ --- Numpy version string
+
+\"\"\"" code nil nil [1 2202])
+            ("__future__" include nil nil [2203 2267])
+            ("__all__" variable nil nil [2269 2287])
+            ("numpy" include nil nil [2289 2339])
+            ("if" code nil nil [2340 2466])
+            ("numpy" include nil nil [2466 2516])
+            ("numpy" include nil nil [2561 2581])
+            ("linalg" variable nil nil [2582 2595])
+            ("numpy" include nil nil [2596 2615])
+            ("numpy.random" include nil nil [2616 2652])
+            ("numpy.fft" include nil nil [2653 2684])
+            ("numpy.lib.scimath" include nil nil [2685 2716])
+            ("_distributor_init" include nil nil [2770 2794])
+            ("__all__" variable nil nil [2796 2819])
+            ("__all__" variable nil nil [2820 2863])
+            ("del" code nil nil [2865 2873])
+            ("del" code nil nil [2966 2976])
+            ("__all__" code nil nil [2977 3001])
+            ("try" code nil nil [3119 3190])
+            ("if" code nil nil [3192 4209]))          
+      :file "__init__.py"
+      :pointmax 4209
+      :fsize 4208
+      :lastmodtime '(23164 24731 392725 467000)
+      :unmatched-syntax '((FROM 2763 . 2767) (PERIOD 2768 . 2769)))
+    (semanticdb-table "semanticdb-table"
+      :file "_distributor_init.py"
+      :fsize 331
+      :lastmodtime '(23164 24731 392725 467000)))
+  :file "!usr!local!lib!python3.5!dist-packages!scipy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

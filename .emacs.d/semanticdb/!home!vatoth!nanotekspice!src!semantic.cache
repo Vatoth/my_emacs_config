@@ -1,0 +1,76 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [78 97])
+            ("string" include (:system-flag t) nil [98 115])
+            ("Parser.hpp" include nil nil [116 137])
+            ("IComponent.hpp" include nil nil [138 163])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [174 183])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [184 197]))                  
+                :type "int")
+                nil [165 286]))          
+      :file "main.cpp"
+      :pointmax 287
+      :fsize 286
+      :lastmodtime '(23144 35085 298716 779000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [80 99])
+            ("sstream" include (:system-flag t) nil [100 118])
+            ("fstream" include (:system-flag t) nil [119 137])
+            ("algorithm" include (:system-flag t) nil [138 158])
+            ("Parser.hpp" include nil nil [159 180])
+            ("epurString" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [206 223]))                  
+                :type "void")
+                nil [183 537])
+            ("removeCommentary" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [568 585]))                  
+                :type "void")
+                nil [539 700])
+            ("Parser" function
+               (:constructor-flag t
+                :parent "Parser"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [717 745]))                  
+                :type ("Parser" type (:type "class") nil nil))
+                nil [702 790])
+            ("parseFile" function
+               (:parent "Parser"
+                :type "void")
+                nil [792 1173]))          
+      :file "Parser.cpp"
+      :pointmax 1174
+      :fsize 1173
+      :lastmodtime '(23163 44988 9190 671000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!nanotekspice!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

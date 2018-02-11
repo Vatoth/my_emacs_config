@@ -1,0 +1,161 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PALINDROME_H_" variable (:constant-flag t) nil [249 262])
+            ("BASE_TWO" variable (:constant-flag t) nil [273 281])
+            ("BASE_THREE" variable (:constant-flag t) nil [296 306])
+            ("BASE_FOUR" variable (:constant-flag t) nil [322 331])
+            ("BASE_FIVE" variable (:constant-flag t) nil [348 357])
+            ("BASE_SIX" variable (:constant-flag t) nil [375 383])
+            ("BASE_SEVEN" variable (:constant-flag t) nil [402 412])
+            ("BASE_EIGHT" variable (:constant-flag t) nil [432 442])
+            ("BASE_NINE" variable (:constant-flag t) nil [463 472])
+            ("BASE_TEN" variable (:constant-flag t) nil [494 502])
+            ("FIND_PALINDROME" variable (:constant-flag t) nil [525 540])
+            ("s_arg" type
+               (:members 
+                  ( ("nb" variable (:type "int") (reparse-symbol classsubparts) [617 625])
+                    ("val" variable (:type "long") (reparse-symbol classsubparts) [628 638])
+                    ("val_max" variable (:type "int") (reparse-symbol classsubparts) [641 654])
+                    ("palin" variable (:type "int") (reparse-symbol classsubparts) [657 668])
+                    ("pl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [671 681])
+                    ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [684 696])
+                    ("count" variable (:type "int") (reparse-symbol classsubparts) [699 710])
+                    ("iteration" variable (:type "int") (reparse-symbol classsubparts) [713 728])
+                    ("min" variable (:type "int") (reparse-symbol classsubparts) [731 740])
+                    ("max" variable (:type "int") (reparse-symbol classsubparts) [743 752])
+                    ("first" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [755 768])
+                    ("second" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [771 785]))                  
+                :type "struct")
+                nil [592 795])
+            ("t_arg" type
+               (:typedef ("s_arg" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [592 795])
+            ("recursive_palindrome" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [826 837]))                  
+                :type "int")
+                nil [797 838])
+            ("begin_iteration" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [863 874]))                  
+                :type "int")
+                nil [839 875])
+            ("revstr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [892 902]))                  
+                :type "char")
+                nil [876 903])
+            ("convert_to_base" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [928 941])
+                    ("base" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [942 959])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [963 971])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [972 978]))                  
+                :type "int")
+                nil [904 979])
+            ("my_base" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable (:type "int") (reparse-symbol arg-sub-list) [996 1003])
+                    ("base" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1004 1021])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1022 1030]))                  
+                :type "int")
+                nil [980 1031])
+            ("my_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1048 1053]))                  
+                :type "void")
+                nil [1032 1054])
+            ("check_number" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1076 1090]))                  
+                :type "int")
+                nil [1055 1091])
+            ("check_arg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1110 1120])
+                    ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1121 1132]))                  
+                :type "int")
+                nil [1092 1133]))          
+      :file "palindrome.h"
+      :pointmax 1163
+      :fsize 1162
+      :lastmodtime '(23144 53885 557838 366000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BASE_SIX" . ((string "\"012345\"" 384 . 392)))
+          ("BASE_TEN" . ((string "\"0123456789\"" 503 . 515)))
+          ("BASE_EIGHT" . ((string "\"01234567\"" 443 . 453)))
+          ("BASE_TWO" . ((string "\"01\"" 282 . 286)))
+          ("BASE_THREE" . ((string "\"012\"" 307 . 312)))
+          ("BASE_SEVEN" . ((string "\"0123456\"" 413 . 422)))
+          ("FIND_PALINDROME" . ((string "\"%i leads to %ld in %i iteration(s) in base %i\\n\"" 541 . 590)))
+          ("BASE_NINE" . ((string "\"012345678\"" 473 . 484)))
+          ("PALINDROME_H_")
+          ("BASE_FOUR" . ((string "\"0123\"" 332 . 338)))
+          ("BASE_FIVE" . ((string "\"01234\"" 358 . 365)))
+          )
+))
+  :file "!home!vatoth!ADM_palindrome_2016!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

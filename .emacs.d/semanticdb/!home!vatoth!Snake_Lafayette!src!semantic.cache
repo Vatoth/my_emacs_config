@@ -1,0 +1,118 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1 20])
+            ("ncurses.h" include (:system-flag t) nil [21 41])
+            ("ncurces_interfaces.h" include nil nil [42 73])
+            ("snake.h" include nil nil [74 92])
+            ("main" function (:type "int") nil [94 334]))          
+      :file "main.c"
+      :pointmax 335
+      :fsize 331
+      :lastmodtime '(23165 64563 950704 967000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("stdlib.h" include (:system-flag t) nil [39 58])
+            ("string.h" include (:system-flag t) nil [59 78])
+            ("linked_list.h" include nil nil [80 104])
+            ("raise.h" include nil nil [105 123])
+            ("get_new_node" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [153 165])
+                    ("y" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [166 178]))                  
+                :type ("node_t" type (:type "class") nil nil))
+                nil [125 386])
+            ("insert_at_tail" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [408 421])
+                    ("x" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [422 434])
+                    ("y" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [435 447]))                  
+                :type "void")
+                nil [388 682])
+            ("list_destroy" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [702 715]))                  
+                :type "void")
+                nil [684 864])
+            ("print_list" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("list_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [882 895]))                  
+                :type "void")
+                nil [866 1105]))          
+      :file "linked_list.c"
+      :pointmax 1106
+      :fsize 1105
+      :lastmodtime '(23165 62592 199458 527000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("snake.h" include nil nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("createSnake" function (:type ("snake_t" type (:type "class") nil nil)) nil [41 295])
+            ("destroy_snake" function
+               (:arguments 
+                  ( ("snake" variable (:type ("snake_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [316 330]))                  
+                :type "void")
+                nil [297 357]))          
+      :file "snake.c"
+      :pointmax 358
+      :fsize 357
+      :lastmodtime '(23161 56200 971812 342000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [1 21])
+            ("signal.h" include (:system-flag t) nil [22 41])
+            ("stdlib.h" include (:system-flag t) nil [42 61])
+            ("end_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [87 95]))                  
+                :type "void")
+                nil [63 178])
+            ("drawBorder" function
+               (:pointer 1
+                :type ("WINDOW" type (:type "class") nil nil))
+                nil [180 467]))          
+      :file "ncurces_interfaces.c"
+      :pointmax 468
+      :fsize 467
+      :lastmodtime '(23165 61313 21286 107000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!Snake_Lafayette!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

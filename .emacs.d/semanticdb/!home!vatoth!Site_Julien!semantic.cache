@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Sample Games" section nil nil [43 410])
+            ("Sample Games" section (:members 
+              ( ("Sample Games" anchor nil nil [590 593])
+                ("Sample Games" section nil nil [633 1685])
+                ("Sample Games" section (:members 
+                  ( ("Sample Games" section nil nil [2464 3108])
+                    ("A propos" section nil nil [3108 4023])
+                    ("Un choix" section nil nil [4023 4146])
+                    ("Autres jeux" section nil nil [4146 4543]))                  ) nil [1685 4543]))              ) nil [410 4543]))          
+      :file "site.html"
+      :pointmax 4543
+      :fsize 4567
+      :lastmodtime '(23153 63341 834040 242000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("SG-Hollow Knight" section nil nil [45 135])
+            ("Hollow Knight" section (:members 
+              ( ("Hollow Knight" anchor nil nil [164 167])
+                ("Hollow Knight" section (:members 
+                  ( ("De quoi ça parle ?" anchor nil nil [412 415])
+                    ("De quoi ça parle ?" section (:members 
+                      ( ("Petite liste des familles" section (:members 
+                          ( ("Faire:" section (:members 
+                              ( ("Site d'hayatho" anchor nil nil [1352 1355]))                              ) nil [1211 1460]))                          ) nil [1077 1460]))                      ) nil [588 1460]))                  ) nil [274 1460]))              ) nil [135 1460]))          
+      :file "Web_3.html"
+      :pointmax 1460
+      :fsize 1459
+      :lastmodtime '(23153 59789 221597 626000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!Site_Julien!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1149 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("FREETYPE_H_" variable (:constant-flag t) nil [1279 1290])
+            ("ft2build.h" include (:system-flag t) nil [1525 1546])
+            ("FT_Glyph_Metrics_" type
+               (:members 
+                  ( ("width" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21736 21750])
+                    ("height" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21755 21770])
+                    ("horiBearingX" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21776 21797])
+                    ("horiBearingY" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21802 21823])
+                    ("horiAdvance" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21828 21848])
+                    ("vertBearingX" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21854 21875])
+                    ("vertBearingY" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21880 21901])
+                    ("vertAdvance" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21906 21926]))                  
+                :type "struct")
+                nil [21694 21949])
+            ("FT_Glyph_Metrics" type
+               (:typedef ("FT_Glyph_Metrics_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [21694 21949])
+            ("FT_Bitmap_Size_" type
+               (:members 
+                  ( ("height" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24958 24975])
+                    ("width" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24980 24996])
+                    ("size" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25002 25017])
+                    ("x_ppem" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25023 25040])
+                    ("y_ppem" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25045 25062]))                  
+                :type "struct")
+                nil [24918 25083])
+            ("FT_Bitmap_Size" type
+               (:typedef ("FT_Bitmap_Size_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [24918 25083])
+            ("FT_Library" type
+               (:typedef ("FT_LibraryRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [27585 27628])
+            ("FT_Module" type
+               (:typedef ("FT_ModuleRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [28882 28923])
+            ("FT_Driver" type
+               (:typedef ("FT_DriverRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [29630 29671])
+            ("FT_Renderer" type
+               (:typedef ("FT_RendererRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [30534 30579])
+            ("FT_Face" type
+               (:typedef ("FT_FaceRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [33393 33430])
+            ("FT_Size" type
+               (:typedef ("FT_SizeRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [35619 35656])
+            ("FT_GlyphSlot" type
+               (:typedef ("FT_GlyphSlotRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [37065 37112])
+            ("FT_CharMap" type
+               (:typedef ("FT_CharMapRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [39379 39422])
+            ("FT_ENC_TAG" variable (:constant-flag t) nil [41013 41023])
+            ("FT_Encoding_" type
+               (:members 
+                  ( ("FT_ENCODING_NONE" variable
+                       (:constant-flag t
+                        :default-value (52548 52590)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52548 52590])
+                    ("FT_ENCODING_MS_SYMBOL" variable
+                       (:constant-flag t
+                        :default-value (52597 52652)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52597 52652])
+                    ("FT_ENCODING_UNICODE" variable
+                       (:constant-flag t
+                        :default-value (52658 52713)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52658 52713])
+                    ("FT_ENCODING_SJIS" variable
+                       (:constant-flag t
+                        :default-value (52720 52773)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52720 52773])
+                    ("FT_ENCODING_GB2312" variable
+                       (:constant-flag t
+                        :default-value (52779 52832)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52779 52832])
+                    ("FT_ENCODING_BIG5" variable
+                       (:constant-flag t
+                        :default-value (52838 52891)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52838 52891])
+                    ("FT_ENCODING_WANSUNG" variable
+                       (:constant-flag t
+                        :default-value (52897 52950)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52897 52950])
+                    ("FT_ENCODING_JOHAB" variable
+                       (:constant-flag t
+                        :default-value (52956 53009)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [52956 53009])
+                    ("FT_ENCODING_MS_SJIS" variable
+                       (:constant-flag t
+                        :default-value (53079 53095)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53054 53095])
+                    ("FT_ENCODING_MS_GB2312" variable
+                       (:constant-flag t
+                        :default-value (53126 53144)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53101 53144])
+                    ("FT_ENCODING_MS_BIG5" variable
+                       (:constant-flag t
+                        :default-value (53175 53191)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53150 53191])
+                    ("FT_ENCODING_MS_WANSUNG" variable
+                       (:constant-flag t
+                        :default-value (53222 53241)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53197 53241])
+                    ("FT_ENCODING_MS_JOHAB" variable
+                       (:constant-flag t
+                        :default-value (53272 53289)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53247 53289])
+                    ("FT_ENCODING_ADOBE_STANDARD" variable
+                       (:constant-flag t
+                        :default-value (53296 53356)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53296 53356])
+                    ("FT_ENCODING_ADOBE_EXPERT" variable
+                       (:constant-flag t
+                        :default-value (53362 53422)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53362 53422])
+                    ("FT_ENCODING_ADOBE_CUSTOM" variable
+                       (:constant-flag t
+                        :default-value (53428 53488)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53428 53488])
+                    ("FT_ENCODING_ADOBE_LATIN_1" variable
+                       (:constant-flag t
+                        :default-value (53494 53554)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53494 53554])
+                    ("FT_ENCODING_OLD_LATIN_2" variable
+                       (:constant-flag t
+                        :default-value (53561 53618)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53561 53618])
+                    ("FT_ENCODING_APPLE_ROMAN" variable
+                       (:constant-flag t
+                        :default-value (53625 53682)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [53625 53682]))                  
+                :type "enum")
+                nil [52513 53700])
+            ("FT_Encoding" type
+               (:typedef ("FT_Encoding_" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [52513 53700])
+            ("ft_encoding_none" variable (:constant-flag t) nil [53863 53879])
+            ("ft_encoding_unicode" variable (:constant-flag t) nil [53916 53935])
+            ("ft_encoding_symbol" variable (:constant-flag t) nil [53972 53990])
+            ("ft_encoding_latin_1" variable (:constant-flag t) nil [54030 54049])
+            ("ft_encoding_latin_2" variable (:constant-flag t) nil [54092 54111])
+            ("ft_encoding_sjis" variable (:constant-flag t) nil [54152 54168])
+            ("ft_encoding_gb2312" variable (:constant-flag t) nil [54205 54223])
+            ("ft_encoding_big5" variable (:constant-flag t) nil [54260 54276])
+            ("ft_encoding_wansung" variable (:constant-flag t) nil [54313 54332])
+            ("ft_encoding_johab" variable (:constant-flag t) nil [54369 54386])
+            ("ft_encoding_adobe_standard" variable (:constant-flag t) nil [54424 54450])
+            ("ft_encoding_adobe_expert" variable (:constant-flag t) nil [54487 54511])
+            ("ft_encoding_adobe_custom" variable (:constant-flag t) nil [54548 54572])
+            ("ft_encoding_apple_roman" variable (:constant-flag t) nil [54609 54632])
+            ("FT_CharMapRec_" type
+               (:members 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56498 56516])
+                    ("encoding" variable (:type ("FT_Encoding" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56521 56543])
+                    ("platform_id" variable (:type ("FT_UShort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56548 56573])
+                    ("encoding_id" variable (:type ("FT_UShort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [56578 56603]))                  
+                :type "struct")
+                nil [56459 56623])
+            ("FT_CharMapRec" type
+               (:typedef ("FT_CharMapRec_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [56459 56623])
+            ("FT_Face_Internal" type
+               (:typedef ("FT_Face_InternalRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [58112 58167])
+            ("FT_FaceRec_" type
+               (:members 
+                  ( ("num_faces" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71390 71418])
+                    ("face_index" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71423 71452])
+                    ("face_flags" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71458 71487])
+                    ("style_flags" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71492 71522])
+                    ("num_glyphs" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71528 71557])
+                    ("family_name" variable
+                       (:pointer 1
+                        :type ("FT_String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71563 71593])
+                    ("style_name" variable
+                       (:pointer 1
+                        :type ("FT_String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71598 71627])
+                    ("num_fixed_sizes" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71633 71667])
+                    ("available_sizes" variable
+                       (:pointer 1
+                        :type ("FT_Bitmap_Size" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71672 71706])
+                    ("num_charmaps" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71712 71743])
+                    ("charmaps" variable
+                       (:pointer 1
+                        :type ("FT_CharMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71748 71775])
+                    ("generic" variable (:type ("FT_Generic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [71781 71807])
+                    ("bbox" variable (:type ("FT_BBox" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72035 72058])
+                    ("units_per_EM" variable (:type ("FT_UShort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72064 72095])
+                    ("ascender" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72100 72127])
+                    ("descender" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72132 72160])
+                    ("height" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72165 72190])
+                    ("max_advance_width" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72196 72232])
+                    ("max_advance_height" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72237 72274])
+                    ("underline_position" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72280 72317])
+                    ("underline_thickness" variable (:type ("FT_Short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72322 72360])
+                    ("glyph" variable (:type ("FT_GlyphSlot" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72366 72390])
+                    ("size" variable (:type ("FT_Size" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72395 72418])
+                    ("charmap" variable (:type ("FT_CharMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72423 72449])
+                    ("driver" variable (:type ("FT_Driver" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72480 72505])
+                    ("memory" variable (:type ("FT_Memory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72510 72535])
+                    ("stream" variable (:type ("FT_Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72540 72565])
+                    ("sizes_list" variable (:type ("FT_ListRec" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72571 72600])
+                    ("autohint" variable (:type ("FT_Generic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72606 72633])
+                    ("extensions" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [72677 72706])
+                    ("internal" variable (:type ("FT_Face_Internal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [72749 72776]))                  
+                :type "struct")
+                nil [71354 72816])
+            ("FT_FaceRec" type
+               (:typedef ("FT_FaceRec_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [71354 72816])
+            ("FT_FACE_FLAG_SCALABLE" variable (:constant-flag t) nil [80783 80804])
+            ("FT_FACE_FLAG_FIXED_SIZES" variable (:constant-flag t) nil [80835 80859])
+            ("FT_FACE_FLAG_FIXED_WIDTH" variable (:constant-flag t) nil [80887 80911])
+            ("FT_FACE_FLAG_SFNT" variable (:constant-flag t) nil [80939 80956])
+            ("FT_FACE_FLAG_HORIZONTAL" variable (:constant-flag t) nil [80991 81014])
+            ("FT_FACE_FLAG_VERTICAL" variable (:constant-flag t) nil [81043 81064])
+            ("FT_FACE_FLAG_KERNING" variable (:constant-flag t) nil [81095 81115])
+            ("FT_FACE_FLAG_FAST_GLYPHS" variable (:constant-flag t) nil [81147 81171])
+            ("FT_FACE_FLAG_MULTIPLE_MASTERS" variable (:constant-flag t) nil [81199 81228])
+            ("FT_FACE_FLAG_GLYPH_NAMES" variable (:constant-flag t) nil [81251 81275])
+            ("FT_FACE_FLAG_EXTERNAL_STREAM" variable (:constant-flag t) nil [81303 81331])
+            ("FT_FACE_FLAG_HINTER" variable (:constant-flag t) nil [81355 81374])
+            ("FT_FACE_FLAG_CID_KEYED" variable (:constant-flag t) nil [81407 81429])
+            ("FT_FACE_FLAG_TRICKY" variable (:constant-flag t) nil [81459 81478])
+            ("FT_FACE_FLAG_COLOR" variable (:constant-flag t) nil [81511 81529])
+            ("FT_HAS_HORIZONTAL" variable (:constant-flag t) nil [81947 81964])
+            ("FT_HAS_VERTICAL" variable (:constant-flag t) nil [82330 82345])
+            ("FT_HAS_KERNING" variable (:constant-flag t) nil [82709 82723])
+            ("FT_IS_SCALABLE" variable (:constant-flag t) nil [83136 83150])
+            ("FT_IS_SFNT" variable (:constant-flag t) nil [83748 83758])
+            ("FT_IS_FIXED_WIDTH" variable (:constant-flag t) nil [84156 84173])
+            ("FT_HAS_FIXED_SIZES" variable (:constant-flag t) nil [84581 84599])
+            ("FT_HAS_FAST_GLYPHS" variable (:constant-flag t) nil [84861 84879])
+            ("FT_HAS_GLYPH_NAMES" variable (:constant-flag t) nil [85203 85221])
+            ("FT_HAS_MULTIPLE_MASTERS" variable (:constant-flag t) nil [85677 85700])
+            ("FT_IS_CID_KEYED" variable (:constant-flag t) nil [86199 86214])
+            ("FT_IS_TRICKY" variable (:constant-flag t) nil [86594 86606])
+            ("FT_HAS_COLOR" variable (:constant-flag t) nil [86935 86947])
+            ("FT_STYLE_FLAG_ITALIC" variable (:constant-flag t) nil [88736 88756])
+            ("FT_STYLE_FLAG_BOLD" variable (:constant-flag t) nil [88777 88795])
+            ("FT_Size_Internal" type
+               (:typedef ("FT_Size_InternalRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [89516 89571])
+            ("FT_Size_Metrics_" type
+               (:members 
+                  ( ("x_ppem" variable (:type ("FT_UShort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [93907 93925])
+                    ("y_ppem" variable (:type ("FT_UShort" type (:type "class") nil nil)) (reparse-symbol classsubparts) [93980 93998])
+                    ("x_scale" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94054 94073])
+                    ("y_scale" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94127 94146])
+                    ("ascender" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94201 94221])
+                    ("descender" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94274 94295])
+                    ("height" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94347 94365])
+                    ("max_advance" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [94420 94443]))                  
+                :type "struct")
+                nil [93866 94510])
+            ("FT_Size_Metrics" type
+               (:typedef ("FT_Size_Metrics_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [93866 94510])
+            ("FT_SizeRec_" type
+               (:members 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol classsubparts) [96033 96056])
+                    ("generic" variable (:type ("FT_Generic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [96104 96130])
+                    ("metrics" variable (:type ("FT_Size_Metrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [96175 96201])
+                    ("internal" variable (:type ("FT_Size_Internal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [96246 96273]))                  
+                :type "struct")
+                nil [95997 96290])
+            ("FT_SizeRec" type
+               (:typedef ("FT_SizeRec_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [95997 96290])
+            ("FT_SubGlyph" type
+               (:typedef ("FT_SubGlyphRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [97543 97588])
+            ("FT_Slot_Internal" type
+               (:typedef ("FT_Slot_InternalRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [98295 98350])
+            ("FT_GlyphSlotRec_" type
+               (:members 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111500 111526])
+                    ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111531 111554])
+                    ("next" variable (:type ("FT_GlyphSlot" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111559 111582])
+                    ("reserved" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111587 111614])
+                    ("generic" variable (:type ("FT_Generic" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111665 111691])
+                    ("metrics" variable (:type ("FT_Glyph_Metrics" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111697 111723])
+                    ("linearHoriAdvance" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111728 111764])
+                    ("linearVertAdvance" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111769 111805])
+                    ("advance" variable (:type ("FT_Vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111810 111836])
+                    ("format" variable (:type ("FT_Glyph_Format" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111842 111867])
+                    ("bitmap" variable (:type ("FT_Bitmap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111873 111898])
+                    ("bitmap_left" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111903 111933])
+                    ("bitmap_top" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111938 111967])
+                    ("outline" variable (:type ("FT_Outline" type (:type "class") nil nil)) (reparse-symbol classsubparts) [111973 111999])
+                    ("num_subglyphs" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112005 112037])
+                    ("subglyphs" variable (:type ("FT_SubGlyph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112042 112070])
+                    ("control_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [112076 112107])
+                    ("control_len" variable (:type "long") (reparse-symbol classsubparts) [112112 112142])
+                    ("lsb_delta" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112148 112176])
+                    ("rsb_delta" variable (:type ("FT_Pos" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112181 112209])
+                    ("other" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [112215 112239])
+                    ("internal" variable (:type ("FT_Slot_Internal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [112245 112272]))                  
+                :type "struct")
+                nil [111459 112294])
+            ("FT_GlyphSlotRec" type
+               (:typedef ("FT_GlyphSlotRec_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [111459 112294])
+            ("FT_Init_FreeType" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("alibrary" variable
+                       (:pointer 1
+                        :type ("FT_Library" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114917 114940]))                  
+                :type "int")
+                nil [114899 114941])
+            ("FT_Done_FreeType" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116158 116179]))                  
+                :type "int")
+                nil [116140 116180])
+            ("FT_OPEN_MEMORY" variable (:constant-flag t) nil [118141 118155])
+            ("FT_OPEN_STREAM" variable (:constant-flag t) nil [118171 118185])
+            ("FT_OPEN_PATHNAME" variable (:constant-flag t) nil [118201 118217])
+            ("FT_OPEN_DRIVER" variable (:constant-flag t) nil [118231 118245])
+            ("FT_OPEN_PARAMS" variable (:constant-flag t) nil [118261 118275])
+            ("ft_open_memory" variable (:constant-flag t) nil [118446 118460])
+            ("ft_open_stream" variable (:constant-flag t) nil [118487 118501])
+            ("ft_open_pathname" variable (:constant-flag t) nil [118528 118544])
+            ("ft_open_driver" variable (:constant-flag t) nil [118571 118585])
+            ("ft_open_params" variable (:constant-flag t) nil [118612 118626])
+            ("FT_Parameter_" type
+               (:members 
+                  ( ("tag" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [120091 120107])
+                    ("data" variable (:type ("FT_Pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [120112 120129]))                  
+                :type "struct")
+                nil [120053 120148])
+            ("FT_Parameter" type
+               (:typedef ("FT_Parameter_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [120053 120148])
+            ("FT_Open_Args_" type
+               (:members 
+                  ( ("flags" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [124715 124737])
+                    ("memory_base" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FT_Byte" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [124742 124770])
+                    ("memory_size" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [124775 124803])
+                    ("pathname" variable
+                       (:pointer 1
+                        :type ("FT_String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [124808 124833])
+                    ("stream" variable (:type ("FT_Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [124838 124861])
+                    ("driver" variable (:type ("FT_Module" type (:type "class") nil nil)) (reparse-symbol classsubparts) [124866 124889])
+                    ("num_params" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol classsubparts) [124894 124921])
+                    ("params" variable
+                       (:pointer 1
+                        :type ("FT_Parameter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [124926 124949]))                  
+                :type "struct")
+                nil [124677 124968])
+            ("FT_Open_Args" type
+               (:typedef ("FT_Open_Args_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [124677 124968])
+            ("FT_New_Face" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127194 127215])
+                    ("filepathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127231 127257])
+                    ("face_index" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127273 127297])
+                    ("aface" variable
+                       (:pointer 1
+                        :type ("FT_Face" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127313 127333]))                  
+                :type "int")
+                nil [127181 127334])
+            ("FT_New_Memory_Face" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129723 129747])
+                    ("file_base" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FT_Byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129770 129796])
+                    ("file_size" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129819 129845])
+                    ("face_index" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129868 129895])
+                    ("aface" variable
+                       (:pointer 1
+                        :type ("FT_Face" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129918 129941]))                  
+                :type "int")
+                nil [129703 129942])
+            ("FT_Open_Face" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140905 140934])
+                    ("args" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FT_Open_Args" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140951 140977])
+                    ("face_index" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140994 141026])
+                    ("aface" variable
+                       (:pointer 1
+                        :type ("FT_Face" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141043 141071]))                  
+                :type "int")
+                nil [140891 141072])
+            ("FT_Attach_File" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [142443 142461])
+                    ("filepathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142480 142507]))                  
+                :type "int")
+                nil [142427 142508])
+            ("FT_Attach_Stream" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144895 144915])
+                    ("parameters" variable
+                       (:pointer 1
+                        :type ("FT_Open_Args" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144936 144963]))                  
+                :type "int")
+                nil [144877 144964])
+            ("FT_Reference_Face" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146806 146821]))                  
+                :type "int")
+                nil [146787 146822])
+            ("FT_Done_Face" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148347 148362]))                  
+                :type "int")
+                nil [148333 148363])
+            ("FT_Select_Size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149812 149826])
+                    ("strike_index" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149845 149868]))                  
+                :type "int")
+                nil [149796 149869])
+            ("FT_Size_Request_Type_" type
+               (:members 
+                  ( ("FT_SIZE_REQUEST_TYPE_NOMINAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153194 153223])
+                    ("FT_SIZE_REQUEST_TYPE_REAL_DIM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153228 153258])
+                    ("FT_SIZE_REQUEST_TYPE_BBOX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153263 153289])
+                    ("FT_SIZE_REQUEST_TYPE_CELL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153294 153320])
+                    ("FT_SIZE_REQUEST_TYPE_SCALES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153325 153353])
+                    ("FT_SIZE_REQUEST_TYPE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [153359 153388]))                  
+                :type "enum")
+                nil [153150 153410])
+            ("FT_Size_Request_Type" type
+               (:typedef ("FT_Size_Request_Type_" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [153150 153410])
+            ("FT_Size_RequestRec_" type
+               (:members 
+                  ( ("type" variable (:type ("FT_Size_Request_Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [155565 155592])
+                    ("width" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [155597 155625])
+                    ("height" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol classsubparts) [155630 155659])
+                    ("horiResolution" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [155664 155701])
+                    ("vertResolution" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [155706 155743]))                  
+                :type "struct")
+                nil [155521 155768])
+            ("FT_Size_RequestRec" type
+               (:typedef ("FT_Size_RequestRec_" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [155521 155768])
+            ("FT_Size_Request" type
+               (:typedef ("FT_Size_RequestRec_" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [156397 156450])
+            ("FT_Request_Size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158914 158936])
+                    ("req" variable (:type ("FT_Size_Request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158956 158978]))                  
+                :type "int")
+                nil [158897 158979])
+            ("FT_Set_Char_Size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161834 161851])
+                    ("char_width" variable (:type ("FT_F26Dot6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161872 161895])
+                    ("char_height" variable (:type ("FT_F26Dot6" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161916 161940])
+                    ("horz_resolution" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161961 161989])
+                    ("vert_resolution" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [162010 162039]))                  
+                :type "int")
+                nil [161816 162040])
+            ("FT_Set_Pixel_Sizes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164195 164209])
+                    ("pixel_width" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164232 164253])
+                    ("pixel_height" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164276 164299]))                  
+                :type "int")
+                nil [164175 164300])
+            ("FT_Load_Glyph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167152 167167])
+                    ("glyph_index" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167185 167207])
+                    ("load_flags" variable (:type ("FT_Int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167225 167247]))                  
+                :type "int")
+                nil [167137 167248])
+            ("FT_Load_Char" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169553 169568])
+                    ("char_code" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169585 169605])
+                    ("load_flags" variable (:type ("FT_Int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169622 169644]))                  
+                :type "int")
+                nil [169539 169645])
+            ("FT_LOAD_DEFAULT" variable (:constant-flag t) nil [176923 176938])
+            ("FT_LOAD_NO_SCALE" variable (:constant-flag t) nil [176972 176988])
+            ("FT_LOAD_NO_HINTING" variable (:constant-flag t) nil [177029 177047])
+            ("FT_LOAD_RENDER" variable (:constant-flag t) nil [177086 177100])
+            ("FT_LOAD_NO_BITMAP" variable (:constant-flag t) nil [177143 177160])
+            ("FT_LOAD_VERTICAL_LAYOUT" variable (:constant-flag t) nil [177200 177223])
+            ("FT_LOAD_FORCE_AUTOHINT" variable (:constant-flag t) nil [177257 177279])
+            ("FT_LOAD_CROP_BITMAP" variable (:constant-flag t) nil [177314 177333])
+            ("FT_LOAD_PEDANTIC" variable (:constant-flag t) nil [177371 177387])
+            ("FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH" variable (:constant-flag t) nil [177428 177463])
+            ("FT_LOAD_NO_RECURSE" variable (:constant-flag t) nil [177485 177503])
+            ("FT_LOAD_IGNORE_TRANSFORM" variable (:constant-flag t) nil [177543 177567])
+            ("FT_LOAD_MONOCHROME" variable (:constant-flag t) nil [177601 177619])
+            ("FT_LOAD_LINEAR_DESIGN" variable (:constant-flag t) nil [177659 177680])
+            ("FT_LOAD_NO_AUTOHINT" variable (:constant-flag t) nil [177717 177736])
+            ("FT_LOAD_COLOR" variable (:constant-flag t) nil [177825 177838])
+            ("FT_LOAD_COMPUTE_METRICS" variable (:constant-flag t) nil [177883 177906])
+            ("FT_LOAD_ADVANCE_ONLY" variable (:constant-flag t) nil [178005 178025])
+            ("FT_LOAD_SBITS_ONLY" variable (:constant-flag t) nil [178062 178080])
+            ("FT_LOAD_TARGET_" variable (:constant-flag t) nil [180844 180859])
+            ("FT_LOAD_TARGET_NORMAL" variable (:constant-flag t) nil [180909 180930])
+            ("FT_LOAD_TARGET_LIGHT" variable (:constant-flag t) nil [180981 181001])
+            ("FT_LOAD_TARGET_MONO" variable (:constant-flag t) nil [181053 181072])
+            ("FT_LOAD_TARGET_LCD" variable (:constant-flag t) nil [181125 181143])
+            ("FT_LOAD_TARGET_LCD_V" variable (:constant-flag t) nil [181197 181217])
+            ("FT_LOAD_TARGET_MODE" variable (:constant-flag t) nil [181522 181541])
+            ("FT_Set_Transform" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [183817 183834])
+                    ("matrix" variable
+                       (:pointer 1
+                        :type ("FT_Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183855 183874])
+                    ("delta" variable
+                       (:pointer 1
+                        :type ("FT_Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183895 183914]))                  
+                :type "int")
+                nil [183799 183915])
+            ("FT_Render_Mode_" type
+               (:members 
+                  ( ("FT_RENDER_MODE_NORMAL" variable
+                       (:constant-flag t
+                        :default-value (188506 188507)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188482 188507])
+                    ("FT_RENDER_MODE_LIGHT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188513 188534])
+                    ("FT_RENDER_MODE_MONO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188539 188559])
+                    ("FT_RENDER_MODE_LCD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188564 188583])
+                    ("FT_RENDER_MODE_LCD_V" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188588 188609])
+                    ("FT_RENDER_MODE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188615 188638]))                  
+                :type "enum")
+                nil [188444 188654])
+            ("FT_Render_Mode" type
+               (:typedef ("FT_Render_Mode_" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [188444 188654])
+            ("ft_render_mode_normal" variable (:constant-flag t) nil [188789 188810])
+            ("ft_render_mode_mono" variable (:constant-flag t) nil [188842 188861])
+            ("FT_Render_Glyph" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("slot" variable (:type ("FT_GlyphSlot" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196964 196985])
+                    ("render_mode" variable (:type ("FT_Render_Mode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [197005 197034]))                  
+                :type "int")
+                nil [196947 197035])
+            ("FT_Kerning_Mode_" type
+               (:members 
+                  ( ("FT_KERNING_DEFAULT" variable
+                       (:constant-flag t
+                        :default-value (199129 199130)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [199107 199130])
+                    ("FT_KERNING_UNFITTED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [199136 199156])
+                    ("FT_KERNING_UNSCALED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [199161 199185]))                  
+                :type "enum")
+                nil [199068 199202])
+            ("FT_Kerning_Mode" type
+               (:typedef ("FT_Kerning_Mode_" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [199068 199202])
+            ("ft_kerning_default" variable (:constant-flag t) nil [199337 199355])
+            ("ft_kerning_unfitted" variable (:constant-flag t) nil [199385 199404])
+            ("ft_kerning_unscaled" variable (:constant-flag t) nil [199434 199453])
+            ("FT_Get_Kerning" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202171 202188])
+                    ("left_glyph" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202207 202230])
+                    ("right_glyph" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202249 202273])
+                    ("kern_mode" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [202292 202314])
+                    ("akerning" variable
+                       (:pointer 1
+                        :type ("FT_Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202333 202355]))                  
+                :type "int")
+                nil [202155 202356])
+            ("FT_Get_Track_Kerning" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [204981 204997])
+                    ("point_size" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [205022 205044])
+                    ("degree" variable (:type ("FT_Int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [205069 205087])
+                    ("akerning" variable
+                       (:pointer 1
+                        :type ("FT_Fixed" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [205112 205133]))                  
+                :type "int")
+                nil [204959 205134])
+            ("FT_Get_Glyph_Name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208224 208241])
+                    ("glyph_index" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208263 208287])
+                    ("buffer" variable (:type ("FT_Pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208309 208328])
+                    ("buffer_max" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [208350 208374]))                  
+                :type "int")
+                nil [208205 208375])
+            ("FT_Get_Postscript_Name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209913 209928]))                  
+                :type "int")
+                nil [209889 209929])
+            ("FT_Select_Charmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [212161 212179])
+                    ("encoding" variable (:type ("FT_Encoding" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [212201 212224]))                  
+                :type "int")
+                nil [212142 212225])
+            ("FT_Set_Charmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [214142 214159])
+                    ("charmap" variable (:type ("FT_CharMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [214178 214199]))                  
+                :type "int")
+                nil [214126 214200])
+            ("FT_Get_Charmap_Index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("charmap" variable (:type ("FT_CharMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [214677 214698]))                  
+                :type "int")
+                nil [214655 214699])
+            ("FT_Get_Char_Index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217086 217101])
+                    ("charcode" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [217123 217143]))                  
+                :type "int")
+                nil [217067 217144])
+            ("FT_Get_First_Char" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [221092 221107])
+                    ("agindex" variable
+                       (:pointer 1
+                        :type ("FT_UInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221129 221148]))                  
+                :type "int")
+                nil [221073 221149])
+            ("FT_Get_Next_Char" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223458 223474])
+                    ("char_code" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223495 223516])
+                    ("agindex" variable
+                       (:pointer 1
+                        :type ("FT_UInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223537 223557]))                  
+                :type "int")
+                nil [223440 223558])
+            ("FT_Get_Name_Index" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [224931 224948])
+                    ("glyph_name" variable
+                       (:pointer 1
+                        :type ("FT_String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [224970 224994]))                  
+                :type "int")
+                nil [224912 224995])
+            ("FT_SUBGLYPH_FLAG_ARGS_ARE_WORDS" variable (:constant-flag t) nil [225601 225632])
+            ("FT_SUBGLYPH_FLAG_ARGS_ARE_XY_VALUES" variable (:constant-flag t) nil [225652 225687])
+            ("FT_SUBGLYPH_FLAG_ROUND_XY_TO_GRID" variable (:constant-flag t) nil [225703 225736])
+            ("FT_SUBGLYPH_FLAG_SCALE" variable (:constant-flag t) nil [225754 225776])
+            ("FT_SUBGLYPH_FLAG_XY_SCALE" variable (:constant-flag t) nil [225805 225830])
+            ("FT_SUBGLYPH_FLAG_2X2" variable (:constant-flag t) nil [225856 225876])
+            ("FT_SUBGLYPH_FLAG_USE_MY_METRICS" variable (:constant-flag t) nil [225907 225938])
+            ("FT_Get_SubGlyph_Info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("glyph" variable (:type ("FT_GlyphSlot" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [227141 227161])
+                    ("sub_index" variable (:type ("FT_UInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [227186 227210])
+                    ("p_index" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227235 227257])
+                    ("p_flags" variable
+                       (:pointer 1
+                        :type ("FT_UInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227282 227304])
+                    ("p_arg1" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227329 227350])
+                    ("p_arg2" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227375 227396])
+                    ("p_transform" variable
+                       (:pointer 1
+                        :type ("FT_Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227421 227448]))                  
+                :type "int")
+                nil [227119 227449])
+            ("FT_FSTYPE_INSTALLABLE_EMBEDDING" variable (:constant-flag t) nil [231762 231793])
+            ("FT_FSTYPE_RESTRICTED_LICENSE_EMBEDDING" variable (:constant-flag t) nil [231817 231855])
+            ("FT_FSTYPE_PREVIEW_AND_PRINT_EMBEDDING" variable (:constant-flag t) nil [231872 231909])
+            ("FT_FSTYPE_EDITABLE_EMBEDDING" variable (:constant-flag t) nil [231927 231955])
+            ("FT_FSTYPE_NO_SUBSETTING" variable (:constant-flag t) nil [231982 232005])
+            ("FT_FSTYPE_BITMAP_EMBEDDING_ONLY" variable (:constant-flag t) nil [232037 232068])
+            ("FT_Get_FSType_Flags" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [233850 233865]))                  
+                :type "int")
+                nil [233829 233866])
+            ("FT_Face_GetCharVariantIndex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240165 240180])
+                    ("charcode" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240212 240231])
+                    ("variantSelector" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240263 240290]))                  
+                :type "int")
+                nil [240136 240291])
+            ("FT_Face_GetCharVariantIsDefault" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242691 242706])
+                    ("charcode" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242742 242761])
+                    ("variantSelector" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242797 242824]))                  
+                :type "int")
+                nil [242658 242825])
+            ("FT_Face_GetVariantSelectors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [244835 244850]))                  
+                :type "int")
+                nil [244806 244851])
+            ("FT_Face_GetVariantsOfChar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247171 247186])
+                    ("charcode" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247216 247236]))                  
+                :type "int")
+                nil [247144 247237])
+            ("FT_Face_GetCharsOfVariant" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [249557 249572])
+                    ("variantSelector" variable (:type ("FT_ULong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [249602 249629]))                  
+                :type "int")
+                nil [249530 249630])
+            ("FT_MulDiv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253571 253582])
+                    ("b" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253596 253607])
+                    ("c" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253621 253633]))                  
+                :type "int")
+                nil [253560 253634])
+            ("FT_MulFix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [255935 255946])
+                    ("b" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [255960 255972]))                  
+                :type "int")
+                nil [255924 255973])
+            ("FT_DivFix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [257338 257349])
+                    ("b" variable (:type ("FT_Long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [257363 257375]))                  
+                :type "int")
+                nil [257327 257376])
+            ("FT_RoundFix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258588 258601]))                  
+                :type "int")
+                nil [258575 258602])
+            ("FT_CeilFix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259813 259826]))                  
+                :type "int")
+                nil [259801 259827])
+            ("FT_FloorFix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("FT_Fixed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261039 261052]))                  
+                :type "int")
+                nil [261026 261053])
+            ("FT_Vector_Transform" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:pointer 1
+                        :type ("FT_Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [262425 262447])
+                    ("matrix" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("FT_Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [262471 262497]))                  
+                :type "int")
+                nil [262404 262498])
+            ("FREETYPE_MAJOR" variable (:constant-flag t) nil [265386 265400])
+            ("FREETYPE_MINOR" variable (:constant-flag t) nil [265412 265426])
+            ("FREETYPE_PATCH" variable (:constant-flag t) nil [265438 265452])
+            ("FT_Library_Version" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("library" variable (:type ("FT_Library" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [267762 267783])
+                    ("amajor" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [267806 267826])
+                    ("aminor" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [267849 267869])
+                    ("apatch" variable
+                       (:pointer 1
+                        :type ("FT_Int" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [267892 267913]))                  
+                :type "int")
+                nil [267742 267914])
+            ("FT_Face_CheckTrueTypePatents" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [269532 269547]))                  
+                :type "int")
+                nil [269502 269548])
+            ("FT_Face_SetUnpatentedHinting" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("face" variable (:type ("FT_Face" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271322 271336])
+                    ("value" variable (:type ("FT_Bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271369 271385]))                  
+                :type "int")
+                nil [271292 271386]))          
+      :file "freetype.h"
+      :pointmax 271450
+      :fsize 271451
+      :lastmodtime '(22786 16164 0 0)
+      :unmatched-syntax '((symbol 271398 . 271411) (semantic-list 271278 . 271289) (symbol 271269 . 271278) (semantic-list 269488 . 269499) (symbol 269479 . 269488) (semantic-list 267731 . 267739) (symbol 267722 . 267731) (semantic-list 262393 . 262401) (symbol 262384 . 262393) (semantic-list 261011 . 261023) (symbol 261002 . 261011) (semantic-list 259786 . 259798) (symbol 259777 . 259786) (semantic-list 258560 . 258572) (symbol 258551 . 258560) (semantic-list 257313 . 257324) (symbol 257304 . 257313) (semantic-list 255910 . 255921) (symbol 255901 . 255910) (semantic-list 253546 . 253557) (symbol 253537 . 253546) (semantic-list 249513 . 249527) (symbol 249504 . 249513) (semantic-list 247127 . 247141) (symbol 247118 . 247127) (semantic-list 244789 . 244803) (symbol 244780 . 244789) (semantic-list 242645 . 242655) (symbol 242636 . 242645) (semantic-list 240122 . 240133) (symbol 240113 . 240122) (semantic-list 233813 . 233826) (symbol 233804 . 233813) (semantic-list 227104 . 227116) (symbol 227095 . 227104) (semantic-list 224898 . 224909) (symbol 224889 . 224898) (semantic-list 223425 . 223437) (symbol 223416 . 223425) (semantic-list 221058 . 221070) (symbol 221049 . 221058) (semantic-list 217053 . 217064) (symbol 217044 . 217053) (semantic-list 214642 . 214652) (symbol 214633 . 214642) (semantic-list 214111 . 214123) (symbol 214102 . 214111) (semantic-list 212127 . 212139) (symbol 212118 . 212127) (semantic-list 209871 . 209886) (symbol 209862 . 209871) (semantic-list 208190 . 208202) (symbol 208181 . 208190) (semantic-list 204944 . 204956) (symbol 204935 . 204944) (semantic-list 202140 . 202152) (symbol 202131 . 202140) (semantic-list 196932 . 196944) (symbol 196923 . 196932) (semantic-list 183788 . 183796) (symbol 183779 . 183788) (semantic-list 169524 . 169536) (symbol 169515 . 169524) (semantic-list 167122 . 167134) (symbol 167113 . 167122) (semantic-list 164160 . 164172) (symbol 164151 . 164160) (semantic-list 161801 . 161813) (symbol 161792 . 161801) (semantic-list 158882 . 158894) (symbol 158873 . 158882) (semantic-list 149781 . 149793) (symbol 149772 . 149781) (semantic-list 148318 . 148330) (symbol 148309 . 148318) (semantic-list 146772 . 146784) (symbol 146763 . 146772) (semantic-list 144862 . 144874) (symbol 144853 . 144862) (semantic-list 142412 . 142424) (symbol 142403 . 142412) (semantic-list 140876 . 140888) (symbol 140867 . 140876) (semantic-list 129688 . 129700) (symbol 129679 . 129688) (semantic-list 127166 . 127178) (symbol 127157 . 127166) (semantic-list 116125 . 116137) (symbol 116116 . 116125) (semantic-list 114884 . 114896) (symbol 114875 . 114884) (symbol 1618 . 1633) (symbol 1604 . 1615) (symbol 1596 . 1603) (punctuation 1595 . 1596) (symbol 1584 . 1594) (symbol 1576 . 1583) (punctuation 1575 . 1576) (symbol 1556 . 1574) (symbol 1548 . 1555) (punctuation 1547 . 1548) (string 1489 . 1515) (symbol 1483 . 1488) (punctuation 1482 . 1483) (string 1456 . 1481) (symbol 1450 . 1455) (punctuation 1449 . 1450) (string 1438 . 1448) (symbol 1432 . 1437) (punctuation 1431 . 1432) (string 1370 . 1430) (symbol 1364 . 1369) (punctuation 1363 . 1364) (string 1322 . 1362) (symbol 1316 . 1321) (punctuation 1315 . 1316))
+      :lexical-table 
+        '(("ft_encoding_adobe_standard" . ((symbol "FT_ENCODING_ADOBE_STANDARD" 54452 . 54478)))
+          ("ft_encoding_adobe_custom" . ((symbol "FT_ENCODING_ADOBE_CUSTOM" 54576 . 54600)))
+          ("FT_FACE_FLAG_SFNT" . ((semantic-list "( 1L <<  3 )" 80970 . 80982)))
+          ("FT_FACE_FLAG_FAST_GLYPHS" . ((semantic-list "( 1L <<  7 )" 81178 . 81190)))
+          ("FT_FACE_FLAG_GLYPH_NAMES" . ((semantic-list "( 1L <<  9 )" 81282 . 81294)))
+          ("FT_HAS_FIXED_SIZES" (spp-arg-list ("face") 84599 . 84607) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_FIXED_SIZES )" 84620 . 84667)))
+          ("FT_STYLE_FLAG_ITALIC" . ((semantic-list "( 1 << 0 )" 88758 . 88768)))
+          ("FT_LOAD_DEFAULT" . ((number "0x0" 176960 . 176963)))
+          ("FT_LOAD_NO_HINTING" . ((semantic-list "( 1L << 1 )" 177066 . 177077)))
+          ("FT_LOAD_RENDER" . ((semantic-list "( 1L << 2 )" 177123 . 177134)))
+          ("ft_render_mode_normal" . ((symbol "FT_RENDER_MODE_NORMAL" 188812 . 188833)))
+          ("FT_FSTYPE_INSTALLABLE_EMBEDDING" . ((number "0x0000" 231802 . 231808)))
+          ("ft_encoding_none" . ((symbol "FT_ENCODING_NONE" 53891 . 53907)))
+          ("ft_encoding_wansung" . ((symbol "FT_ENCODING_WANSUNG" 54341 . 54360)))
+          ("ft_encoding_apple_roman" . ((symbol "FT_ENCODING_APPLE_ROMAN" 54637 . 54660)))
+          ("FT_FACE_FLAG_FIXED_WIDTH" . ((semantic-list "( 1L <<  2 )" 80918 . 80930)))
+          ("FT_LOAD_COMPUTE_METRICS" . ((semantic-list "( 1L << 21 )" 177920 . 177932)))
+          ("FT_LOAD_SBITS_ONLY" . ((semantic-list "( 1L << 14 )" 178099 . 178111)))
+          ("FT_ENC_TAG" (spp-arg-list ("value" "a" "b" "c" "d") 41023 . 41044) . 
+              ((symbol "value" 41065 . 41070) (punctuation "=" 41071 . 41072) (semantic-list "( ( (FT_UInt32)(a) << 24 ) |  \\
+                    ( (FT_UInt32)(b) << 16 ) |  \\
+                    ( (FT_UInt32)(c) <<  8 ) |  \\
+                      (FT_UInt32)(d)         )" 41073 . 41251)))
+          ("FT_FACE_FLAG_VERTICAL" . ((semantic-list "( 1L <<  5 )" 81074 . 81086)))
+          ("FT_HAS_HORIZONTAL" (spp-arg-list ("face") 81964 . 81972) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_HORIZONTAL )" 81985 . 82031)))
+          ("FT_IS_FIXED_WIDTH" (spp-arg-list ("face") 84173 . 84181) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_FIXED_WIDTH )" 84194 . 84241)))
+          ("FT_STYLE_FLAG_BOLD" . ((semantic-list "( 1 << 1 )" 88799 . 88809)))
+          ("ft_encoding_gb2312" . ((symbol "FT_ENCODING_GB2312" 54233 . 54251)))
+          ("FT_FACE_FLAG_MULTIPLE_MASTERS" . ((semantic-list "( 1L <<  8 )" 81230 . 81242)))
+          ("FT_FACE_FLAG_EXTERNAL_STREAM" . ((semantic-list "( 1L << 10 )" 81334 . 81346)))
+          ("FT_FACE_FLAG_HINTER" . ((semantic-list "( 1L << 11 )" 81386 . 81398)))
+          ("FT_FACE_FLAG_COLOR" . ((semantic-list "( 1L << 14 )" 81542 . 81554)))
+          ("FT_HAS_FAST_GLYPHS" (spp-arg-list ("face") 84879 . 84887) . ((number "0" 84889 . 84890)))
+          ("FT_HAS_GLYPH_NAMES" (spp-arg-list ("face") 85221 . 85229) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_GLYPH_NAMES )" 85242 . 85289)))
+          ("FT_OPEN_DRIVER" . ((number "0x8" 118249 . 118252)))
+          ("FT_LOAD_NO_AUTOHINT" . ((semantic-list "( 1L << 15 )" 177754 . 177766)))
+          ("FT_LOAD_ADVANCE_ONLY" . ((semantic-list "( 1L << 8 )" 178042 . 178053)))
+          ("FT_HAS_VERTICAL" (spp-arg-list ("face") 82345 . 82353) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_VERTICAL )" 82366 . 82410)))
+          ("FT_OPEN_PATHNAME" . ((number "0x4" 118219 . 118222)))
+          ("FT_LOAD_TARGET_" (spp-arg-list ("x") 180859 . 180864) . ((semantic-list "( (FT_Int32)( (x) & 15 ) << 16 )" 180867 . 180899)))
+          ("FT_SUBGLYPH_FLAG_ARGS_ARE_XY_VALUES" . ((number "2" 225693 . 225694)))
+          ("FT_SUBGLYPH_FLAG_XY_SCALE" . ((number "0x40" 225843 . 225847)))
+          ("FREETYPE_MAJOR" . ((number "2" 265402 . 265403)))
+          ("ft_encoding_latin_1" . ((symbol "FT_ENCODING_ADOBE_LATIN_1" 54058 . 54083)))
+          ("FT_FACE_FLAG_SCALABLE" . ((semantic-list "( 1L <<  0 )" 80814 . 80826)))
+          ("FT_FACE_FLAG_HORIZONTAL" . ((semantic-list "( 1L <<  4 )" 81022 . 81034)))
+          ("FT_FACE_FLAG_KERNING" . ((semantic-list "( 1L <<  6 )" 81126 . 81138)))
+          ("FT_FACE_FLAG_TRICKY" . ((semantic-list "( 1L << 13 )" 81490 . 81502)))
+          ("FT_IS_TRICKY" (spp-arg-list ("face") 86606 . 86614) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_TRICKY )" 86627 . 86669)))
+          ("FT_LOAD_NO_SCALE" . ((semantic-list "( 1L << 0 )" 177009 . 177020)))
+          ("FT_LOAD_FORCE_AUTOHINT" . ((semantic-list "( 1L << 5 )" 177294 . 177305)))
+          ("FT_LOAD_PEDANTIC" . ((semantic-list "( 1L << 7 )" 177408 . 177419)))
+          ("FT_LOAD_IGNORE_TRANSFORM" . ((semantic-list "( 1L << 11 )" 177580 . 177592)))
+          ("FT_LOAD_TARGET_NORMAL" . ((symbol "FT_LOAD_TARGET_" 180932 . 180947) (semantic-list "( FT_RENDER_MODE_NORMAL )" 180947 . 180972)))
+          ("FT_SUBGLYPH_FLAG_2X2" . ((number "0x80" 225894 . 225898)))
+          ("FREETYPE_PATCH" . ((number "3" 265454 . 265455)))
+          ("ft_encoding_latin_2" . ((symbol "FT_ENCODING_OLD_LATIN_2" 54120 . 54143)))
+          ("FT_OPEN_MEMORY" . ((number "0x1" 118159 . 118162)))
+          ("ft_open_driver" . ((symbol "FT_OPEN_DRIVER" 118589 . 118603)))
+          ("FT_LOAD_NO_BITMAP" . ((semantic-list "( 1L << 3 )" 177180 . 177191)))
+          ("FT_LOAD_TARGET_LCD" . ((symbol "FT_LOAD_TARGET_" 181148 . 181163) (semantic-list "( FT_RENDER_MODE_LCD    )" 181163 . 181188)))
+          ("FT_LOAD_TARGET_MODE" (spp-arg-list ("x") 181541 . 181546) . ((semantic-list "( (FT_Render_Mode)( ( (x) >> 16 ) & 15 ) )" 181548 . 181590)))
+          ("ft_kerning_unscaled" . ((symbol "FT_KERNING_UNSCALED" 199455 . 199474)))
+          ("FT_FSTYPE_PREVIEW_AND_PRINT_EMBEDDING" . ((number "0x0004" 231912 . 231918)))
+          ("FT_FSTYPE_BITMAP_EMBEDDING_ONLY" . ((number "0x0200" 232077 . 232083)))
+          ("FT_FACE_FLAG_CID_KEYED" . ((semantic-list "( 1L << 12 )" 81438 . 81450)))
+          ("FT_LOAD_TARGET_MONO" . ((symbol "FT_LOAD_TARGET_" 181076 . 181091) (semantic-list "( FT_RENDER_MODE_MONO   )" 181091 . 181116)))
+          ("ft_kerning_default" . ((symbol "FT_KERNING_DEFAULT" 199358 . 199376)))
+          ("FT_SUBGLYPH_FLAG_ARGS_ARE_WORDS" . ((number "1" 225642 . 225643)))
+          ("FT_SUBGLYPH_FLAG_USE_MY_METRICS" . ((number "0x200" 225944 . 225949)))
+          ("FT_HAS_MULTIPLE_MASTERS" (spp-arg-list ("face") 85700 . 85708) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_MULTIPLE_MASTERS )" 85721 . 85773)))
+          ("FT_LOAD_VERTICAL_LAYOUT" . ((semantic-list "( 1L << 4 )" 177237 . 177248)))
+          ("FT_LOAD_CROP_BITMAP" . ((semantic-list "( 1L << 6 )" 177351 . 177362)))
+          ("FT_LOAD_MONOCHROME" . ((semantic-list "( 1L << 12 )" 177638 . 177650)))
+          ("FT_LOAD_LINEAR_DESIGN" . ((semantic-list "( 1L << 13 )" 177696 . 177708)))
+          ("FT_SUBGLYPH_FLAG_SCALE" . ((number "8" 225795 . 225796)))
+          ("FREETYPE_H_")
+          ("ft_encoding_symbol" . ((symbol "FT_ENCODING_MS_SYMBOL" 54000 . 54021)))
+          ("ft_encoding_big5" . ((symbol "FT_ENCODING_BIG5" 54288 . 54304)))
+          ("ft_encoding_adobe_expert" . ((symbol "FT_ENCODING_ADOBE_EXPERT" 54515 . 54539)))
+          ("FT_OPEN_STREAM" . ((number "0x2" 118189 . 118192)))
+          ("FT_OPEN_PARAMS" . ((number "0x10" 118279 . 118283)))
+          ("ft_open_memory" . ((symbol "FT_OPEN_MEMORY" 118464 . 118478)))
+          ("FT_LOAD_COLOR" . ((semantic-list "( 1L << 20 )" 177862 . 177874)))
+          ("FT_LOAD_TARGET_LCD_V" . ((symbol "FT_LOAD_TARGET_" 181220 . 181235) (semantic-list "( FT_RENDER_MODE_LCD_V  )" 181235 . 181260)))
+          ("ft_render_mode_mono" . ((symbol "FT_RENDER_MODE_MONO" 188865 . 188884)))
+          ("FT_FSTYPE_NO_SUBSETTING" . ((number "0x0100" 232022 . 232028)))
+          ("FREETYPE_MINOR" . ((number "6" 265428 . 265429)))
+          ("ft_encoding_johab" . ((symbol "FT_ENCODING_JOHAB" 54397 . 54414)))
+          ("FT_FACE_FLAG_FIXED_SIZES" . ((semantic-list "( 1L <<  1 )" 80866 . 80878)))
+          ("FT_IS_SCALABLE" (spp-arg-list ("face") 83150 . 83158) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_SCALABLE )" 83171 . 83215)))
+          ("FT_IS_SFNT" (spp-arg-list ("face") 83758 . 83766) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_SFNT )" 83779 . 83819)))
+          ("FT_IS_CID_KEYED" (spp-arg-list ("face") 86214 . 86222) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_CID_KEYED )" 86235 . 86280)))
+          ("FT_LOAD_NO_RECURSE" . ((semantic-list "( 1L << 10 )" 177522 . 177534)))
+          ("FT_LOAD_TARGET_LIGHT" . ((symbol "FT_LOAD_TARGET_" 181004 . 181019) (semantic-list "( FT_RENDER_MODE_LIGHT  )" 181019 . 181044)))
+          ("FT_FSTYPE_RESTRICTED_LICENSE_EMBEDDING" . ((number "0x0002" 231857 . 231863)))
+          ("FT_HAS_KERNING" (spp-arg-list ("face") 82723 . 82731) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_KERNING )" 82744 . 82787)))
+          ("FT_HAS_COLOR" (spp-arg-list ("face") 86947 . 86955) . ((semantic-list "( face->face_flags & FT_FACE_FLAG_COLOR )" 86968 . 87009)))
+          ("ft_kerning_unfitted" . ((symbol "FT_KERNING_UNFITTED" 199406 . 199425)))
+          ("ft_encoding_unicode" . ((symbol "FT_ENCODING_UNICODE" 53944 . 53963)))
+          ("ft_encoding_sjis" . ((symbol "FT_ENCODING_SJIS" 54180 . 54196)))
+          ("ft_open_stream" . ((symbol "FT_OPEN_STREAM" 118505 . 118519)))
+          ("ft_open_pathname" . ((symbol "FT_OPEN_PATHNAME" 118546 . 118562)))
+          ("ft_open_params" . ((symbol "FT_OPEN_PARAMS" 118630 . 118644)))
+          ("FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH" . ((semantic-list "( 1L << 9 )" 177465 . 177476)))
+          ("FT_SUBGLYPH_FLAG_ROUND_XY_TO_GRID" . ((number "4" 225744 . 225745)))
+          ("FT_FSTYPE_EDITABLE_EMBEDDING" . ((number "0x0008" 231967 . 231973)))
+          )
+))
+  :file "!usr!include!freetype2!freetype!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

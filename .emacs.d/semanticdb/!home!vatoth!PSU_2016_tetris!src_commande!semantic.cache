@@ -1,0 +1,62 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [247 267])
+            ("commande.h" include nil nil [268 289])
+            ("g_keys" variable
+               (:typemodifiers ("extern")
+                :type ("t_keys" type (:type "class") nil nil))
+                nil [291 312])
+            ("assignkt" function
+               (:arguments 
+                  ( ("commande" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [327 342]))                  
+                :type "int")
+                nil [314 521])
+            ("assignkd" function
+               (:arguments 
+                  ( ("commande" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [540 555]))                  
+                :type "int")
+                nil [523 734])
+            ("assignkq" function
+               (:arguments 
+                  ( ("commande" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [753 768]))                  
+                :type "int")
+                nil [736 972])
+            ("assignkp" function
+               (:arguments 
+                  ( ("commande" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [991 1006]))                  
+                :type "int")
+                nil [974 1213])
+            ("assignkl" function
+               (:arguments 
+                  ( ("commande" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1228 1243]))                  
+                :type "int")
+                nil [1215 1424]))          
+      :file "interpret_commande.c"
+      :pointmax 1425
+      :fsize 1424
+      :lastmodtime '(23165 64682 550426 638000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!PSU_2016_tetris!src_commande!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

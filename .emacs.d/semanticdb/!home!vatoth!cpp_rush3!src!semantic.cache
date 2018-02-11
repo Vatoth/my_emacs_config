@@ -1,0 +1,222 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [64 83])
+            ("unistd.h" include (:system-flag t) nil [84 103])
+            ("gtkMonitorDisplayMain.hpp" include nil nil [105 141])
+            ("ncursesInterface.hpp" include nil nil [142 173])
+            ("MonitorModuleUser.hpp" include nil nil [174 206])
+            ("MonitorModuleCpu.hpp" include nil nil [207 238])
+            ("MonitorModuleRam.hpp" include nil nil [239 270])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [281 288])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [289 302]))                  
+                :type "int")
+                nil [272 1007]))          
+      :file "main.cpp"
+      :pointmax 1008
+      :fsize 1019
+      :lastmodtime '(23163 36773 733057 162000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [83 103])
+            ("signal.h" include (:system-flag t) nil [104 123])
+            ("cstdlib" include (:system-flag t) nil [124 142])
+            ("iostream" include (:system-flag t) nil [143 162])
+            ("fstream" include (:system-flag t) nil [163 181])
+            ("ctime" include (:system-flag t) nil [182 198])
+            ("ncursesInterface.hpp" include nil nil [200 231])
+            ("MonitorDisplayKernel.hpp" include nil nil [232 267])
+            ("MonitorDisplayCpu.hpp" include nil nil [268 300])
+            ("NcursesInterface" function
+               (:constructor-flag t
+                :parent "NcursesInterface"
+                :type ("NcursesInterface" type (:type "class") nil nil))
+                nil [302 427])
+            ("NcursesInterface" function
+               (:destructor-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [429 517])
+            ("end_handler" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [536 544]))                  
+                :type "void")
+                nil [519 643])
+            ("init" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [645 1091])
+            ("getDelay" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "int")
+                nil [1093 1151])
+            ("end" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [1153 1202])
+            ("reload" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [1204 1257])
+            ("clean" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [1259 1309])
+            ("isOpen" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "bool")
+                nil [1311 1368])
+            ("isPause" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "bool")
+                nil [1370 1429])
+            ("colorset" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1463 1470]))                  
+                :type "void")
+                nil [1431 1514])
+            ("colordel" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1548 1555]))                  
+                :type "void")
+                nil [1516 1600])
+            ("get" function
+               (:parent "NcursesInterface"
+                :type "void")
+                nil [1602 1651])
+            ("getStringFromUser" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :arguments 
+                  ( ("format" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1701 1727]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1653 2084])
+            ("save" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [2086 2707])
+            ("loadConfig" function
+               (:parent "NcursesInterface"
+                :type "void")
+                nil [2709 3480])
+            ("saveConfig" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [3482 3848])
+            ("react" function
+               (:parent "NcursesInterface"
+                :type "void")
+                nil [3850 4377])
+            ("buttons" function
+               (:parent "NcursesInterface"
+                :type "void")
+                nil [4379 4815])
+            ("loadArgs" function
+               (:parent "NcursesInterface"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [4849 4856])
+                    ("av" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4857 4868]))                  
+                :type "void")
+                nil [4817 5242])
+            ("print" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :arguments 
+                  ( ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5273 5279])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5280 5286])
+                    ("colorid" variable (:type "int") (reparse-symbol arg-sub-list) [5287 5299])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5300 5319])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5328 5332]))                  
+                :type "void")
+                nil [5244 5477])
+            ("display_buttons" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [5479 5922])
+            ("display" function
+               (:methodconst-flag t
+                :parent "NcursesInterface"
+                :type "void")
+                nil [5924 6262])
+            ("refreshDelay" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("clock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6289 6301]))                  
+                :type "void")
+                nil [6264 6416])
+            ("ncursesInterface" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [6440 6447])
+                    ("av" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6448 6459]))                  
+                :type "void")
+                nil [6418 6925]))          
+      :file "ncursesInterface.cpp"
+      :pointmax 6926
+      :fsize 6925
+      :lastmodtime '(23163 37546 996493 913000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gtkMonitorDisplayMain.cpp"
+      :pointmax 306
+      :fsize 305
+      :lastmodtime '(23161 40667 722670 194000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "gtkMonitorDisplayUser.cpp"
+      :pointmax 1130
+      :fsize 1130
+      :lastmodtime '(23163 37546 936493 647000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_rush3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

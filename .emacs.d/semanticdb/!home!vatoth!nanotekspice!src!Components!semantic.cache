@@ -1,0 +1,145 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("False.hpp" include nil nil [64 84])
+            ("False" function
+               (:constructor-flag t
+                :parent "False"
+                :type ("False" type (:type "class") nil nil))
+                nil [86 144])
+            ("compute" function
+               (:parent "False"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175 191]))                  
+                :type ("nts::Tristate" type (:type "class") nil nil))
+                nil [146 224])
+            ("setLink" function
+               (:parent "False"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [246 262])
+                    ("other" variable
+                       (:reference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [269 292])
+                    ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [299 320]))                  
+                :type "void")
+                nil [226 388]))          
+      :file "False.cpp"
+      :pointmax 389
+      :fsize 388
+      :lastmodtime '(23160 7274 730016 23000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("True.hpp" include nil nil [64 83])
+            ("True" function
+               (:constructor-flag t
+                :parent "True"
+                :type ("True" type (:type "class") nil nil))
+                nil [85 140])
+            ("compute" function
+               (:parent "True"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170 186]))                  
+                :type ("nts::Tristate" type (:type "class") nil nil))
+                nil [142 219])
+            ("setLink" function
+               (:parent "True"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [241 257])
+                    ("other" variable
+                       (:reference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [264 287])
+                    ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294 315]))                  
+                :type "void")
+                nil [222 383]))          
+      :file "True.cpp"
+      :pointmax 384
+      :fsize 383
+      :lastmodtime '(23160 7229 50015 1000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Input.hpp" include nil nil [64 84])
+            ("Input" function
+               (:constructor-flag t
+                :parent "Input"
+                :type ("Input" type (:type "class") nil nil))
+                nil [86 148])
+            ("compute" function
+               (:parent "Input"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179 195]))                  
+                :type ("nts::Tristate" type (:type "class") nil nil))
+                nil [150 228])
+            ("setLink" function
+               (:parent "Input"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [251 267])
+                    ("other" variable
+                       (:reference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [274 297])
+                    ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [304 325]))                  
+                :type "void")
+                nil [231 393]))          
+      :file "Input.cpp"
+      :pointmax 394
+      :fsize 393
+      :lastmodtime '(23160 7268 926015 893000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "Output.cpp"
+      :pointmax 399
+      :fsize 398
+      :lastmodtime '(23160 7257 310015 634000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("4081.hpp" include nil nil [64 83])
+            ("Component4081" function
+               (:constructor-flag t
+                :parent "Component4081"
+                :type ("Component4081" type (:type "class") nil nil))
+                nil [85 122])
+            ("compute" function
+               (:parent "Component4081"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161 177]))                  
+                :type ("nts::Tristate" type (:type "class") nil nil))
+                nil [124 218])
+            ("setLink" function
+               (:parent "Component4081"
+                :arguments 
+                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248 264])
+                    ("other" variable
+                       (:reference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [271 294])
+                    ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 322]))                  
+                :type "void")
+                nil [220 390])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "Component4081"
+                :type "void")
+                nil [392 428]))          
+      :file "4081.cpp"
+      :pointmax 429
+      :fsize 443
+      :lastmodtime '(23160 9583 182067 663000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!nanotekspice!src!Components!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

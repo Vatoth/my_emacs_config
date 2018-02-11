@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "clavier.c"
+      :pointmax 193
+      :fsize 192
+      :lastmodtime '(23154 53655 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/select.h" include (:system-flag t) nil [65 88])
+            ("monconio.h" include nil nil [89 110])
+            ("oldtermios" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [112 139])
+            ("ttyraw" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [152 159]))                  
+                :type "int")
+                nil [141 2453])
+            ("ttyreset" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2468 2475]))                  
+                :type "int")
+                nil [2455 2568])
+            ("inputAvailable" function (:type "int") nil [2571 2819]))          
+      :file "monconio.c"
+      :pointmax 2820
+      :fsize 2819
+      :lastmodtime '(23160 52912 686853 671000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("monconio_h" variable (:constant-flag t) nil [95 105])
+            ("monconio_h" variable (:constant-flag t) nil [95 105])
+            ("stdio.h" include (:system-flag t) nil [107 126])
+            ("termios.h" include (:system-flag t) nil [127 148])
+            ("unistd.h" include (:system-flag t) nil [149 169])
+            ("ttyreset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [184 191]))                  
+                :type "int")
+                nil [171 192])
+            ("ttyraw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [204 211]))                  
+                :type "int")
+                nil [193 212])
+            ("inputAvailable" function
+               (:prototype-flag t
+                :type "int")
+                nil [213 234]))          
+      :file "monconio.h"
+      :pointmax 261
+      :fsize 260
+      :lastmodtime '(23160 52920 199099 360000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("monconio_h")
+          )
+))
+  :file "!home!vatoth!Snake_Lafayette!snake!samples!clavier!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

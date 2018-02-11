@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Py_ARRAYOBJECT_H" variable (:constant-flag t) nil [34 50])
+            ("ndarrayobject.h" include nil nil [52 78])
+            ("npy_interrupt.h" include nil nil [79 105]))          
+      :file "arrayobject.h"
+      :pointmax 165
+      :fsize 164
+      :lastmodtime '(22618 41936 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Py_ARRAYOBJECT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ndarrayobject.h"
+      :fsize 10394
+      :lastmodtime '(22716 254 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "npy_interrupt.h"
+      :fsize 3439
+      :lastmodtime '(22401 23450 0 0)))
+  :file "!usr!lib!python2.7!dist-packages!numpy!core!include!numpy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

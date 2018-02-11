@@ -1,0 +1,237 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("NCURSESINTERFACE_HPP_" variable (:constant-flag t) nil [122 143])
+            ("vector" include (:system-flag t) nil [145 163])
+            ("UserModule.hpp" include nil nil [165 191])
+            ("RamModule.hpp" include nil nil [192 217])
+            ("TimeModule.hpp" include nil nil [218 244])
+            ("NetworkModule.hpp" include nil nil [245 274])
+            ("NcursesInterface" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [301 308])
+                    ("NcursesInterface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("NcursesInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [310 329])
+                    ("NcursesInterface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [331 351])
+                    ("isPause" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [353 374])
+                    ("isOpen" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [376 396])
+                    ("init" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [398 416])
+                    ("end" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [418 435])
+                    ("reload" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [437 457])
+                    ("getDelay" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [459 480])
+                    ("clean" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [482 501])
+                    ("get" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [503 514])
+                    ("display" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [516 537])
+                    ("colorset" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [553 560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [539 567])
+                    ("colordel" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [583 590]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [569 597])
+                    ("buttons" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [599 614])
+                    ("react" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [616 629])
+                    ("print" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("y" variable (:type "int") (reparse-symbol arg-sub-list) [642 648])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [649 655])
+                            ("colorid" variable (:type "int") (reparse-symbol arg-sub-list) [656 668])
+                            ("format" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [669 688])
+                            ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [689 693]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [631 700])
+                    ("getStringFromUser" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("format" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [732 758]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [702 765])
+                    ("loadArgs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [781 788])
+                            ("av" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [789 800]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [767 801])
+                    ("saveConfig" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [803 827])
+                    ("loadConfig" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [829 847])
+                    ("save" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [849 867])
+                    ("protected" label nil (reparse-symbol classsubparts) [868 878])
+                    ("display_buttons" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [880 909])
+                    ("Selected" type
+                       (:members 
+                          ( ("PAUSE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [929 935])
+                            ("PRINT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [938 944])
+                            ("QUIT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [947 954]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [911 955])
+                    ("_key" variable (:type "int") (reparse-symbol classsubparts) [957 966])
+                    ("_state" variable (:type "bool") (reparse-symbol classsubparts) [968 980])
+                    ("_selected" variable (:type "int") (reparse-symbol classsubparts) [982 996])
+                    ("_paused" variable (:type "bool") (reparse-symbol classsubparts) [998 1011])
+                    ("_delay" variable (:type "int") (reparse-symbol classsubparts) [1013 1024])
+                    ("_modules" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("IMonitorDisplay" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1026 1066]))                  
+                :type "class")
+                nil [276 1069])
+            ("ncursesInterface" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [1093 1100])
+                    ("av" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1101 1112]))                  
+                :type "void")
+                nil [1071 1113]))          
+      :file "ncursesInterface.hpp"
+      :pointmax 1151
+      :fsize 1150
+      :lastmodtime '(23160 50679 715779 894000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NCURSESINTERFACE_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "UserModule.hpp"
+      :pointmax 309
+      :fsize 308
+      :lastmodtime '(23160 50679 715779 894000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "RamModule.hpp"
+      :fsize 259
+      :lastmodtime '(23160 50679 715779 894000))
+    (semanticdb-table "semanticdb-table"
+      :file "TimeModule.hpp"
+      :fsize 333
+      :lastmodtime '(23160 50679 715779 894000))
+    (semanticdb-table "semanticdb-table"
+      :file "NetworkModule.hpp"
+      :fsize 416
+      :lastmodtime '(23160 50679 715779 894000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "IMonitorDisplay.hpp"
+      :pointmax 789
+      :fsize 788
+      :lastmodtime '(23160 50679 715779 894000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "IMonitorModule.hpp"
+      :pointmax 280
+      :fsize 279
+      :lastmodtime '(23160 50679 715779 894000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!cpp_rush3!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

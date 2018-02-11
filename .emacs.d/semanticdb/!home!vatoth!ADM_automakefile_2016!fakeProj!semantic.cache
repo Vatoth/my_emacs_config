@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("a.out")) nil [1 13])
+            ("CC" variable (:default-value ("clang")) nil [13 24])
+            ("SRC_DIR" variable (:default-value (".")) nil [24 36])
+            ("LDFLAGS" variable (:default-value ("LDFLAGS")) nil [58 77])
+            ("CFLAGS" variable (:default-value ("CFLAGS" "-ftest-coverage" "-O2")) nil [77 114])
+            ("SRCS" variable (:default-value ("./main.c" "./fakeProj" "./calc.c" "include/fakeProj.h" "include/calc/calc.h" "include/fakeProj.h")) nil [114 210])
+            ("OBJS" variable (:default-value ("$(SRCS:.c=.o)")) nil [210 231])
+            ("all" function (:arguments ("$(NAME)")) nil [232 245])
+            ("$(NAME)" function (:arguments ("$(OBJS)")) nil [246 289])
+            ("clean" function nil nil [290 312])
+            ("fclean" function (:arguments ("clean")) nil [313 342])
+            ("re" function (:arguments ("fclean" "all")) nil [343 358]))          
+      :file "Makefile"
+      :pointmax 386
+      :fsize 385
+      :lastmodtime '(23144 31514 476194 881000)
+      :unmatched-syntax '((symbol 383 . 385) (symbol 376 . 382) (symbol 370 . 375) (symbol 366 . 369) (punctuation 364 . 365) (symbol 358 . 364) (bol 358 . 358) (INCLUDE 50 . 57) (punctuation 48 . 49) (symbol 36 . 47) (bol 36 . 36))))
+  :file "!home!vatoth!ADM_automakefile_2016!fakeProj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

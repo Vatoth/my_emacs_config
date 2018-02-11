@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("libmy_malloc.so")) nil [76 99])
+            ("SONAME" variable (:default-value ("$(NAME)")) nil [100 117])
+            ("CC" variable (:default-value ("gcc")) nil [118 127])
+            ("SRCS" variable (:default-value ("src/malloc.c")) nil [128 148])
+            ("SRCS" variable (:default-value ("src/allocs.c")) nil [148 169])
+            ("SRCS" variable (:default-value ("src/get_order.c")) nil [169 193])
+            ("SRCS" variable (:default-value ("src/new_list_node.c")) nil [193 221])
+            ("SRCS" variable (:default-value ("src/get_free_block.c")) nil [221 250])
+            ("SRCS" variable (:default-value ("src/divide_block.c")) nil [250 277])
+            ("SRCS" variable (:default-value ("src/free.c")) nil [277 296])
+            ("SRCS" variable (:default-value ("src/get_node.c")) nil [296 319])
+            ("SRCS" variable (:default-value ("src/realloc.c")) nil [319 341])
+            ("SRCS" variable (:default-value ("src/calloc.c")) nil [341 362])
+            ("SRCS" variable (:default-value ("src/trace.c")) nil [362 382])
+            ("SRCS" variable (:default-value ("src/mutex.c")) nil [382 402])
+            ("OBJS" variable (:default-value ("$(SRCS:.c=.o)")) nil [403 424])
+            ("RM" variable (:default-value ("rm" "-f")) nil [425 436])
+            ("CFLAGS" variable (:default-value ("-Werror" "-Wall" "-Wextra" "-std=gnu99" "-fPIC" "-lm")) nil [437 489])
+            ("CFLAGS" variable (:default-value ("-I" "./include")) nil [489 512])
+            ("CFLAGS" variable (:default-value ("-O2")) nil [512 526])
+            ("LDFLAGS" variable (:default-value ("-shared")) nil [527 546])
+            ("all" function (:arguments ("$(NAME)")) nil [547 560])
+            ("$(NAME)" function (:arguments ("$(OBJS)")) nil [561 674])
+            ("clean" function nil nil [675 697])
+            ("fclean" function (:arguments ("clean")) nil [698 727])
+            ("re" function (:arguments ("fclean" "all")) nil [728 743]))          
+      :file "Makefile"
+      :pointmax 772
+      :fsize 769
+      :lastmodtime '(23167 49125 156778 58000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!PSU_2017_malloc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

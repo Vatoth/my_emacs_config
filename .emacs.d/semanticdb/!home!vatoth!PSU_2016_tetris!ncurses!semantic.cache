@@ -1,0 +1,234 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "key_event.c"
+      :pointmax 794
+      :fsize 755
+      :lastmodtime '(23165 65009 280523 358000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [283 303])
+            ("tetris.h" include nil nil [304 323])
+            ("g_keys" variable
+               (:typemodifiers ("extern")
+                :type ("t_keys" type (:type "class") nil nil))
+                nil [325 346])
+            ("game_map" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [366 371]))                  
+                :type ("WINDOW" type (:type "class") nil nil))
+                nil [348 632])
+            ("map_score" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [653 658]))                  
+                :type ("WINDOW" type (:type "class") nil nil))
+                nil [634 882])
+            ("map_next" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [902 907]))                  
+                :type ("WINDOW" type (:type "class") nil nil))
+                nil [884 1132]))          
+      :file "ncurses_map.c"
+      :pointmax 1133
+      :fsize 1097
+      :lastmodtime '(23165 65009 284523 426000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [227 245])
+            ("tetris.h" include nil nil [246 265])
+            ("rotate" function
+               (:pointer 2
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [282 291])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [292 299])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [300 307]))                  
+                :type "char")
+                nil [267 784]))          
+      :file "turn_pieces.c"
+      :pointmax 785
+      :fsize 744
+      :lastmodtime '(23165 65009 288523 494000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("tetris.h" include nil nil [220 239])
+            ("g_keys" variable
+               (:typemodifiers ("extern")
+                :type ("t_keys" type (:type "class") nil nil))
+                nil [241 262])
+            ("print_tetri" function
+               (:arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("t_piece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 295])
+                    ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [296 307])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [308 314])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [315 321]))                  
+                :type "void")
+                nil [264 583])
+            ("clean_tetri" function
+               (:arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("t_piece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [605 616])
+                    ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [617 628])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [629 635])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [636 642]))                  
+                :type "void")
+                nil [585 876])
+            ("fall_tetri" function
+               (:arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("t_piece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [897 908])
+                    ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [909 920])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [921 928])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [929 935]))                  
+                :type "int")
+                nil [878 1020]))          
+      :file "fall.c"
+      :pointmax 1021
+      :fsize 917
+      :lastmodtime '(23165 65009 272523 221000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("fcntl.h" include (:system-flag t) nil [282 300])
+            ("ncurses.h" include (:system-flag t) nil [301 321])
+            ("curses.h" include (:system-flag t) nil [322 341])
+            ("tetris.h" include nil nil [342 361])
+            ("g_keys" variable
+               (:typemodifiers ("extern")
+                :type ("t_keys" type (:type "class") nil nil))
+                nil [363 384])
+            ("init_pair_color" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [407 412]))                  
+                :type "void")
+                nil [386 743])
+            ("print_title" function (:type "int") nil [745 1263])
+            ("animation_title" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1286 1299]))                  
+                :type "void")
+                nil [1265 1603])
+            ("init_ncurses_fonc" function (:type "void") nil [1605 1785])
+            ("ncurses_init" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("t_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1805 1818]))                  
+                :type "void")
+                nil [1787 2021]))          
+      :file "init_ncurses.c"
+      :pointmax 2022
+      :fsize 2021
+      :lastmodtime '(23165 65009 280523 358000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("tetris.h" include nil nil [266 285])
+            ("print_next_piece" function
+               (:arguments 
+                  ( ("element" variable
+                       (:pointer 1
+                        :type ("t_piece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [309 326])
+                    ("score" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [327 341]))                  
+                :type "void")
+                nil [287 476])
+            ("creat_score_map" function
+               (:pointer 2
+                :type "char")
+                nil [478 824])
+            ("print_window_score" function
+               (:arguments 
+                  ( ("map_score" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [850 867])
+                    ("score" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [868 882]))                  
+                :type "void")
+                nil [826 1032])
+            ("aff_next_piece" function
+               (:arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("t_piece" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1054 1065])
+                    ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1066 1077]))                  
+                :type "void")
+                nil [1034 1418])
+            ("liste" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("t_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1432 1445])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1446 1452])
+                    ("score" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1453 1467]))                  
+                :type "void")
+                nil [1420 1790]))          
+      :file "next_piece.c"
+      :pointmax 1791
+      :fsize 1683
+      :lastmodtime '(23165 65009 284523 426000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!PSU_2016_tetris!ncurses!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

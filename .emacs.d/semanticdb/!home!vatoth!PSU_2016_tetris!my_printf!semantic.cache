@@ -1,0 +1,25 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("SRC" variable (:default-value ("my_putchar.c" "my_strlen.c" "my_printable.c" "my_putstr.c" "my_put_nbr.c" "my_put_long.c" "my_printf.c" "my_base.c" "my_put_pointers.c" "my_put_unsigned.c" "my_revstr.c")) nil [235 514])
+            ("CFLAGS" variable (:default-value ("-I.././include" "-Wall" "-Wextra")) nil [515 554])
+            ("OBJ" variable (:default-value ("$(SRC:.c=.o)")) nil [555 574])
+            ("NAME" variable (:default-value ("libmy.a")) nil [575 590])
+            ("all" function (:arguments ("$(NAME)")) nil [591 604])
+            ("$(NAME)" function (:arguments ("$(OBJ)")) nil [605 643])
+            ("clean" function nil nil [644 665])
+            ("fclean" function (:arguments ("clean")) nil [666 695])
+            ("re" function (:arguments ("fclean" "all")) nil [696 711]))          
+      :file "Makefile"
+      :pointmax 740
+      :fsize 739
+      :lastmodtime '(23165 64682 546426 504000)
+      :unmatched-syntax '((symbol 737 . 739) (symbol 730 . 736) (symbol 724 . 729) (symbol 720 . 723) (punctuation 718 . 719) (symbol 712 . 718) (bol 712 . 712))))
+  :file "!home!vatoth!PSU_2016_tetris!my_printf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

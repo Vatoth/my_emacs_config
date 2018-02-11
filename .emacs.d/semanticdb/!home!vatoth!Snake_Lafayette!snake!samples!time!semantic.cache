@@ -1,0 +1,57 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ansi.h" include nil nil [1 18])
+            ("monconio.h" include nil nil [19 40])
+            ("sys/time.h" include (:system-flag t) nil [41 62])
+            ("signal.h" include (:system-flag t) nil [63 82])
+            ("stdlib.h" include (:system-flag t) nil [93 112])
+            ("sys/wait.h" include (:system-flag t) nil [121 142])
+            ("sys/time.h" include (:system-flag t) nil [151 172])
+            ("mesureTemps" function (:type "long int") nil [191 564])
+            ("main" function (:type "int") nil [566 1119]))          
+      :file "monTemps.c"
+      :pointmax 1120
+      :fsize 1120
+      :lastmodtime '(23160 54432 154456 488000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ansi.h"
+      :fsize 741
+      :lastmodtime '(23154 58937 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "monconio.h"
+      :fsize 256
+      :lastmodtime '(23154 58950 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("monconio.h" include nil nil [67 88])
+            ("oldtermios" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [90 117])
+            ("ttyraw" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [130 137]))                  
+                :type "int")
+                nil [119 2459])
+            ("ttyreset" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2474 2481]))                  
+                :type "int")
+                nil [2461 2578])
+            ("inputAvailable" function (:type "int") nil [2581 2829]))          
+      :file "monconio.c"
+      :pointmax 2831
+      :fsize 2830
+      :lastmodtime '(23154 58950 0 0)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!Snake_Lafayette!snake!samples!time!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

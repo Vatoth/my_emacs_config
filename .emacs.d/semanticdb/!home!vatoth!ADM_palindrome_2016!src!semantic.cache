@@ -1,0 +1,92 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("errno.h" include (:system-flag t) nil [212 230])
+            ("stdio.h" include (:system-flag t) nil [231 249])
+            ("stdlib.h" include (:system-flag t) nil [250 269])
+            ("ctype.h" include (:system-flag t) nil [270 288])
+            ("limits.h" include (:system-flag t) nil [289 308])
+            ("string.h" include (:system-flag t) nil [309 328])
+            ("palindrome.h" include nil nil [329 352])
+            ("recursive_iteration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [385 396]))                  
+                :type "int")
+                nil [354 1255])
+            ("begin_iteration" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1277 1288]))                  
+                :type "int")
+                nil [1257 1777])
+            ("recursive_palindrome" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1804 1815]))                  
+                :type "int")
+                nil [1779 2638]))          
+      :file "algo.c"
+      :pointmax 2639
+      :fsize 2638
+      :lastmodtime '(23144 53885 557838 366000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("errno.h" include (:system-flag t) nil [212 230])
+            ("stdio.h" include (:system-flag t) nil [231 249])
+            ("stdlib.h" include (:system-flag t) nil [250 269])
+            ("ctype.h" include (:system-flag t) nil [270 288])
+            ("limits.h" include (:system-flag t) nil [289 308])
+            ("string.h" include (:system-flag t) nil [309 328])
+            ("palindrome.h" include nil nil [329 352])
+            ("fill_arg" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [368 379]))                  
+                :type "void")
+                nil [354 510])
+            ("check_palin" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("t_arg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [528 539])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [540 550]))                  
+                :type "int")
+                nil [512 1094])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [1105 1112])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1113 1123]))                  
+                :type "int")
+                nil [1096 1423]))          
+      :file "main.c"
+      :pointmax 1424
+      :fsize 1423
+      :lastmodtime '(23144 54148 744424 269000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!ADM_palindrome_2016!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

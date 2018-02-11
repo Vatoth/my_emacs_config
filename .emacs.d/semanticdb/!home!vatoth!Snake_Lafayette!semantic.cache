@@ -1,0 +1,228 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("snake")) nil [1 14])
+            ("CC" variable (:default-value ("gcc")) nil [15 24])
+            ("INCLUDE" variable (:default-value ("-I./include")) nil [25 47])
+            ("SRCS" variable (:default-value ("src/main.c")) nil [48 66])
+            ("SRCS" variable (:default-value ("src/linked_list.c")) nil [66 92])
+            ("SRCS" variable (:default-value ("src/snake.c")) nil [92 112])
+            ("SRCS" variable (:default-value ("src/ncurces_interfaces.c")) nil [112 145])
+            ("LIBS" variable (:default-value ("-lncurses")) nil [146 163])
+            ("OBJS" variable (:default-value ("$(SRCS:.c=.o)")) nil [164 185])
+            ("RM" variable (:default-value ("rm" "-f")) nil [186 197])
+            ("CPPFLAGS" variable (:default-value ("-Werror" "-Wall" "-Wextra")) nil [198 231])
+            ("CPPFLAGS" variable (:default-value ("$(INCLUDE)")) nil [231 254])
+            ("CFLAGS" variable (:default-value ("-std=gnu11")) nil [255 275])
+            ("all" function (:arguments ("$(NAME)")) nil [276 289])
+            ("$(NAME)" function (:arguments ("$(OBJS)")) nil [290 363])
+            ("clean" function nil nil [364 386])
+            ("fclean" function (:arguments ("clean")) nil [387 416])
+            ("re" function (:arguments ("fclean" "all")) nil [417 432]))          
+      :file "Makefile"
+      :pointmax 461
+      :fsize 460
+      :lastmodtime '(23168 15143 247822 959000)
+      :unmatched-syntax '((symbol 458 . 460) (symbol 451 . 457) (symbol 445 . 450) (symbol 441 . 444) (punctuation 439 . 440) (symbol 433 . 439) (bol 433 . 433) (symbol 269 . 274) (punctuation 268 . 269) (symbol 264 . 268) (punctuation 262 . 263) (symbol 255 . 261) (bol 255 . 255)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("signal.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [52 71])
+            ("sys/wait.h" include (:system-flag t) nil [82 103])
+            ("sys/time.h" include (:system-flag t) nil [112 133])
+            ("stdbool.h" include (:system-flag t) nil [149 169])
+            ("ansi.h" include nil nil [170 187])
+            ("monconio.h" include nil nil [188 209])
+            ("CHAUT" variable (:constant-flag t) nil [219 224])
+            ("CBAS" variable (:constant-flag t) nil [236 240])
+            ("CDROITE" variable (:constant-flag t) nil [252 259])
+            ("CGAUCHE" variable (:constant-flag t) nil [271 278])
+            ("ECHAP" variable (:constant-flag t) nil [290 295])
+            ("MODEFLECHE" variable (:constant-flag t) nil [307 317])
+            ("CSPACE" variable (:constant-flag t) nil [330 336])
+            ("ZoneMax_x" variable (:constant-flag t) nil [348 357])
+            ("ZoneMax_y" variable (:constant-flag t) nil [369 378])
+            ("ZoneMin_x" variable (:constant-flag t) nil [390 399])
+            ("ZoneMin_y" variable (:constant-flag t) nil [410 419])
+            ("PMax_x" variable (:constant-flag t) nil [430 436])
+            ("Pmin_x" variable (:constant-flag t) nil [445 451])
+            ("PMax_y" variable (:constant-flag t) nil [462 468])
+            ("Pmin_y" variable (:constant-flag t) nil [477 483])
+            ("mesureTemps" function (:type "long int") nil [488 816])
+            ("cadre" function (:type "void") nil [818 1158])
+            ("cas" type
+               (:members 
+                  ( ("NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1180 1185])
+                    ("HAUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1186 1191])
+                    ("BAS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1192 1196])
+                    ("GAUCHE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1197 1204])
+                    ("DROITE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1205 1212])
+                    ("SPACE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1213 1219])
+                    ("QUIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1220 1226]))                  
+                :type "enum")
+                nil [1161 1233])
+            ("Order" type
+               (:typedef ("cas" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1161 1233])
+            ("getOrder" function (:type "int") nil [1235 1747])
+            ("main" function (:type "int") nil [1750 2549]))          
+      :file "Test.c"
+      :pointmax 2550
+      :fsize 2553
+      :lastmodtime '(23165 60256 829719 797000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Pmin_y" . ((number "2" 484 . 485)))
+          ("CHAUT" . ((number "65" 225 . 227)))
+          ("ECHAP" . ((number "27" 296 . 298)))
+          ("CGAUCHE" . ((number "68" 279 . 281)))
+          ("CBAS" . ((number "66" 241 . 243)))
+          ("MODEFLECHE" . ((string "'['" 318 . 321)))
+          ("CDROITE" . ((number "67" 260 . 262)))
+          ("CSPACE" . ((number "32" 337 . 339)))
+          ("ZoneMin_x" . ((number "2" 400 . 401)))
+          ("ZoneMin_y" . ((number "2" 420 . 421)))
+          ("ZoneMax_x" . ((number "41" 358 . 360)))
+          ("ZoneMax_y" . ((number "21" 379 . 381)))
+          ("PMax_x")
+          ("Pmin_x" . ((number "2" 452 . 453)))
+          ("PMax_y")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "monconio.h"
+      :pointmax 384
+      :fsize 382
+      :lastmodtime '(23165 60154 303087 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ANSI_H_" variable (:constant-flag t) nil [25 32])
+            ("stdio.h" include (:system-flag t) nil [34 52])
+            ("" type
+               (:members 
+                  ( ("BLACK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [60 66])
+                    ("RED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [67 71])
+                    ("GREEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [72 78])
+                    ("YELLOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [79 86])
+                    ("BLUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [87 92])
+                    ("MAGENTA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [93 101])
+                    ("CYAN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [102 107])
+                    ("WHITE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [108 114]))                  
+                :type "enum")
+                nil [54 115])
+            ("FGCOLOR" variable (:constant-flag t) nil [125 132])
+            ("BGCOLOR" variable (:constant-flag t) nil [193 200])
+            ("UNDERLINE" variable (:constant-flag t) nil [261 270])
+            ("RESET" variable (:constant-flag t) nil [297 302])
+            ("CUU" variable (:constant-flag t) nil [350 353])
+            ("CUD" variable (:constant-flag t) nil [402 405])
+            ("CUF" variable (:constant-flag t) nil [456 459])
+            ("CUB" variable (:constant-flag t) nil [513 516])
+            ("CHA" variable (:constant-flag t) nil [567 570])
+            ("CUP" variable (:constant-flag t) nil [636 639])
+            ("CLRSCR" variable (:constant-flag t) nil [701 707]))          
+      :file "ansi.h"
+      :pointmax 902
+      :fsize 891
+      :lastmodtime '(23165 60263 273885 225000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CHA" (spp-arg-list ("X") 570 . 573) . ((symbol "printf" 574 . 580) (semantic-list "(\"\\x1b[%dG\", X)" 580 . 595)))
+          ("RESET" . ((symbol "printf" 303 . 309) (semantic-list "(\"\\x1b[0m\")" 309 . 320)))
+          ("CUB" (spp-arg-list ("N") 516 . 519) . ((symbol "printf" 520 . 526) (semantic-list "(\"\\x1b[%dD\", N)" 526 . 541)))
+          ("CUP" (spp-arg-list ("X" "Y") 639 . 645) . ((symbol "printf" 646 . 652) (semantic-list "(\"\\x1b[%d;%dH\", Y, X)" 652 . 673)))
+          ("FGCOLOR" (spp-arg-list ("V") 132 . 135) . ((symbol "printf" 136 . 142) (semantic-list "(\"\\x1b[%dm\", 30 + (V))" 142 . 164)))
+          ("CUD" (spp-arg-list ("N") 405 . 408) . ((symbol "printf" 409 . 415) (semantic-list "(\"\\x1b[%dB\", N)" 415 . 430)))
+          ("CUF" (spp-arg-list ("N") 459 . 462) . ((symbol "printf" 463 . 469) (semantic-list "(\"\\x1b[%dC\", N)" 469 . 484)))
+          ("ANSI_H_")
+          ("UNDERLINE" . ((symbol "printf" 271 . 277) (semantic-list "(\"\\x1b[4m\")" 277 . 288)))
+          ("CLRSCR" . 
+              ((symbol "CUP" 775 . 778) (semantic-list "(1, 1)" 778 . 784) (punctuation ";" 784 . 785) (symbol "printf" 849 . 855) (semantic-list "(\"\\x1b[2J\")" 855 . 866)))
+          ("CUU" (spp-arg-list ("N") 353 . 356) . ((symbol "printf" 357 . 363) (semantic-list "(\"\\x1b[%dA\", N)" 363 . 378)))
+          ("BGCOLOR" (spp-arg-list ("V") 200 . 203) . ((symbol "printf" 204 . 210) (semantic-list "(\"\\x1b[%dm\", 40 + (V))" 210 . 232)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("monconio.h" include nil nil [65 86])
+            ("oldtermios" variable (:type ("termios" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [88 114])
+            ("ttyraw" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [127 134]))                  
+                :type "int")
+                nil [116 2268])
+            ("ttyreset" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2283 2290]))                  
+                :type "int")
+                nil [2270 2371])
+            ("inputAvailable" function (:type "int") nil [2373 2587]))          
+      :file "monconio.c"
+      :pointmax 2588
+      :fsize 2587
+      :lastmodtime '(23165 60223 604866 834000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!Snake_Lafayette!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,133 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [78 96])
+            ("unistd.h" include (:system-flag t) nil [97 116])
+            ("string.h" include (:system-flag t) nil [117 136])
+            ("stdio.h" include (:system-flag t) nil [137 155])
+            ("my_malloc.h" include nil nil [157 179])
+            ("_mutex" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [226 277])
+            ("_last" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("alloc_header_t" type (:type "class") nil nil))
+                nil [279 308])
+            ("st" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [318 332]))                  
+                :type "void")
+                nil [310 361])
+            ("my_putchar" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [379 386]))                  
+                :type "void")
+                nil [363 408])
+            ("my_put_nbr" function
+               (:arguments 
+                  ( ("nb" variable (:type "int") (reparse-symbol arg-sub-list) [426 433]))                  
+                :type "void")
+                nil [410 487])
+            ("new_node" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("alloc_header_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [598 619])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [620 632])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [633 644]))                  
+                :type "void")
+                nil [577 1012])
+            ("match_alloc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("alloc_header_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1038 1059])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1072])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1073 1084]))                  
+                :type "bool")
+                nil [1014 1529])
+            ("alloc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1614 1626])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1627 1638]))                  
+                :type "int")
+                nil [1597 1956])
+            ("normal_alloc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2058 2070])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2071 2082]))                  
+                :type "int")
+                nil [2034 2302])
+            ("malloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2317 2329]))                  
+                :type "void")
+                nil [2304 2649])
+            ("calloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2664 2673])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2674 2686]))                  
+                :type "void")
+                nil [2651 2781])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2793 2803]))                  
+                :type "void")
+                nil [2783 2804])
+            ("realloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2820 2830])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2831 2843]))                  
+                :type "void")
+                nil [2806 3224]))          
+      :file "malloc.c"
+      :pointmax 3225
+      :fsize 3224
+      :lastmodtime '(23143 47501 799510 613000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "my_malloc.h"
+      :fsize 465
+      :lastmodtime '(23143 45969 585997 292000)))
+  :file "!home!vatoth!malloc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 249
+      :fsize 248
+      :lastmodtime '(23168 40693 212317 100000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!EpitechDocker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

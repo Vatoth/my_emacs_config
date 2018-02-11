@@ -1,0 +1,135 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Bootswatch: Superhero" section nil nil [74 392])
+            ("var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', \"bootswatch.com\"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();" section nil nil [392 987])
+            ("Bootswatch" section (:members 
+              ( ("Bootswatch" anchor nil nil [1104 1107])
+                ("Superhero" section (:members 
+                  ( ("Navbar
+      ================================================== -->
+      <div class=\"bs-docs-section clearfix\">
+        <div class=\"row\">
+          <div class=\"col-lg-12\">
+            <div class=\"page-header\">
+              <h1 id=\"navbars\">Navbars" anchor nil nil [5349 5352]))                  ) nil [5159 5791])
+                ("Navbars" section nil nil [5791 10633])
+                ("Buttons" section nil nil [10633 19732])
+                ("Typography" section nil nil [19732 19959])
+                ("Heading 1" section (:members 
+                  ( ("Heading 2" section (:members 
+                      ( ("Heading 3" section (:members 
+                          ( ("Heading 4" section (:members 
+                              ( ("Heading 5" section (:members 
+                                  ( ("Heading 6" section nil nil [20124 20157]))                                  ) nil [20091 20157]))                              ) nil [20058 20157]))                          ) nil [20025 20157])
+                        ("Heading
+                <small class=\"text-muted\">with muted text" section nil nil [20157 20499]))                      ) nil [19992 20499])
+                    ("Example body text" section (:members 
+                      ( ("urna mollis ornare" anchor nil nil [20566 20569]))                      ) nil [20499 21215])
+                    ("Emphasis classes" section nil nil [21215 21987])
+                    ("Blockquotes" section nil nil [21987 23652]))                  ) nil [19959 23652])
+                ("Tables" section nil nil [23652 26940])
+                ("Forms" section nil nil [26940 37669])
+                ("Navs" section (:members 
+                  ( ("Tabs" section nil nil [37845 41152])
+                    ("Pills" section nil nil [41152 43577])
+                    ("Breadcrumbs" section (:members 
+                      ( ("Home" anchor nil nil [43859 43862])
+                        ("Home" anchor nil nil [44051 44054])
+                        ("Library" anchor nil nil [44121 44124]))                      ) nil [43577 44313])
+                    ("Pagination" section nil nil [44313 47650]))                  ) nil [37669 47650])
+                ("Indicators" section (:members 
+                  ( ("Alerts" section (:members 
+                      ( ("Warning!" section (:members 
+                          ( ("vel scelerisque nisl consectetur et" anchor nil nil [48232 48235])
+                            ("Change a few things up" anchor nil nil [48675 48678])
+                            ("this important alert message" anchor nil nil [49110 49113])
+                            ("alert needs your attention" anchor nil nil [49505 49508]))                          ) nil [48037 49694]))                      ) nil [47810 49694])
+                    ("Badges" section nil nil [49694 51142]))                  ) nil [47650 51142])
+                ("Progress" section (:members 
+                  ( ("Basic" section nil nil [51206 51515])
+                    ("Contextual alternatives" section nil nil [51515 52496])
+                    ("Multiple bars" section nil nil [52496 53122])
+                    ("Striped" section nil nil [53122 54389])
+                    ("Animated" section nil nil [54389 55011]))                  ) nil [51142 55011])
+                ("Containers" section nil nil [55011 55159])
+                ("Hello, world!" section (:members 
+                  ( ("List groups" section (:members 
+                      ( ("Cras justo odio" anchor nil nil [56862 56865])
+                        ("Dapibus ac facilisis in" anchor nil nil [57000 57003])
+                        ("Morbi leo risus" anchor nil nil [57120 57123])
+                        ("List group item heading" anchor nil nil [57409 57412])
+                        ("List group item heading" section (:members 
+                          ( ("List group item heading" anchor nil nil [57943 57946]))                          ) nil [57595 58122])
+                        ("List group item heading" section nil nil [58122 58637]))                      ) nil [55811 58637])
+                    ("Cards" section (:members 
+                      ( ("Primary card title" section nil nil [58981 59410])
+                        ("Secondary card title" section nil nil [59410 59839])
+                        ("Success card title" section nil nil [59839 60265])
+                        ("Danger card title" section nil nil [60265 60691])
+                        ("Warning card title" section nil nil [60691 61115])
+                        ("Info card title" section nil nil [61115 61526])
+                        ("Light card title" section nil nil [61526 61948])
+                        ("Dark card title" section nil nil [61948 62486])
+                        ("Primary card title" section nil nil [62486 62923])
+                        ("Secondary card title" section nil nil [62923 63358])
+                        ("Success card title" section nil nil [63358 63789])
+                        ("Danger card title" section nil nil [63789 64221])
+                        ("Warning card title" section nil nil [64221 64648])
+                        ("Info card title" section nil nil [64648 65063])
+                        ("Light card title" section nil nil [65063 65488])
+                        ("Dark card title" section nil nil [65488 65877])
+                        ("Card header" section (:members 
+                          ( ("Special title treatment" section (:members 
+                              ( ("Support card subtitle" section (:members 
+                                  ( ("Card link" anchor nil nil [67458 67461])
+                                    ("Another link" anchor nil nil [67520 67523]))                                  ) nil [66046 67807]))                              ) nil [65976 67807])
+                            ("Card title" section (:members 
+                              ( ("Card subtitle" section (:members 
+                                  ( ("Card link" anchor nil nil [68081 68084])
+                                    ("Another link" anchor nil nil [68143 68146]))                                  ) nil [67864 68529]))                              ) nil [67807 68529]))                          ) nil [65877 68529]))                      ) nil [58637 68529]))                  ) nil [55159 68529])
+                ("Dialogs" section (:members 
+                  ( ("Modals" section (:members 
+                      ( ("Modal title" section nil nil [68944 69755]))                      ) nil [68681 69755])
+                    ("Popovers" section nil nil [69755 70840])
+                    ("Tooltips" section (:members 
+                      ( ("Source Code" section (:members 
+                          ( ("Back to top" anchor nil nil [72194 72197])
+                            ("Blog" anchor nil nil [72248 72251])
+                            ("RSS" anchor nil nil [72371 72374])
+                            ("Twitter" anchor nil nil [72451 72454])
+                            ("GitHub" anchor nil nil [72527 72530])
+                            ("API" anchor nil nil [72613 72616])
+                            ("Donate" anchor nil nil [72667 72670])
+                            ("Thomas Park" anchor nil nil [72750 72753])
+                            ("MIT License" anchor nil nil [72841 72844])
+                            ("Bootstrap" anchor nil nil [72957 72960])
+                            ("Font Awesome" anchor nil nil [73032 73035])
+                            ("Google" anchor nil nil [73113 73116]))                          ) nil [71731 73249]))                      ) nil [70840 73249]))                  ) nil [68529 73249]))              ) nil [987 73249])
+            ("" section nil nil [73249 73314])
+            ("" section nil nil [73314 73386])
+            ("" section nil nil [73386 73460])
+            ("" section nil nil [73460 73526]))          
+      :file "index.html"
+      :pointmax 73526
+      :fsize 73527
+      :lastmodtime '(23153 55316 654212 550000)
+      :unmatched-syntax nil))
+  :file "!home!vatoth!bootswatch!docs!superhero!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

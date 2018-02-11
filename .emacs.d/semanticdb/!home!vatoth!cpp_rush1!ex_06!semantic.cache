@@ -1,0 +1,29 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RAISE_H" variable (:constant-flag t) nil [27 34])
+            ("stdio.h" include (:system-flag t) nil [36 55])
+            ("stdlib.h" include (:system-flag t) nil [56 76])
+            ("raise" variable (:constant-flag t) nil [87 92]))          
+      :file "raise.h"
+      :pointmax 363
+      :fsize 362
+      :lastmodtime '(23161 774 770692 773000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RAISE_H")
+          ("raise" (spp-arg-list ("msg") 92 . 97) . 
+              ((DO "do" 144 . 146) (semantic-list "{                                                            \\
+    fprintf(stderr, \"%s: %u: %s\\n\", __FILE__, __LINE__, msg);   \\
+    abort();                                                    \\
+}" 147 . 343) (WHILE "while" 344 . 349) (semantic-list "(0)" 350 . 353)))
+          )
+))
+  :file "!home!vatoth!cpp_rush1!ex_06!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

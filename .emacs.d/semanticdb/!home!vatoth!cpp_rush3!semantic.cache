@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("NAME" variable (:default-value ("MyGKrellm")) nil [70 88])
+            ("CCXX" variable (:default-value ("g++")) nil [89 101])
+            ("SRCS" variable (:default-value ("src/main.cpp")) nil [102 123])
+            ("SRCS" variable (:default-value ("src/Window.cpp")) nil [123 147])
+            ("SRCS" variable (:default-value ("src/gtkMonitorDisplayUser.cpp")) nil [147 186])
+            ("SRCS" variable (:default-value ("src/gtkMonitorDisplayMain.cpp")) nil [186 225])
+            ("SRCS" variable (:default-value ("src/gtkMonitorDisplayRam.cpp")) nil [225 263])
+            ("SRCS" variable (:default-value ("src/MonitorDisplay.cpp")) nil [263 295])
+            ("SRCS" variable (:default-value ("src/MonitorModuleUser.cpp")) nil [295 330])
+            ("SRCS" variable (:default-value ("src/MonitorModuleCpu.cpp")) nil [330 364])
+            ("SRCS" variable (:default-value ("src/IMonitorModule.cpp")) nil [364 396])
+            ("SRCS" variable (:default-value ("src/IMonitorDisplay.cpp")) nil [396 429])
+            ("SRCS" variable (:default-value ("src/MonitorModuleRam.cpp")) nil [429 463])
+            ("SRCS" variable (:default-value ("src/MonitorModuleNetwork.cpp")) nil [463 501])
+            ("SRCS" variable (:default-value ("src/ncursesInterface.cpp")) nil [501 535])
+            ("SRCS" variable (:default-value ("src/UserModule.cpp")) nil [535 563])
+            ("SRCS" variable (:default-value ("src/RamModule.cpp")) nil [563 590])
+            ("SRCS" variable (:default-value ("src/TimeModule.cpp")) nil [590 618])
+            ("SRCS" variable (:default-value ("src/MonitorDisplayKernel.cpp")) nil [618 656])
+            ("SRCS" variable (:default-value ("src/MonitorDisplayCpu.cpp")) nil [656 691])
+            ("SRCS" variable (:default-value ("src/NetworkModule.cpp")) nil [691 722])
+            ("OBJ" variable (:default-value ("$(SRCS:.cpp=.o)")) nil [723 746])
+            ("LIB" variable (:default-value ("`pkg-config gtkmm-3.0 --libs`" "-g3")) nil [747 788])
+            ("LIB" variable (:default-value ("`pkg-config glibmm-2.4 --libs`")) nil [788 827])
+            ("LIB" variable (:default-value ("`pkg-config glib-2.0 --libs`")) nil [827 864])
+            ("LIB" variable (:default-value ("`pkg-config gdkmm-3.0 --libs`")) nil [864 902])
+            ("LIB" variable (:default-value ("-lncurses")) nil [902 920])
+            ("RM" variable (:default-value ("rm" "-f")) nil [921 933])
+            ("CXXFLAGS" variable (:default-value ("-W" "-Werror" "-Wall" "-Wextra")) nil [934 971])
+            ("CXXFLAGS" variable (:default-value ("-I" "./include")) nil [971 997])
+            ("CXXFLAGS" variable (:default-value ("`pkg-config gtkmm-3.0 --cflags`")) nil [997 1042])
+            ("CXXFLAGS" variable (:default-value ("`pkg-config glibmm-2.4 --cflags`")) nil [1042 1088])
+            ("CXXFLAGS" variable (:default-value ("`pkg-config glib-2.0 --cflags`")) nil [1088 1132])
+            ("CXXFLAGS" variable (:default-value ("`pkg-config gdkmm-3.0 --cflags`")) nil [1132 1177])
+            ("all" function (:arguments ("$(NAME)")) nil [1229 1242])
+            ("$(NAME)" function (:arguments ("$(OBJ)")) nil [1243 1363])
+            ("clean" function nil nil [1364 1385])
+            ("fclean" function (:arguments ("clean")) nil [1386 1415])
+            ("re" function (:arguments ("fclean" "all")) nil [1416 1431]))          
+      :file "Makefile"
+      :pointmax 1460
+      :fsize 1459
+      :lastmodtime '(23161 5314 936228 42000)
+      :unmatched-syntax '((symbol 1457 . 1459) (symbol 1450 . 1456) (symbol 1444 . 1449) (symbol 1440 . 1443) (punctuation 1438 . 1439) (symbol 1432 . 1438) (bol 1432 . 1432))))
+  :file "!home!vatoth!cpp_rush3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ansi.h" include nil nil [1 18])
+            ("stdlib.h" include (:system-flag t) nil [52 71])
+            ("unistd.h" include (:system-flag t) nil [81 100])
+            ("main" function (:type "int") nil [112 367]))          
+      :file "deplacement.c"
+      :pointmax 368
+      :fsize 367
+      :lastmodtime '(23160 54262 816918 335000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ansi.h"
+      :fsize 741
+      :lastmodtime '(22204 27724 0 0)))
+  :file "!home!vatoth!Snake_Lafayette!snake!samples!deplacement!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,379 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PARSER_HPP" variable (:constant-flag t) nil [92 102])
+            ("string" include (:system-flag t) nil [104 122])
+            ("vector" include (:system-flag t) nil [123 141])
+            ("Parser" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [158 165])
+                    ("Parser" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [174 202]))                          
+                        :type ("Parser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [167 203])
+                    ("parseFile" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [205 222])
+                    ("private" label nil (reparse-symbol classsubparts) [223 231])
+                    ("_fileName" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [233 261])
+                    ("_fileContent" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [263 301]))                  
+                :type "class")
+                nil [143 304]))          
+      :file "Parser.hpp"
+      :pointmax 326
+      :fsize 325
+      :lastmodtime '(23144 36816 566357 586000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PARSER_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ICOMPONENT_HPP_" variable (:constant-flag t) nil [127 142])
+            ("cstddef" include (:system-flag t) nil [144 163])
+            ("nts" type
+               (:members 
+                  ( ("Tristate" type
+                       (:members 
+                          ( ("UNDEFINED" variable
+                               (:constant-flag t
+                                :default-value (212 219)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [200 219])
+                            ("TRUE" variable
+                               (:constant-flag t
+                                :default-value (230 234)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [223 234])
+                            ("FALSE" variable
+                               (:constant-flag t
+                                :default-value (246 251)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [238 251]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [182 255])
+                    ("IComponent" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [278 285])
+                            ("public" label nil (reparse-symbol classsubparts) [322 329])
+                            ("compute" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pin" variable
+                                       (:default-value "1"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [362 381]))                                  
+                                :type ("nts::Tristate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [332 387])
+                            ("setLink" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [411 427])
+                                    ("other" variable
+                                       (:reference 1
+                                        :type ("nts::IComponent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [437 460])
+                                    ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 491]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [390 496])
+                            ("dump" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [499 529]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [257 533]))                  
+                :type "namespace")
+                nil [165 535]))          
+      :file "IComponent.hpp"
+      :pointmax 562
+      :fsize 561
+      :lastmodtime '(23144 27215 119412 12000)
+      :unmatched-syntax '((punctuation 319 . 320) (DEFAULT 312 . 319) (punctuation 310 . 311) (semantic-list 307 . 309) (symbol 297 . 307) (punctuation 296 . 297) (VIRTUAL 288 . 295))
+      :lexical-table 
+        '(("ICOMPONENT_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("FALSE_HPP_" variable (:constant-flag t) nil [92 102])
+            ("IComponent.hpp" include nil nil [104 130])
+            ("False" type
+               (:superclasses 
+                  ( ("nts::IComponent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [170 177])
+                    ("False" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("False" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [179 187])
+                    ("False" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [189 200])
+                    ("compute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable
+                               (:default-value "1"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [224 243]))                          
+                        :type ("nts::Tristate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [202 245])
+                    ("setLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 276])
+                            ("other" variable
+                               (:reference 1
+                                :type ("nts::IComponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [284 307])
+                            ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [315 336]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [247 337])
+                    ("private" label nil (reparse-symbol classsubparts) [338 346])
+                    ("_value" variable (:type ("nts::Tristate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [348 369])
+                    ("_pins" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [371 397]))                  
+                :type "class")
+                nil [132 400]))          
+      :file "False.hpp"
+      :pointmax 422
+      :fsize 421
+      :lastmodtime '(23160 7663 270024 715000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FALSE_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TRUE_HPP_" variable (:constant-flag t) nil [91 100])
+            ("IComponent.hpp" include nil nil [102 128])
+            ("True" type
+               (:superclasses 
+                  ( ("nts::IComponent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [167 174])
+                    ("True" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("True" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [176 183])
+                    ("True" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [185 195])
+                    ("compute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable
+                               (:default-value "1"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [219 238]))                          
+                        :type ("nts::Tristate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [197 240])
+                    ("setLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [255 271])
+                            ("other" variable
+                               (:reference 1
+                                :type ("nts::IComponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [279 302])
+                            ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [310 331]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [242 332])
+                    ("private" label nil (reparse-symbol classsubparts) [333 341])
+                    ("_value" variable (:type ("nts::Tristate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [343 364])
+                    ("_pins" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [366 392]))                  
+                :type "class")
+                nil [130 395]))          
+      :file "True.hpp"
+      :pointmax 416
+      :fsize 415
+      :lastmodtime '(23160 7675 402024 986000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TRUE_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "Output.hpp"
+      :pointmax 413
+      :fsize 426
+      :lastmodtime '(23160 7696 402025 456000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("INPUT_HPP_" variable (:constant-flag t) nil [92 102])
+            ("IComponent.hpp" include nil nil [104 130])
+            ("Input" type
+               (:superclasses 
+                  ( ("nts::IComponent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [170 177])
+                    ("Input" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Input" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [179 187])
+                    ("Input" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [189 200])
+                    ("compute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable
+                               (:default-value "1"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [224 243]))                          
+                        :type ("nts::Tristate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [202 245])
+                    ("setLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 276])
+                            ("other" variable
+                               (:reference 1
+                                :type ("nts::IComponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [284 307])
+                            ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [315 336]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [247 337])
+                    ("private" label nil (reparse-symbol classsubparts) [338 346])
+                    ("_value" variable (:type ("nts::Tristate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [348 369])
+                    ("_pins" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [371 397]))                  
+                :type "class")
+                nil [132 400]))          
+      :file "Input.hpp"
+      :pointmax 422
+      :fsize 421
+      :lastmodtime '(23160 7686 654025 238000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INPUT_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_COMPONENTS4081_HPP_" variable (:constant-flag t) nil [102 122])
+            ("IComponent.hpp" include nil nil [124 150])
+            ("Component4081" type
+               (:superclasses 
+                  ( ("nts::IComponent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [198 205])
+                    ("Component4081" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Component4081" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [207 223])
+                    ("Component4081" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [225 244])
+                    ("compute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable
+                               (:default-value "1"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [269 288]))                          
+                        :type ("nts::Tristate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [247 290])
+                    ("setLink" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [305 321])
+                            ("other" variable
+                               (:reference 1
+                                :type ("nts::IComponent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [329 352])
+                            ("otherPin" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [360 381]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [292 382])
+                    ("dump" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [384 402])
+                    ("private" label nil (reparse-symbol classsubparts) [403 411])
+                    ("_pins" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("nts::IComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [413 440]))                  
+                :type "class")
+                nil [152 443]))          
+      :file "4081.hpp"
+      :pointmax 475
+      :fsize 474
+      :lastmodtime '(23160 9585 66067 705000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_COMPONENTS4081_HPP_")
+          )
+))
+  :file "!home!vatoth!nanotekspice!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

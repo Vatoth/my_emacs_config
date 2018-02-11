@@ -1,0 +1,392 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MY_H_" variable (:constant-flag t) nil [279 284])
+            ("unistd.h" include (:system-flag t) nil [286 305])
+            ("stdlib.h" include (:system-flag t) nil [306 325])
+            ("stdarg.h" include (:system-flag t) nil [326 345])
+            ("my_put_nbr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable (:type "int") (reparse-symbol arg-sub-list) [362 369]))                  
+                :type "int")
+                nil [347 370])
+            ("my_printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flag" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [385 396])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [397 401]))                  
+                :type "int")
+                nil [371 402])
+            ("my_putchar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [419 426]))                  
+                :type "void")
+                nil [403 427])
+            ("my_putstr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [442 452]))                  
+                :type "int")
+                nil [428 453])
+            ("my_put_binary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nbr" variable (:type "int") (reparse-symbol arg-sub-list) [473 481]))                  
+                :type "long")
+                nil [454 482])
+            ("my_put_long" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable (:type "long") (reparse-symbol arg-sub-list) [500 508]))                  
+                :type "void")
+                nil [483 509])
+            ("my_flag" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flag" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [522 533])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [534 540])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [541 552]))                  
+                :type "int")
+                nil [510 553])
+            ("my_base" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable (:type "int") (reparse-symbol arg-sub-list) [566 573])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [574 584]))                  
+                :type "int")
+                nil [554 585])
+            ("my_printable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [603 613]))                  
+                :type "int")
+                nil [586 614])
+            ("my_strlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [629 645]))                  
+                :type "int")
+                nil [615 646])
+            ("my_revstr" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [663 673]))                  
+                :type "char")
+                nil [647 674])
+            ("my_put_pointers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable (:type "long") (reparse-symbol arg-sub-list) [695 704]))                  
+                :type "int")
+                nil [675 705])
+            ("my_base_pointers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nbr" variable (:type "long") (reparse-symbol arg-sub-list) [728 737])
+                    ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [738 749]))                  
+                :type "long")
+                nil [706 750])
+            ("my_put_unsigned" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [771 784]))                  
+                :type "int")
+                nil [751 785]))          
+      :file "my.h"
+      :pointmax 807
+      :fsize 803
+      :lastmodtime '(23165 65076 913763 616000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("COMMANDE_H_" variable (:constant-flag t) nil [298 309])
+            ("tetris.h" include nil nil [311 330])
+            ("WAX_SIZE_KEYS" variable (:constant-flag t) nil [340 353])
+            ("s_keys" type
+               (:members 
+                  ( ("keyy_left" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [626 642])
+                    ("keyy_right" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [644 661])
+                    ("key_turn" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [663 678])
+                    ("key_drop" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [680 695])
+                    ("key_quit" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [697 712])
+                    ("key_pause" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [714 730])
+                    ("next" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [732 743])
+                    ("level" variable (:type "int") (reparse-symbol classsubparts) [745 755])
+                    ("size_x" variable (:type "int") (reparse-symbol classsubparts) [757 768])
+                    ("size_y" variable (:type "int") (reparse-symbol classsubparts) [770 781])
+                    ("debug" variable (:type "int") (reparse-symbol classsubparts) [783 793])
+                    ("without_next" variable (:type "int") (reparse-symbol classsubparts) [795 812]))                  
+                :type "struct")
+                nil [601 822])
+            ("t_keys" type
+               (:typedef ("s_keys" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [601 822])
+            ("recup_command" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [842 849])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [850 857]))                  
+                :type "int")
+                nil [824 858])
+            ("assignkd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [872 879]))                  
+                :type "int")
+                nil [859 880])
+            ("assignkq" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [894 901]))                  
+                :type "int")
+                nil [881 902])
+            ("assignkp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [916 923]))                  
+                :type "int")
+                nil [903 924])
+            ("assignkl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [938 945]))                  
+                :type "int")
+                nil [925 946])
+            ("assignkt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [960 967]))                  
+                :type "int")
+                nil [947 968])
+            ("assignsize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [984 991]))                  
+                :type "int")
+                nil [969 992])
+            ("assignl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1005 1012]))                  
+                :type "int")
+                nil [993 1013])
+            ("assignkr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1271 1278]))                  
+                :type "int")
+                nil [1258 1279])
+            ("str_in_tab" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1297 1301])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1302 1309])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1310 1314])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1315 1323]))                  
+                :type "char")
+                nil [1280 1324])
+            ("setup_term" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1340 1348]))                  
+                :type "int")
+                nil [1325 1349])
+            ("recup_term" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1367 1375]))                  
+                :type "char")
+                nil [1350 1376])
+            ("my_strc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1633 1646])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1647 1660]))                  
+                :type "int")
+                nil [1621 1661])
+            ("my_strdup" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1678 1685]))                  
+                :type "char")
+                nil [1662 1686])
+            ("print_commande_debug_mode" function
+               (:prototype-flag t
+                :type "void")
+                nil [1931 1964]))          
+      :file "commande.h"
+      :pointmax 1992
+      :fsize 1991
+      :lastmodtime '(23165 65076 913763 616000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COMMANDE_H_")
+          ("WAX_SIZE_KEYS" . ((number "10" 354 . 356)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "tetris.h"
+      :fsize 6625
+      :lastmodtime '(23165 65076 921763 772000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MY_STR_TO_WORDTAB_H_" variable (:constant-flag t) nil [278 298])
+            ("s_tab" type
+               (:members 
+                  ( ("array" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [324 337])
+                    ("nb" variable (:type "int") (reparse-symbol classsubparts) [339 346])
+                    ("i" variable (:type "int") (reparse-symbol classsubparts) [348 354])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [356 362])
+                    ("k" variable (:type "int") (reparse-symbol classsubparts) [364 370]))                  
+                :type "struct")
+                nil [300 379])
+            ("t_tab" type
+               (:typedef ("s_tab" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [300 379])
+            ("my_str_to_wordtab" function
+               (:prototype-flag t
+                :pointer 2
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [406 413])
+                    ("s" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [414 427]))                  
+                :type "char")
+                nil [381 428]))          
+      :file "my_str_to_wordtab.h"
+      :pointmax 465
+      :fsize 464
+      :lastmodtime '(23165 65076 917763 694000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MY_STR_TO_WORDTAB_H_")
+          )
+))
+  :file "!home!vatoth!PSU_2016_tetris!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

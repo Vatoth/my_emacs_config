@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("SRC" variable (:default-value ("malloc.c" "free.c" "realloc.c" "calloc.c" "show_alloc_mem.c" "add_blk.c" "mem_set.c" "get_available.c" "get_allocated_blk.c" "init_blk_list.c" "sup_power.c" "conv_10_to_16.c" "get_blk_size.c" "my_strlen.c" "my_putchar.c" "my_putnbr.c" "my_putstr.c" "my_power.c" "my_revstr.c")) nil [1 337])
+            ("NAME" variable (:default-value ("libmy_malloc_.so")) nil [338 363])
+            ("OBJ" variable (:default-value ("$(SRC:.c=.o)")) nil [364 384])
+            ("CC" variable (:default-value ("gcc")) nil [385 395])
+            ("INCLUDES" variable (:default-value ("-I.")) nil [396 411])
+            ("CFLAGS" variable (:default-value ("-Wall" "$(INCLUDES)")) nil [412 440])
+            ("$(NAME)" function (:arguments ("$(OBJ)")) nil [441 490])
+            ("all" function (:arguments ("$(NAME)")) nil [491 504])
+            ("clean" function nil nil [505 546])
+            ("fclean" function (:arguments ("clean")) nil [547 577]))          
+      :file "Makefile"
+      :pointmax 593
+      :fsize 592
+      :lastmodtime '(23166 339 932633 802000)
+      :unmatched-syntax '((symbol 589 . 592) (symbol 582 . 588) (punctuation 580 . 581) (symbol 578 . 580) (bol 578 . 578))))
+  :file "!home!vatoth!PSU_2017_malloc!mallocer-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

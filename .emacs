@@ -166,6 +166,8 @@
                         company-irony
                         company-c-headers
                         company-yasnippet)))
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
 
 
 
@@ -174,13 +176,18 @@
 (global-flycheck-mode)
 (add-hook 'c++-mode-hook (lambda () (
 				setq flycheck-clang-language-standard "c++14")))
+(add-hook 'c-mode-hook (lambda () (
+			      setq flycheck-clang-language-standard "c11")))
 (add-hook 'c++-mode-hook
           (lambda () (setq flycheck-clang-include-path
 		      (list (expand-file-name "./include/")
+			    (expand-file-name "~/nanotekspice/include/")
 			    (expand-file-name "../include/")
 			    (expand-file-name "/usr/include/gtkmm-3.0/")))))
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+(add-hook 'c-mode-hook
+          (lambda () (setq flycheck-clang-include-path
+		      (list (expand-file-name "./include/")
+			    (expand-file-name "../include/")))))
 
 ;;; tab of 8
 (setq-default indent-tabs-mode t)
@@ -208,6 +215,11 @@
 (setq
  c-default-style "linux" ;; set style to "linux"
  )
+
+(eval-after-load 'php-mode
+  '(require 'php-ext))
+
+(c-set-offset (quote cpp-macro) 0 nil)
 
 (provide '.emacs)
 ;;; .emacs ends here

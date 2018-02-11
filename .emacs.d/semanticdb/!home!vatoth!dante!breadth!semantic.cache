@@ -1,0 +1,274 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("fcntl.h" include (:system-flag t) nil [204 222])
+            ("stdio.h" include (:system-flag t) nil [223 241])
+            ("stdlib.h" include (:system-flag t) nil [242 261])
+            ("breadth.h" include nil nil [262 282])
+            ("init" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [313 326])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [327 344]))                  
+                :type ("t_info" type (:type "class") nil nil))
+                nil [284 831])
+            ("add_node" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [855 868])
+                    ("x" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [869 881])
+                    ("y" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [887 899])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("t_element" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [900 913]))                  
+                :type "void")
+                nil [833 1351])
+            ("trace_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1377 1390]))                  
+                :type "void")
+                nil [1353 1819])
+            ("algo" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1839 1852]))                  
+                :type "void")
+                nil [1821 2708])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [2720 2727])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2728 2738]))                  
+                :type "int")
+                nil [2710 2974]))          
+      :file "main.c"
+      :pointmax 2975
+      :fsize 2974
+      :lastmodtime '(23144 40235 418814 297000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BREADTH_H_" variable (:constant-flag t) nil [233 243])
+            ("stdbool.h" include (:system-flag t) nil [245 265])
+            ("s_element" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [305 329])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [332 356])
+                    ("node_1" variable
+                       (:pointer 1
+                        :type ("s_element" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [359 389])
+                    ("node_2" variable
+                       (:pointer 1
+                        :type ("s_element" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [392 417])
+                    ("node_3" variable
+                       (:pointer 1
+                        :type ("s_element" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [420 445])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("s_element" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [448 471]))                  
+                :type "struct")
+                nil [267 506])
+            ("t_element" type
+               (:typedef ("s_element" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [267 506])
+            ("s_list" type
+               (:members 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("s_element" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [535 555])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("s_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [558 579])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("s_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [582 603]))                  
+                :type "struct")
+                nil [508 615])
+            ("t_list" type
+               (:typedef ("s_list" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [508 615])
+            ("s_info" type
+               (:members 
+                  ( ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [644 664])
+                    ("first" variable
+                       (:pointer 1
+                        :type ("t_list" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [667 681])
+                    ("last" variable
+                       (:pointer 1
+                        :type ("t_list" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [684 697])
+                    ("max_y" variable (:type "int") (reparse-symbol classsubparts) [700 720])
+                    ("max_x" variable (:type "int") (reparse-symbol classsubparts) [723 743])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("t_element" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [746 761])
+                    ("current" variable
+                       (:pointer 1
+                        :type ("t_element" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [764 783]))                  
+                :type "struct")
+                nil [617 807])
+            ("t_info" type
+               (:typedef ("s_info" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [617 807])
+            ("my_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [823 840])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [841 855]))                  
+                :type "void")
+                nil [809 856])
+            ("add_to_list" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [875 888])
+                    ("x" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [889 901])
+                    ("y" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [909 921])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("t_element" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [922 938]))                  
+                :type "void")
+                nil [857 939])
+            ("del_element" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [968 981]))                  
+                :type "void")
+                nil [940 982])
+            ("check_map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("map" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [999 1010]))                  
+                :type "void")
+                nil [983 1011])
+            ("count_tab" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tab" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1027 1038]))                  
+                :type "int")
+                nil [1012 1039])
+            ("recup_map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fd" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1056 1069])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1070 1087])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("t_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1088 1101]))                  
+                :type "void")
+                nil [1040 1102]))          
+      :file "breadth.h"
+      :pointmax 1129
+      :fsize 1128
+      :lastmodtime '(23144 40348 66325 924000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BREADTH_H_")
+          )
+))
+  :file "!home!vatoth!dante!breadth!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
