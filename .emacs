@@ -1,16 +1,15 @@
-(require 'cl)
-
-(require 'elisp-format)
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-
 
 ;;; activate all the packages in particular autoloads
 (package-initialize)
 
 (setq custom-file "~/.emacs.d/emacs-custom.el")
 (load custom-file)
+
 
 ;;; fetch the list of packages available
 (unless package-archive-contents (package-refresh-contents))
@@ -25,12 +24,18 @@
 				 company-irony-c-headers irony smartparens
 				 better-defaults monokai-theme function-args
 				 smart-mode-line aggressive-indent flycheck
-				 flycheck-irony elpy helm mode-icons neotree))
+				 flycheck-irony elpy helm mode-icons neotree
+				 elisp-format))
   (unless (package-installed-p package)
     (package-install package)))
 
+(require 'elisp-format)
+
 ;;load monoakai theme
 (load-theme 'monokai t)
+
+;; make {copy, cut, paste, undo} have {C-c, C-x, C-v, C-z} keys
+(cua-mode 1)
 
 ;;display time
 (display-time)
@@ -83,6 +88,12 @@
 
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
+
+;; auto close bracket insertion. New in emacs 24
+(electric-pair-mode 1)
+;; make electric-pair-mode work on more brackets
+(defvar electric-pair-pairs '((?\" . ?\")
+			      (?\{ . ?\})))
 
 ;; molette souris
 (mouse-wheel-mode t)
@@ -153,96 +164,99 @@
 
 (setq flycheck-c/c++-clang-executable clang-executable)
 
-(add-hook 'c++-mode-hook
-	  (lambda ()
+(add-hook 'c++-mode-hook (lambda ()
 
-            ;; List of relative paths where irony can search for a compile
-            ;; database (e.g. compile_commands.json)
-            (defvar irony-cdb-search-directory-list (quote ("." ".." "build")))
+			   ;; List of relative paths where irony can search for a compile
+			   ;; database (e.g. compile_commands.json)
+			   (defvar irony-cdb-search-directory-list
+			     (quote ("." ".." "build")))
 
-            ;; NOTE: Put a .clang_complete or compile_commands.json in the
-            ;; project root
-            (irony-mode)
-
-
-            ;; Eldoc-mode - show function call signatures in echo area
-            (eldoc-mode)
-	    (irony-eldoc)
-
-            ;; Flycheck ("Modern on the fly syntax checking")
-            (flycheck-mode)
-	    (flycheck-irony-setup)
-
-            ;; NOTE: Put a .dir_locals file in project root, containing a
-            ;; configuration of the company-clang-arguments variable
-            (set (make-local-variable 'company-backends)
-		 '(company-irony company-clang company-irony-c-headers))
-	    (define-key irony-mode-map [remap completion-at-point]
-	      'irony-completion-at-point-async)
-	    (define-key irony-mode-map [remap complete-symbol]
-	      'irony-completion-at-point-async)
-	    (company-irony-setup-begin-commands)
-	    (irony-cdb-autosetup-compile-options)
-
-            ;;Key binding to auto complete and indent
-            (local-set-key (kbd "TAB") #'company-indent-or-complete-common)
-
-            ;; Delete trailing whitespace on save
-            (add-hook 'write-contents-functions
-		      (lambda ()
-			(delete-trailing-whitespace)
-			nil))
-
-	    ;; lazy header creator
-	    (load "~/.emacs.d/header_guard.el")
-
-            ;; Whitespace mode
-            (require 'whitespace)
-	    (whitespace-mode 1)))
-
-(add-hook 'c-mode-hook
-	  (lambda ()
-
-            ;; List of relative paths where irony can search for a compile
-            ;; database (e.g. compile_commands.json)
-            (defvar irony-cdb-search-directory-list (quote ("." ".." "build")))
-
-            ;; NOTE: Put a .clang_complete or compile_commands.json in the
-            ;; project root
-            (irony-mode)
+			   ;; NOTE: Put a .clang_complete or compile_commands.json in the
+			   ;; project root
+			   (irony-mode)
 
 
-            ;; Eldoc-mode - show function call signatures in echo area
-            (eldoc-mode)
-	    (irony-eldoc)
+			   ;; Eldoc-mode - show function call signatures in echo area
+			   (eldoc-mode)
+			   (irony-eldoc)
 
-            ;; Flycheck ("Modern on the fly syntax checking")
-            (flycheck-mode)
-	    (flycheck-irony-setup)
+			   ;; Flycheck ("Modern on the fly syntax checking")
+			   (flycheck-mode)
+			   (flycheck-irony-setup)
 
-            ;; NOTE: Put a .dir_locals file in project root, containing a
-            ;; configuration of the company-clang-arguments variable
-            (set (make-local-variable 'company-backends)
-		 '(company-irony company-clang company-irony-c-headers))
-	    (define-key irony-mode-map [remap completion-at-point]
-	      'irony-completion-at-point-async)
-	    (define-key irony-mode-map [remap complete-symbol]
-	      'irony-completion-at-point-async)
-	    (company-irony-setup-begin-commands)
-	    (irony-cdb-autosetup-compile-options)
+			   ;; NOTE: Put a .dir_locals file in project root, containing a
+			   ;; configuration of the company-clang-arguments variable
+			   (set (make-local-variable 'company-backends)
+				'(company-irony company-clang
+						company-irony-c-headers))
+			   (define-key irony-mode-map [remap
+						       completion-at-point]
+			     'irony-completion-at-point-async)
+			   (define-key irony-mode-map [remap complete-symbol]
+			     'irony-completion-at-point-async)
+			   (company-irony-setup-begin-commands)
+			   (irony-cdb-autosetup-compile-options)
 
-            ;;Key binding to auto complete and indent
-            (local-set-key (kbd "TAB") #'company-indent-or-complete-common)
+			   ;;Key binding to auto complete and indent
+			   (local-set-key (kbd "TAB")
+					  #'company-indent-or-complete-common)
 
-            ;; Delete trailing whitespace on save
-            (add-hook 'write-contents-functions
-		      (lambda ()
-			(delete-trailing-whitespace)
-			nil))
+			   ;; Delete trailing whitespace on save
+			   (add-hook 'write-contents-functions (lambda ()
+								 (delete-trailing-whitespace)
+								 nil))
 
-            ;; Whitespace mode
-            (require 'whitespace)
-	    (whitespace-mode 1)))
+			   ;; lazy header creator
+			   (load "~/.emacs.d/header_guard.el")
+
+			   ;; Whitespace mode
+			   (require 'whitespace)
+			   (whitespace-mode 1)))
+
+(add-hook 'c-mode-hook (lambda ()
+
+			 ;; List of relative paths where irony can search for a compile
+			 ;; database (e.g. compile_commands.json)
+			 (defvar irony-cdb-search-directory-list
+			   (quote ("." ".." "build")))
+
+			 ;; NOTE: Put a .clang_complete or compile_commands.json in the
+			 ;; project root
+			 (irony-mode)
+
+
+			 ;; Eldoc-mode - show function call signatures in echo area
+			 (eldoc-mode)
+			 (irony-eldoc)
+
+			 ;; Flycheck ("Modern on the fly syntax checking")
+			 (flycheck-mode)
+			 (flycheck-irony-setup)
+
+			 ;; NOTE: Put a .dir_locals file in project root, containing a
+			 ;; configuration of the company-clang-arguments variable
+			 (set (make-local-variable 'company-backends)
+			      '(company-irony company-clang
+					      company-irony-c-headers))
+			 (define-key irony-mode-map [remap completion-at-point]
+			   'irony-completion-at-point-async)
+			 (define-key irony-mode-map [remap complete-symbol]
+			   'irony-completion-at-point-async)
+			 (company-irony-setup-begin-commands)
+			 (irony-cdb-autosetup-compile-options)
+
+			 ;;Key binding to auto complete and indent
+			 (local-set-key (kbd "TAB")
+					#'company-indent-or-complete-common)
+
+			 ;; Delete trailing whitespace on save
+			 (add-hook 'write-contents-functions (lambda ()
+							       (delete-trailing-whitespace)
+							       nil))
+
+			 ;; Whitespace mode
+			 (require 'whitespace)
+			 (whitespace-mode 1)))
 
 ;;; tab of 8
 (setq-default indent-tabs-mode t)
