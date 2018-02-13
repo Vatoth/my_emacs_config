@@ -20,12 +20,11 @@
   (package-refresh-contents))
 
 ;;; install the missing packages
-(dolist (package '(auto-complete yasnippet yasnippet-snippets company
-				 company-c-headers company-irony
-				 company-irony-c-headers irony smartparens
-				 better-defaults monokai-theme function-args
-				 smart-mode-line aggressive-indent flycheck
-				 flycheck-irony elpy helm mode-icons neotree))
+(dolist (package '(auto-complete yasnippet yasnippet-snippets company company-c-headers
+				 company-irony company-irony-c-headers irony smartparens
+				 better-defaults monokai-theme function-args smart-mode-line
+				 aggressive-indent flycheck flycheck-irony elpy helm mode-icons
+				 neotree))
   (unless (package-installed-p package)
     (package-install package)))
 
@@ -134,10 +133,9 @@
 
 ;;; irony
 (require 'company-irony-c-headers)
-(eval-after-load 'company '(add-to-list 'company-backends
-					'(company-irony-c-headers company-irony
-								  company-c-headers
-								  company-yasnippet)))
+(eval-after-load 'company '(add-to-list 'company-backends '(company-irony-c-headers company-irony
+										    company-c-headers
+										    company-yasnippet)))
 
 ;; provide to not make mistake
 (require  'flycheck)
@@ -177,10 +175,8 @@
             ;; configuration of the company-clang-arguments variable
             (set (make-local-variable 'company-backends)
 		 '(company-irony company-clang company-irony-c-headers))
-	    (define-key irony-mode-map [remap completion-at-point]
-	      'irony-completion-at-point-async)
-	    (define-key irony-mode-map [remap complete-symbol]
-	      'irony-completion-at-point-async)
+	    (define-key irony-mode-map [remap completion-at-point] 'irony-completion-at-point-async)
+	    (define-key irony-mode-map [remap complete-symbol] 'irony-completion-at-point-async)
 	    (company-irony-setup-begin-commands)
 	    (irony-cdb-autosetup-compile-options)
 
@@ -193,7 +189,7 @@
 			(delete-trailing-whitespace)
 			nil))
 
-	    ;; lazy header creator
+;;; lazy header creator
 	    (load "~/.emacs.d/header_guard.el")
 
             ;; Whitespace mode
@@ -224,10 +220,8 @@
             ;; configuration of the company-clang-arguments variable
             (set (make-local-variable 'company-backends)
 		 '(company-irony company-clang company-irony-c-headers))
-	    (define-key irony-mode-map [remap completion-at-point]
-	      'irony-completion-at-point-async)
-	    (define-key irony-mode-map [remap complete-symbol]
-	      'irony-completion-at-point-async)
+	    (define-key irony-mode-map [remap completion-at-point] 'irony-completion-at-point-async)
+	    (define-key irony-mode-map [remap complete-symbol] 'irony-completion-at-point-async)
 	    (company-irony-setup-begin-commands)
 	    (irony-cdb-autosetup-compile-options)
 
@@ -258,6 +252,7 @@
 
 (eval-after-load 'php-mode
   '(require 'php-ext))
+
 
 ;; Default font
 (set-face-attribute 'default nil

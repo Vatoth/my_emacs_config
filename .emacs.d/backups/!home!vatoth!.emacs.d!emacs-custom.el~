@@ -21,7 +21,6 @@
  '(custom-safe-themes
    (quote
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
- '(elisp-format-column 80)
  '(flycheck-clang-language-standard "c11")
  '(flycheck-gcc-language-standard "c11")
  '(package-selected-packages

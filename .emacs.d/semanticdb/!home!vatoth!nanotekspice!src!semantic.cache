@@ -51,25 +51,14 @@
                         (reparse-symbol arg-sub-list) [568 585]))                  
                 :type "void")
                 nil [539 700])
-            ("Parser" function
-               (:constructor-flag t
-                :parent "Parser"
-                :arguments 
-                  ( ("fileName" variable
-                       (:reference 1
-                        :constant-flag t
-                        :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [717 745]))                  
-                :type ("Parser" type (:type "class") nil nil))
-                nil [702 790])
             ("parseFile" function
                (:parent "Parser"
                 :type "void")
-                nil [792 1173]))          
+                nil [808 1189]))          
       :file "Parser.cpp"
-      :pointmax 1174
-      :fsize 1173
-      :lastmodtime '(23163 44988 9190 671000)
+      :pointmax 1190
+      :fsize 1189
+      :lastmodtime '(23170 9036 509134 466000)
       :unmatched-syntax nil))
   :file "!home!vatoth!nanotekspice!src!semantic.cache"
   :semantic-tag-version "2.0"
