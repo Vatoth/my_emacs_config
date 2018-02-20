@@ -1,0 +1,41 @@
+##
+## EPITECH PROJECT, 2018
+## nm-objdump
+## File description:
+## makefile
+##
+
+
+NM		:=	my_nm
+OBJDUMP		:=	my_objdump
+
+$(NM):
+	make -C nm
+	-$(CP) nm/$(NM) .
+
+$(OBJDUMP):
+	make -C objdump
+	-cp nm/$(OBJDUMP) .
+
+all	: $(NM) $(OBJDUMP)
+
+
+clean:
+	make -C nm clean
+	make -C objdump clean
+
+fclean:
+	make -C nm fclean
+	make -C objdump fclean
+	rm $(NM)
+	rm $(OBJDUMP)
+
+re:
+	rm $(NM)
+	rm $(OBJDUMP)
+	make -C nm re
+	make -C objdump re
+	cp nm/$(NM) .
+	cp objdump/$(OBJDUMP) .
+
+.PHONY	: all clean fclean re

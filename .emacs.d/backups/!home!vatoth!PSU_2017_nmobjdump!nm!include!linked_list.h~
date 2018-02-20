@@ -1,0 +1,39 @@
+/*
+** EPITECH PROJECT, 2018
+** nm
+** File description:
+** linked_list
+*/
+
+#ifndef LINKED_LIST_H_
+#define LINKED_LIST_H_
+
+struct s_info {
+char *value;
+char *type;
+char *name;
+};
+
+typedef struct s_info info_t;
+
+struct s_node {
+	info_t info;
+	struct s_node *prev;
+	struct s_node *next;
+};
+
+typedef struct s_node node_t;
+
+struct s_list {
+	node_t *head;
+	node_t *tail;
+};
+
+typedef struct s_list list_t;
+
+void insert_at_tail(list_t *head, const info_t info);
+void list_destroy(list_t *list);
+void print_list(list_t *head);
+void list_remove(list_t *list, node_t *node);
+
+#endif /* LINKED_LIST_H_ */

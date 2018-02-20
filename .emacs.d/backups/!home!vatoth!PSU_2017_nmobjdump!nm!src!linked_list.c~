@@ -1,0 +1,89 @@
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "linked_list.h"
+
+static node_t *get_new_node(const info_t info)
+{
+	node_t *new_node = malloc(sizeof(node_t));
+
+	if (new_node == NULL) {
+		perror(strerror(errno));
+		exit(84);
+	}
+	new_node->info.name = info.name;
+	new_node->info.value = info.value;
+	new_node->info.type = info.type;
+	new_node->prev = NULL;
+	new_node->next = NULL;
+	return new_node;
+}
+
+static int yolo_cmp(char const *a, char const *b)
+{
+	while (strchr("_@", *a))
+		++a;
+	while (strchr("_@", *b))
+		++b;
+	return (strcasecmp(a, b));
+}
+
+void insert_at_tail(list_t *list, const info_t info)
+{
+	node_t *new_node;
+
+	if (info.name == NULL)
+		return;
+	new_node = get_new_node(info);
+	if (list->head == NULL) {
+		list->head = new_node;
+		return;
+	}
+	list->head->prev = new_node;
+	new_node->next = list->head;
+	list->head = new_node;
+}
+
+void swap(info_t *a, info_t *b)
+{
+	info_t c;
+
+	memcpy(&c, a, sizeof(c));
+	memcpy(a, b, sizeof(c));
+	memcpy(b, &c, sizeof(c));
+}
+
+void bubbleSort(list_t *list)
+{
+	int swapped;
+	node_t *temp;
+	node_t *lptr = NULL;
+	do {
+		swapped = 0;
+		temp = list->head;
+		while (temp->next != lptr) {
+			if (yolo_cmp(temp->info.name, temp->next->info.name)
+			    > 0) {
+				swap(&temp->info, &temp->next->info);
+				swapped = 1;
+			}
+			temp = temp->next;
+		}
+		lptr = temp;
+	} while (swapped);
+}
+
+void print_list(list_t *list)
+{
+	node_t *temp = list->head;
+
+	bubbleSort(list);
+	while (temp != NULL) {
+		if (temp->info.name)
+			printf("%s %c %s\n", temp->info.value, temp->info.type,
+			       temp->info.name);
+		temp = temp->next;
+	}
+}

@@ -1,0 +1,7 @@
+[user]
+	email = quentin.sonnefraud@epitech.eu
+	name = Quentin Sonnefraud
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
