@@ -26,7 +26,7 @@
  '(flycheck-gcc-language-standard "c11")
  '(package-selected-packages
    (quote
-    (robe el-get floobits anaconda-mode js2-mode auto-yasnippet elisp-format irony-eldoc xclip php-mode php+-mode dired-sidebar helm-spotify flycheck-rtags zenburn-theme yasnippet-snippets smex smartparens smart-mode-line monokai-theme jedi helm-rtags google-this google-c-style function-args flycheck-pyflakes elpygen elpy doom-themes diminish delight company-rtags company-irony-c-headers company-irony company-c-headers cmake-ide better-defaults autopair aggressive-indent))))
+    (el-get floobits anaconda-mode js2-mode auto-yasnippet elisp-format irony-eldoc xclip php-mode php+-mode dired-sidebar helm-spotify flycheck-rtags zenburn-theme yasnippet-snippets smex smartparens smart-mode-line monokai-theme jedi helm-rtags google-this google-c-style function-args flycheck-pyflakes elpygen elpy doom-themes diminish delight company-rtags company-irony-c-headers company-irony company-c-headers cmake-ide better-defaults autopair aggressive-indent))))
 
 (provide 'emacs-custom)
 ;;; emacs-custom.el ends here

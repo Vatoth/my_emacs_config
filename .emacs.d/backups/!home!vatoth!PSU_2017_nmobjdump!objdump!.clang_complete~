@@ -1,0 +1,6 @@
+-std=c11
+-Wall
+-Wextra
+-Iinclude
+-Irl_utils/include
+-Ijson/2.0.2/include

@@ -1,0 +1,146 @@
+/*
+** EPITECH PROJECT, 2018
+** nm
+** File description:
+** elf
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stddef.h>
+#include <stdbool.h>
+#include <elf.h>
+#include "linked_list.h"
+
+
+bool is_32_bit(Elf64_Ehdr *elf_header)
+{
+	if (elf_header->e_ident[EI_CLASS] == ELFCLASS32) {
+		return true;
+	}
+	return false;
+}
+
+info_t print_32_bits(Elf32_Sym symbol, Elf32_Shdr *section_header,
+		     char *printable_symbol)
+{
+	info_t info;
+
+	info.name = NULL;
+	if (symbol.st_info != STT_FILE
+	    && (&printable_symbol[symbol.st_name])[0] != 0) {
+		if ((info.type != 'U' && info.type != 'u' && info.type != 'W'
+                     && info.type != 'w') || symbol.st_value != 0) {
+			info.value = calloc(sizeof(char), 17);
+			snprintf(info.value, 17, "%08x", symbol.st_value);
+		}
+		else {
+			info.value = strdup("        ");
+		}
+		info.name = strdup(&printable_symbol[symbol.st_name]);
+	}
+	return (info);
+}
+
+
+int read_32_bits(list_t *list, char *map)
+{
+	Elf32_Ehdr *elf_header = (Elf32_Ehdr *)map;
+	Elf32_Shdr *section_header = (Elf32_Shdr *)&map[elf_header->e_shoff];
+	Elf32_Shdr *symbol_header =
+		get_symbol_header32(section_header, elf_header);
+	if (symbol_header == NULL)
+		return (84);
+	Elf32_Sym *symbol_section = (Elf32_Sym *)&map[symbol_header->sh_offset];
+	char *printable_symbol;
+
+	if (symbol_header->sh_link == 0)
+		return (0);
+	printable_symbol =
+		&map[(section_header[symbol_header->sh_link]).sh_offset];
+	for (size_t i = 0;
+	     i < symbol_header->sh_size / symbol_header->sh_entsize; i++) {
+		insert_at_tail(list,
+			       print_32_bits(symbol_section[i], section_header,
+					     printable_symbol));
+	}
+	return (0);
+}
+
+info_t print_64_bits(Elf64_Sym symbol, Elf64_Shdr *section_header,
+		     char *printable_symbol)
+{
+	info_t info;
+
+	info.name = NULL;
+	if (symbol.st_info != STT_FILE
+	    && (&printable_symbol[symbol.st_name])[0] != 0) {
+		info.type = print_type64(symbol, section_header);
+		if ((info.type != 'U' && info.type != 'u' && info.type != 'W'
+		    && info.type != 'w') || symbol.st_value != 0) {
+			info.value = calloc(sizeof(char), 17);
+			snprintf(info.value, 17, "%016lx", symbol.st_value);
+		}
+		else {
+			info.value = strdup("                ");
+		}
+		info.type = print_type64(symbol, section_header);
+		info.name = strdup(&printable_symbol[symbol.st_name]);
+	}
+	return (info);
+}
+
+int read_64_bits(list_t *list, char *map)
+{
+	Elf64_Ehdr *elf_header = (Elf64_Ehdr *)map;
+	Elf64_Shdr *section_header = (Elf64_Shdr *)&map[elf_header->e_shoff];
+	Elf64_Shdr *symbol_header =
+		get_symbol_header64(section_header, elf_header);
+	if (symbol_header == NULL)
+		return (84);
+	Elf64_Sym *symbol_section = (Elf64_Sym *)&map[symbol_header->sh_offset];
+	char *printable_symbol;
+
+	if (symbol_header->sh_link == 0)
+		return (0);
+	printable_symbol =
+		&map[(section_header[symbol_header->sh_link]).sh_offset];
+	for (size_t i = 0;
+	     i < symbol_header->sh_size / symbol_header->sh_entsize; i++) {
+		insert_at_tail(list,
+			       print_64_bits(symbol_section[i], section_header,
+					     printable_symbol));
+	}
+	return (0);
+}
+
+static int check_elf_format(Elf64_Ehdr *elf_header)
+{
+	if (elf_header->e_ident[EI_MAG0] != ELFMAG0
+	    || elf_header->e_ident[EI_MAG1] != ELFMAG1
+	    || elf_header->e_ident[EI_MAG2] != ELFMAG2
+	    || elf_header->e_ident[EI_MAG3] != ELFMAG3
+	    || (elf_header->e_type != ET_EXEC && elf_header->e_type != ET_REL
+		&& elf_header->e_type != ET_DYN)) {
+		return (false);
+	}
+	return (true);
+}
+
+int read_elf_header(char *map)
+{
+	list_t list;
+        int ret;
+
+	list.head = NULL;
+	list.tail = NULL;
+	if (!check_elf_format((Elf64_Ehdr *)map))
+		return (-1);
+	if (is_32_bit((Elf64_Ehdr *)map) == true)
+		ret = read_32_bits(&list, map);
+	else
+		ret = read_64_bits(&list, map);
+	print_list(&list);
+	return (ret);
+}

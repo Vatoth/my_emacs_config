@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("floobits-vatoth-213249"
+ (filename . "~/cpp_nanotekspice/src/Factory.cpp")
+ (front-context-string . "	UNUSED(value);\n")
+ (rear-context-string . "st\n	noexcept\n\n{\n")
+ (position . 829))
+("floobits-vatoth-212803"
+ (filename . "~/cpp_nanotekspice/src/Factory.cpp")
+ (front-context-string . "SED(value);\n	ret")
+ (rear-context-string . "noexcept\n\n{\n	UNU")
+ (position . 833))
+)

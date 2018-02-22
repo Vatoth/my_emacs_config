@@ -212,9 +212,6 @@
 
 			   ;; lazy header creator
 			   (load "~/.emacs.d/header_guard.el")
-                           (setq-default indent-tabs-mode t)
-                           (setq-default tab-width 8) ; Assuming you want your tabs to be four spaces wide
-                           (defvaralias 'c-basic-offset 'tab-width)
 
 			   ;; Whitespace mode
 			   (require 'whitespace)
@@ -262,17 +259,17 @@
 							       nil))
 
 			 ;; Whitespace mode
-                         (setq-default indent-tabs-mode t)
-                         (setq-default tab-width 8) ; Assuming you want your tabs to be four spaces wide
-                         (defvaralias 'c-basic-offset 'tab-width)
-
 			 (require 'whitespace)
 			 (whitespace-mode 1)))
 
-
-;;(auto-completion-enable-snippets-in-popup)
+(auto-completion-enable-snippets-in-popup)
 
 ;;; tab of 8
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 8)
+(defvaralias
+  'c-basic-offset
+  'tab-width)
 
 (defvar c-default-style "linux")
 

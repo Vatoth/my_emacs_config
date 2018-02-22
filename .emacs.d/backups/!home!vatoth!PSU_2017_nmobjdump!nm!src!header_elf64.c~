@@ -1,0 +1,69 @@
+/*
+** EPITECH PROJECT, 2018
+** nm
+** File description:
+** header64
+*/
+
+#include <string.h>
+#include <stdlib.h>
+#include <stdlib.h>
+#include <nm.h>
+
+static Elf64_Shdr *get_symbol_header64(Elf64_Shdr *section_header,
+				Elf64_Ehdr *elf_header)
+{
+	for (size_t i = 0; i < elf_header->e_shnum; i++) {
+		if (section_header[i].sh_type == SHT_SYMTAB) {
+			return (&section_header[i]);
+		}
+	}
+	return (NULL);
+}
+
+static info_t print_64_bits(Elf64_Sym symbol, Elf64_Shdr *section_header,
+                            char *printable_symbol)
+{
+	info_t info;
+
+	info.name = NULL;
+	if (symbol.st_info != STT_FILE
+	    && (&printable_symbol[symbol.st_name])[0] != 0) {
+		info.type = print_type64(symbol, section_header);
+		if ((info.type != 'U' && info.type != 'u' && info.type != 'W'
+		    && info.type != 'w') || symbol.st_value != 0) {
+			info.value = calloc(sizeof(char), 17);
+			snprintf(info.value, 17, "%016lx", symbol.st_value);
+		}
+		else {
+			info.value = strdup("                ");
+		}
+		info.type = print_type64(symbol, section_header);
+		info.name = strdup(&printable_symbol[symbol.st_name]);
+	}
+	return (info);
+}
+
+int read_64_bits(list_t *list, char *map)
+{
+	Elf64_Ehdr *elf_header = (Elf64_Ehdr *)map;
+	Elf64_Shdr *section_header = (Elf64_Shdr *)&map[elf_header->e_shoff];
+	Elf64_Shdr *symbol_header =
+		get_symbol_header64(section_header, elf_header);
+	if (symbol_header == NULL)
+		return (84);
+	Elf64_Sym *symbol_section = (Elf64_Sym *)&map[symbol_header->sh_offset];
+	char *printable_symbol;
+
+	if (symbol_header->sh_link == 0)
+		return (0);
+	printable_symbol =
+		&map[section_header[symbol_header->sh_link].sh_offset];
+	for (size_t i = 0;
+	     i < symbol_header->sh_size / symbol_header->sh_entsize; i++) {
+		insert_at_tail(list,
+			       print_64_bits(symbol_section[i], section_header,
+					     printable_symbol));
+	}
+	return (0);
+}

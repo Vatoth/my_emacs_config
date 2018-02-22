@@ -1,0 +1,77 @@
+/*
+** EPITECH PROJECT, 2018
+** nm
+** File description:
+** type32
+*/
+
+#include <elf.h>
+#include <stdio.h>
+
+static char print_type32_1(char c, Elf32_Sym sym)
+{
+	if (c == 0 && ELF32_ST_BIND(sym.st_info) == STB_WEAK
+            && ELF32_ST_TYPE(sym.st_info) == STT_OBJECT) {
+		c = 'V';
+		if (sym.st_shndx == SHN_UNDEF)
+			c = 'v';
+	}
+	else if (c == 0 && sym.st_shndx == SHN_UNDEF)
+		c = 'U';
+        return (c);
+}
+
+static char print_progbits32(char c, Elf32_Sym sym, Elf32_Shdr *shdr)
+{
+	if (c == 0 && shdr[sym.st_shndx].sh_type == SHT_PROGBITS) {
+                if (shdr[sym.st_shndx].sh_flags == SHF_ALLOC)
+                        c = 'R';
+		else if (c == 0 &&
+                         shdr[sym.st_shndx].sh_flags == (SHF_ALLOC | SHF_WRITE))
+                        c = 'D';
+                else if (c == 0 &&
+                         shdr[sym.st_shndx].sh_flags == (SHF_ALLOC |
+                                                         SHF_EXECINSTR))
+                        c = 'T';
+        }
+        return (c);
+}
+
+static char print_other32(char c, Elf32_Sym sym, Elf32_Shdr *shdr)
+{
+        if (c == 0 && sym.st_shndx == SHN_ABS)
+		c = 'A';
+	else if (c == 0 && sym.st_shndx == SHN_COMMON)
+		c = 'C';
+	else if (c == 0 && shdr[sym.st_shndx].sh_type == SHT_NOBITS
+		 && shdr[sym.st_shndx].sh_flags == (SHF_ALLOC | SHF_WRITE))
+		c = 'B';
+	else if (c == 0 && shdr[sym.st_shndx].sh_type == SHT_DYNAMIC)
+		c = 'D';
+	else if (c == 0 && (shdr[sym.st_shndx].sh_type == (SHT_INIT_ARRAY)
+                            || shdr[sym.st_shndx].sh_type == (SHT_FINI_ARRAY)))
+		c = 't';
+        return (c);
+}
+
+char print_type32(Elf32_Sym sym, Elf32_Shdr *shdr)
+{
+	char c = 0;
+
+	if (ELF32_ST_BIND(sym.st_info) == STB_GNU_UNIQUE)
+		c = 'u';
+	else if (ELF32_ST_BIND(sym.st_info) == STB_WEAK) {
+		c = 'W';
+		if (sym.st_shndx == SHN_UNDEF)
+			c = 'w';
+	}
+        c = print_type32_1(c, sym);
+        c = print_progbits32(c, sym, shdr);
+        c = print_other32(c, sym, shdr);
+        printf("%i\n",  shdr[sym.st_shndx].sh_type);
+	if (c == 0)
+		c = '?';
+	if (ELF32_ST_BIND(sym.st_info) == STB_LOCAL && c != '?' && c != 't')
+		c += 32;
+	return c;
+}
